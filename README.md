@@ -38,24 +38,24 @@ With this, the following generalization bound can be given:
 
 
 ### Questions:
-1. When calculating the error of an hypothesis why do we compare the error of the obtained hypothesis with $h^{*}$ (in hypothesis space $\mathcal{H}$) and not with $f$? 
+1. When calculating the error of an hypothesis why do we compare the error of the obtained hypothesis with <a href="https://www.codecogs.com/eqnedit.php?latex=$h^{*}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$h^{*}$" title="$h^{*}$" /></a> (in hypothesis space <a href="https://www.codecogs.com/eqnedit.php?latex=$\mathcal{H}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\mathcal{H}$" title="$\mathcal{H}$" /></a>) and not with <a href="https://www.codecogs.com/eqnedit.php?latex=$f$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$f$" title="$f$" /></a>? 
 
-In general we compare results with $h^{*}$, because given the hypothesis space $\mathcal{H}$ it is the result closest to the real function one could possibly obtain.
+In general we compare results with <a href="https://www.codecogs.com/eqnedit.php?latex=$h^{*}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$h^{*}$" title="$h^{*}$" /></a>, because given the hypothesis space <a href="https://www.codecogs.com/eqnedit.php?latex=$\mathcal{H}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\mathcal{H}$" title="$\mathcal{H}$" /></a> it is the result closest to the real function one could possibly obtain.
 
-2. Is it possible to calculate $h^{*}$?
+2. Is it possible to calculate <a href="https://www.codecogs.com/eqnedit.php?latex=$h^{*}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$h^{*}$" title="$h^{*}$" /></a>?
 
-3. In the sample set $S$ are duplicates of instances allowed? And what is the actual influence of duplicats in sample $S$?
+3. In the sample set <a href="https://www.codecogs.com/eqnedit.php?latex=$S$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$S$" title="$S$" /></a> are duplicates of instances allowed? And what is the actual influence of duplicats in sample <a href="https://www.codecogs.com/eqnedit.php?latex=$S$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$S$" title="$S$" /></a>?
 
 Yes, duplicates are allowed because the instances are i.i.d. and therefore it is possible.
 In practical apoaches duplicates in the sample set are very rare. Nevertheless, the algorithm should be prepared for this case since some methods could break, for example an inversion of a matrix because of singularity.
 
 4. In the proof of the Corollary where do we use the assumption on realizability?
 
-We utilize the assumption when assuming there exists an hypothesis with $\mathcal{L}_{S}(h)=0$.
+We utilize the assumption when assuming there exists an hypothesis with <a href="https://www.codecogs.com/eqnedit.php?latex=$\mathcal{L}_{S}(h)=0$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\mathcal{L}_{S}(h)=0$" title="$\mathcal{L}_{S}(h)=0$" /></a>.
 
-5. Why $\varepsilon>0$ and not $\varepsilon \in [0,1]$ since it is a probability?
+5. Why <a href="https://www.codecogs.com/eqnedit.php?latex=$\varepsilon>0$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\varepsilon>0$" title="$\varepsilon>0$" /></a> and not <a href="https://www.codecogs.com/eqnedit.php?latex=$\varepsilon&space;\in&space;[0,1]$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\varepsilon&space;\in&space;[0,1]$" title="$\varepsilon \in [0,1]$" /></a> since it is a probability?
 
-Later on epsilon could be the value of a loss function and considering $\varepsilon>0$ one can apply the corollary.
+Later on epsilon could be the value of a loss function and considering <a href="https://www.codecogs.com/eqnedit.php?latex=$\varepsilon>0$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\varepsilon>0$" title="$\varepsilon>0$" /></a> one can apply the corollary.
 
 6. Would anyone ever calculate m utilizing the corollary?
 
@@ -65,7 +65,7 @@ For legal bounds for example in medicine being able to calculate a probability o
 
 Sometimes the considered bounds are right but generally one can only proof uper and lower bounds.
 
-8. The goal utilizing ERM is always to minimize the risk oder the input space. Rare cases (with respect to distribution $\mathcal{D}$) are not considered because they have a very low probabilty but especially those rare cases (for example the corner case in autonomous driving) are the ones that are most interesting because of their strong impacts. How can the algorithms be good on those rare cases?
+8. The goal utilizing ERM is always to minimize the risk oder the input space. Rare cases (with respect to distribution <a href="https://www.codecogs.com/eqnedit.php?latex=$\mathcal{D}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\mathcal{D}$" title="$\mathcal{D}$" /></a>) are not considered because they have a very low probabilty but especially those rare cases (for example the corner case in autonomous driving) are the ones that are most interesting because of their strong impacts. How can the algorithms be good on those rare cases?
 
 ERM sadly doesn't work very well for those cases. But there are practical solutions for example
 - to overdistribute the rare examples by hand or
