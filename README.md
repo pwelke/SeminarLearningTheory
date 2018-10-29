@@ -5,4 +5,5 @@ The wiki of this repository is used for the written documentation of the Seminar
 ## Table of Contents
 
 1) [Introduction and A Gentle Start](IntroAndGentleStart.md)
+
 2) [A Formal Learning Model and Learning via Uniform Convergence](Chap3AndChap4.md)
