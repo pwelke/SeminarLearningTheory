@@ -5,8 +5,4 @@ The wiki of this repository is used for the written documentation of the Seminar
 ## Table of Contents
 
 1) [Introduction and A Gentle Start](IntroAndGentleStart.md)
-
-
-
-
-<!-- You find the wiki <a href="https://github.com/pwelke/SeminarLearningTheory/wiki/Accompanying-Wiki-for-the-Seminar-on-Learning-Theory">here</a>. />
+2) [A Formal Learning Model and Learning via Uniform Convergence](Chap3AndChap4.md)
