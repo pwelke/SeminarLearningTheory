@@ -1,5 +1,5 @@
 ---
-title: "Introduction & a Gentle Start"
+title: "Chap. 1&2"
 ---
 
 {:toc}
