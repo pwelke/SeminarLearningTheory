@@ -60,14 +60,15 @@
             </section>
           {% endif %}
           
-          <ul>
+          <!-- taken from https://thinkshout.com/blog/2014/12/creating-dynamic-menus-in-jekyll/ -->
+          <table style="width:100%">
+          </tr>
             {% for p in site.pages %}
-              <li>
+              <th>
                 <a href="{{ p.url }}">{{ p.title }}</a>
-              </li>
+              </th>
             {% endfor %}
-          </ul>
-          
+          </tr>  
         </header>
     </div>
 
