@@ -62,13 +62,14 @@
           
           <!-- taken from https://thinkshout.com/blog/2014/12/creating-dynamic-menus-in-jekyll/ -->
           <table style="width:100%">
-          </tr>
-            {% for p in site.pages %}
-              <th>
-                <a href="{{ p.url }}">{{ p.title }}</a>
-              </th>
-            {% endfor %}
-          </tr>  
+            </tr>
+              {% for p in site.pages %}
+                <th>
+                  <a href="{{ p.url }}">{{ p.title }}</a>
+                </th>
+              {% endfor %}
+            </tr>  
+          </table>
         </header>
     </div>
 
