@@ -2,8 +2,6 @@
 title: "Chap. 1&2"
 ---
 
-{:toc}
-
 ## Introduction & a Gentle Start
 
 The main goal of the book is to provide statistical learning theory for *supervised*, *passive* *batch* learning from *random* training data. For that, the following formal notation is used.
