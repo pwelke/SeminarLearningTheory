@@ -11,8 +11,8 @@ The main goal of the book is to provide statistical learning theory for *supervi
 
 * training data $S = \left((x_1,y_1),\dots,(x_m,y_m) \right ) \in\left(\mathcal{X}\times\mathcal{Y} \right )^m$
 
-* hypothesis $h\!:\mathcal{X}\to\mathcal{Y}$
-* (unknown) data generator model $f\!:\mathcal{X}\to\mathcal{Y}$ and input distribution $\mathcal{D}\!:\mathcal{X}\to[0,1]$
+* hypothesis $h:\mathcal{X}\to\mathcal{Y}$
+* (unknown) data generator model $f:\mathcal{X}\to\mathcal{Y}$ and input distribution $\mathcal{D}\!:\mathcal{X}\to[0,1]$
 
 * measure of success: **risk** or generalization error $\mathcal{L}_{\mathcal{D},f}(h):=P_{x\sim\mathcal{D}}\left[h(x)\neq f(x) \right ]$
 
@@ -30,7 +30,7 @@ The main goal of the book is to provide statistical learning theory for *supervi
 ### Generalization Bound for ERM in a Restricted Case
 For the following result, three assumptions are made:
 * $\mathcal{H}$ is finite
-* realizability, i.e., $\exisits h^*\in\mathcal{H}\ \ s.t.\ \ \mathcal{L}_{\mathcal{D},f}(h^*)=0$
+* realizability, i.e., $\exists h^*\in\mathcal{H}$ s.t. $\mathcal{L}_{\mathcal{D},f}(h^*)=0$
 
   * note that from this follows that the empirical risk is 0 for all but negligible many S
 * iid training data, i.e., $draw\ x_i\in S iid from \mathcal{D},\ set\ y_i=f(x_i)$
