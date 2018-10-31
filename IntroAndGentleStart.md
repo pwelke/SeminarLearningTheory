@@ -20,7 +20,7 @@ The main goal of the book is to provide statistical learning theory for *supervi
 ### Empirical Risk Minimization
 * restrict search space to hypothesis class $\mathcal{H}$
 
-* **empirical risk** $\mathcal{L}_S:=\frac{1}{m}\left| \left\{ i\in [m]: h(x_i)\neq f(x_i)\right\}\right|$ for training set $S$
+* **empirical risk** $\mathcal{L}_S:=\frac{1}{m}\left| \left\{ i\in \[m\]: h(x_i)\neq f(x_i)\right\}\right|$ for training set $S$
 
 * define ERM as $h_S = ERM_\mathcal{H}(S) = \arg\min_{h\in\mathcal{H}}\mathcal{L}_S(h)$
 
