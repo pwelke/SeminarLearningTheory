@@ -9,20 +9,20 @@ The main goal of the book is to provide statistical learning theory for *supervi
 
 * label set $\mathcal{Y}$, label $y\in\mathcal{Y}$
 
-* training data $S&space;=&space;\left((x_1,y_1),\dots,(x_m,y_m)&space;\right&space;)&space;\in\left(\mathcal{X}\times\mathcal{Y}&space;\right&space;)^m$
+* training data $S = \left((x_1,y_1),\dots,(x_m,y_m) \right ) \in\left(\mathcal{X}\times\mathcal{Y} \right )^m$
 
 * hypothesis $h\!:\mathcal{X}\to\mathcal{Y}$
 * (unknown) data generator model $f\!:\mathcal{X}\to\mathcal{Y}$ and input distribution $\mathcal{D}\!:\mathcal{X}\to[0,1]$
 
-* measure of success: **risk** or generalization error $\mathcal{L}_{\mathcal{D},f}(h):=P_{x\sim\mathcal{D}}\left[h(x)\neq&space;f(x)&space;\right&space;]$
+* measure of success: **risk** or generalization error $\mathcal{L}_{\mathcal{D},f}(h):=P_{x\sim\mathcal{D}}\left[h(x)\neq f(x) \right ]$
 
 
 ### Empirical Risk Minimization
 * restrict search space to hypothesis class $\mathcal{H}$
 
-* **empirical risk** $\mathcal{L}_S:=\frac{1}{m}\left|&space;\left\{&space;i\in&space;[m]:&space;h(x_i)\neq&space;f(x_i)\right\}\right|$ for training set $S$
+* **empirical risk** $\mathcal{L}_S:=\frac{1}{m}\left| \left\{ i\in [m]: h(x_i)\neq f(x_i)\right\}\right|$ for training set $S$
 
-* define ERM as $h_S&space;=&space;ERM_\mathcal{H}(S)&space;=&space;\arg\min_{h\in\mathcal{H}}\mathcal{L}_S(h)$
+* define ERM as $h_S = ERM_\mathcal{H}(S) = \arg\min_{h\in\mathcal{H}}\mathcal{L}_S(h)$
 
   * inductive bias through restriction on $\mathcal{H}$
 
@@ -30,20 +30,20 @@ The main goal of the book is to provide statistical learning theory for *supervi
 ### Generalization Bound for ERM in a Restricted Case
 For the following result, three assumptions are made:
 * $\mathcal{H}$ is finite
-* realizability, i.e., $\exisits&space;h^*\in\mathcal{H}\&space;\&space;s.t.\&space;\&space;\mathcal{L}_{\mathcal{D},f}(h^*)=0$
+* realizability, i.e., $\exisits h^*\in\mathcal{H}\ \ s.t.\ \ \mathcal{L}_{\mathcal{D},f}(h^*)=0$
 
   * note that from this follows that the empirical risk is 0 for all but negligible many S
-* iid training data, i.e., $draw\&space;x_i\in&space;S&space;iid&space;from&space;\mathcal{D},\&space;set\&space;y_i=f(x_i)$
+* iid training data, i.e., $draw\ x_i\in S iid from \mathcal{D},\ set\ y_i=f(x_i)$
 
 
 With this, the following generalization bound can be given:
 
 **Corollary:** 
 
-$finite\&space;\mathcal{H},\delta\in&space;(0,1),&space;\epsilon&space;>0,&space;m\geq\frac{\log\frac{|\mathcal{H}|}{\delta}}{\epsilon}$
+$finite\ \mathcal{H},\delta\in (0,1), \epsilon >0, m\geq\frac{\log\frac{|\mathcal{H}|}{\delta}}{\epsilon}$
 
 
-$\Rightarrow&space;\forall&space;\mathcal{D},f\&space;realizable,\&space;with\&space;prob.\&space;1-\delta\&space;for\&space;iid\&space;sample\&space;S\&space;of\&space;size\&space;m,&space;h_S=ERM_\mathcal{H}(S)\&space;it\&space;holds\&space;that$
+$\Rightarrow \forall \mathcal{D},f\ realizable,\ with\ prob.\ 1-\delta\ for\ iid\ sample\ S\ of\ size\ m, h_S=ERM_\mathcal{H}(S)\ it\ holds\ that$
 
 
 $\mathcal{L}_{\mathcal{D},f}(h_S)\leq\epsilon$
@@ -76,7 +76,7 @@ We utilize the assumption when assuming there exists an hypothesis with $$\mathc
 .
 
 5. Why $$\varepsilon>0$$
- and not $$\varepsilon&space;\in&space;[0,1]$$
+ and not $$\varepsilon \in [0,1]$$
  since it is a probability?
 
 Later on epsilon could be the value of a loss function and considering $$\varepsilon>0$$
