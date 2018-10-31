@@ -3,7 +3,7 @@ title: "Chap. 1&2"
 ---
 
 ## Introduction & a Gentle Start
-
+$\mathcal{X}$
 The main goal of the book is to provide statistical learning theory for *supervised*, *passive* *batch* learning from *random* training data. For that, the following formal notation is used.
 * domain set <a href="https://www.codecogs.com/eqnedit.php?latex=\mathcal{X}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathcal{X}" title="\mathcal{X}" /></a>, instance <a href="https://www.codecogs.com/eqnedit.php?latex=x\in\mathcal{X}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x\in\mathcal{X}" title="x\in\mathcal{X}" /></a>
 * label set <a href="https://www.codecogs.com/eqnedit.php?latex=\mathcal{Y}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathcal{Y}" title="\mathcal{Y}" /></a>, label <a href="https://www.codecogs.com/eqnedit.php?latex=y\in\mathcal{Y}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y\in\mathcal{Y}" title="y\in\mathcal{Y}" /></a>
