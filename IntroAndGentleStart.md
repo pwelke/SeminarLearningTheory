@@ -14,13 +14,13 @@ The main goal of the book is to provide statistical learning theory for *supervi
 * hypothesis $h:\mathcal{X}\to\mathcal{Y}$
 * (unknown) data generator model $f:\mathcal{X}\to\mathcal{Y}$ and input distribution $\mathcal{D}:\mathcal{X}\to[0,1]$
 
-* measure of success: **risk** or generalization error $\mathcal{L}_{\mathcal{D},f}(h):=P_{x\sim\mathcal{D}}\left\[h(x)\neq f(x) \right \]$
+* measure of success: **risk** or generalization error $\mathcal{L}_{\mathcal{D},f}(h):=P_{x\sim\mathcal{D}}\[h(x)\neq f(x) \]$
 
 
 ### Empirical Risk Minimization
 * restrict search space to hypothesis class $\mathcal{H}$
 
-* **empirical risk** $\mathcal{L}_S:=\frac{1}{m}\left\| \left\{ i\in \[m\]: h(x_i)\neq f(x_i)\right\}\right\|$ for training set $S$
+* **empirical risk** $\mathcal{L}_S:=\frac{1}{m}\| \left\{ i\in \[m\]: h(x_i)\neq f(x_i)\right\}\|$ for training set $S$
 
 * define ERM as $h_S = ERM_\mathcal{H}(S) = \arg\min_{h\in\mathcal{H}}\mathcal{L}_S(h)$
 
