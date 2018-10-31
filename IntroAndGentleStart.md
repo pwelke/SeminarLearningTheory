@@ -51,20 +51,20 @@ $\mathcal{L}_{\mathcal{D},f}(h_S)\leq\epsilon$
 
 
 ### Questions:
-1. When calculating the error of an hypothesis why do we compare the error of the obtained hypothesis with $$h^{*}$$
- (in hypothesis space $$\mathcal{H}$$
-) and not with $$f$$
+1. When calculating the error of an hypothesis why do we compare the error of the obtained hypothesis with $h^{*}$
+ (in hypothesis space $\mathcal{H}$
+) and not with $f$
 ? 
 
-In general we compare results with $$h^{*}$$
-, because given the hypothesis space $$\mathcal{H}$$
+In general we compare results with $h^{*}$
+, because given the hypothesis space $\mathcal{H}$
  it is the result closest to the real function one could possibly obtain.
 
-2. Is it possible to calculate $$h^{*}$$
+2. Is it possible to calculate $h^{*}$
 ?
 
-3. In the sample set $$S$$
- are duplicates of instances allowed? And what is the actual influence of duplicats in sample $$S$$
+3. In the sample set $S$
+ are duplicates of instances allowed? And what is the actual influence of duplicats in sample $S$
 ?
 
 Yes, duplicates are allowed because the instances are i.i.d. and therefore it is possible.
@@ -72,14 +72,14 @@ In practical apoaches duplicates in the sample set are very rare. Nevertheless, 
 
 4. In the proof of the Corollary where do we use the assumption on realizability?
 
-We utilize the assumption when assuming there exists an hypothesis with $$\mathcal{L}_{S}(h)=0$$
+We utilize the assumption when assuming there exists an hypothesis with $\mathcal{L}_{S}(h)=0$
 .
 
-5. Why $$\varepsilon>0$$
- and not $$\varepsilon \in [0,1]$$
+5. Why $\varepsilon>0$
+ and not $\varepsilon \in [0,1]$
  since it is a probability?
 
-Later on epsilon could be the value of a loss function and considering $$\varepsilon>0$$
+Later on epsilon could be the value of a loss function and considering $\varepsilon>0$
  one can apply the corollary.
 
 6. Would anyone ever calculate m utilizing the corollary?
@@ -90,7 +90,7 @@ For legal bounds for example in medicine being able to calculate a probability o
 
 Sometimes the considered bounds are right but generally one can only proof uper and lower bounds.
 
-8. The goal utilizing ERM is always to minimize the risk oder the input space. Rare cases (with respect to distribution $$\mathcal{D}$$
+8. The goal utilizing ERM is always to minimize the risk oder the input space. Rare cases (with respect to distribution $\mathcal{D}$
 ) are not considered because they have a very low probabilty but especially those rare cases (for example the corner case in autonomous driving) are the ones that are most interesting because of their strong impacts. How can the algorithms be good on those rare cases?
 
 ERM sadly doesn't work very well for those cases. But there are practical solutions for example
