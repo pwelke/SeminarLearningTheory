@@ -12,9 +12,9 @@ The main goal of the book is to provide statistical learning theory for *supervi
 * training data $S = \left((x_1,y_1),\dots,(x_m,y_m) \right ) \in\left(\mathcal{X}\times\mathcal{Y} \right )^m$
 
 * hypothesis $h:\mathcal{X}\to\mathcal{Y}$
-* (unknown) data generator model $f:\mathcal{X}\to\mathcal{Y}$ and input distribution $\mathcal{D}\!:\mathcal{X}\to[0,1]$
+* (unknown) data generator model $f:\mathcal{X}\to\mathcal{Y}$ and input distribution $\mathcal{D}:\mathcal{X}\to[0,1]$
 
-* measure of success: **risk** or generalization error $\mathcal{L}_{\mathcal{D},f}(h):=P_{x\sim\mathcal{D}}\left[h(x)\neq f(x) \right ]$
+* measure of success: **risk** or generalization error $\mathcal{L}_{\mathcal{D},f}(h):=P_{x\sim\mathcal{D}}\left\[h(x)\neq f(x) \right \]$
 
 
 ### Empirical Risk Minimization
