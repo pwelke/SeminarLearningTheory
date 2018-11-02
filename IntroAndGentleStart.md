@@ -20,7 +20,7 @@ The main goal of the book is to provide statistical learning theory for *supervi
 ### Empirical Risk Minimization
 * restrict search space to hypothesis class $\mathcal{H}$
 
-* **empirical risk** $\mathcal{L}_S:=\frac{1}{m}\| \left\\{ i\in \[m\]: h(x_i)\neq f(x_i)\right\\}\|$ for training set $S$
+* **empirical risk** $\mathcal{L}_S:=\frac{1}{m}\| \\{ i\in \[m\]: h(x_i)\neq f(x_i)\\}\|$ for training set $S$
 
 * define ERM as $h_S = ERM_\mathcal{H}(S) = \arg\min_{h\in\mathcal{H}}\mathcal{L}_S(h)$
 
@@ -30,7 +30,7 @@ The main goal of the book is to provide statistical learning theory for *supervi
 ### Generalization Bound for ERM in a Restricted Case
 For the following result, three assumptions are made:
 * $\mathcal{H}$ is finite
-* realizability, i.e., $\exists h^*\in$ $\mathcal{H}$ s.t. $\mathcal{L}_{\mathcal{D},f}$ $(h^*)=0$
+* realizability, i.e., $\exists h^\*\in$ $\mathcal{H}$ s.t. $\mathcal{L}_{\mathcal{D},f}$ $(h^\*)=0$
   * note that from this follows that the empirical risk is 0 for all but negligible many S
 * iid training data, i.e., $draw\ x_i\in S iid from \mathcal{D},\ set\ y_i=f(x_i)$
 
