@@ -14,11 +14,7 @@ The main goal of the book is to provide statistical learning theory for *supervi
 * hypothesis $h:\mathcal{X}\to\mathcal{Y}$
 * (unknown) data generator model $f:\mathcal{X}\to\mathcal{Y}$ and input distribution $\mathcal{D}:\mathcal{X}\to[0,1]$
 
-* measure of success: **risk** or generalization error $\mathcal{L}_{\mathcal{D},f}$
-
-$(h):=P_{x\sim\mathcal{D}}$ 
-
-$\[h(x)\neq f(x) \]$
+* measure of success: **risk** or generalization error $\mathcal{L}_{\mathcal{D},f}$  $(h):=P_{x\sim\mathcal{D}}$  $\[h(x)\neq f(x) \]$
 
 
 ### Empirical Risk Minimization
@@ -108,5 +104,5 @@ ERM sadly doesn't work very well for those cases. But there are practical soluti
 10. What is overfitting?
 
 * the Oxford dictionary defines overfitting as: "The production of an analysis which corresponds too closely or exactly to a particular set of data, and may therefore fail to fit additional data or predict future observations reliably."
-* In ML, this refers to a model that has a low training error (empirical risk) $\mathcal{L}_{S}$ but a high risk $\mathcal{L}_{\mathcal{H},f}$.
+* In ML, this refers to a model that has a low training error (empirical risk) $\mathcal{L}_{S}$  but a high risk  $\mathcal{L}_{\mathcal{H},f}$.
 
