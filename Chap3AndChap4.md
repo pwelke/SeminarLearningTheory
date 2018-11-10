@@ -22,9 +22,9 @@ $m_H : (0; 1)^2 \to \mathcal{N}$ defines sample complexity (how many samples are
 
 ### Corollary
 Every finite hypothesis class is PAC learnable with following sample complexity:
-\begin{center}
+
 $m_H(\delta; \epsilon) \leq \frac{\log\frac{\|\mathcal{H}\|}{\delta}}{\epsilon}$
-\end{center}
+
 
 ### More general learning rile:
 
@@ -35,6 +35,6 @@ $m_H(\delta; \epsilon) \leq \frac{\log\frac{\|\mathcal{H}\|}{\delta}}{\epsilon}$
 $\Rightarrow \mathcal{D}$ should be considered as a probability distribution over $\mathcal{X}\times\mathcal{Y}$.
 In other words, $\mathcal{D}$ - joint distribution over domain points and labels.
 
-Let us redefine $\mathcal{L}_{\mathcal{D}}(h):
+Let us redefine $\mathcal{L}_{\mathcal{D}}(h)$:
 
-$\mathcal{L}_{\mathcal{D}}(h) = \mathcal{P}_{(x,y)\sim D}[h(x)\neq y] = \mathcal{D}(\{(x,y): h(x) \neq y\})
+$\mathcal{L}_{\mathcal{D}}(h) = \mathcal{P}_{(x,y)\sim D}[h(x)\neq y] = \mathcal{D}(\{(x,y): h(x) \neq y\})$
