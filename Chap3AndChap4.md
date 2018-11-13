@@ -65,3 +65,31 @@ $\mathcal{L}_{\mathcal{D}}(h_S) \leq min_{h \in \mathcal{H}}\mathcal{L}_{\mathca
 ##### Sketch of proof:
 
 $\mathcal{L}_{\mathcal{D}}(h_s) \leq \mathcal{L}_{\mathcal{S}}(h_s) + \frac{\epsilon}{2} \leq \mathcal{L}_{\mathcal{S}}(h) + \frac{\epsilon}{2} \leq \mathcal{L}_{\mathcal{D}}(h)} + \epsilon$
+
+
+###### Finite classes are agnostic PAC learnable
+
+$\mathcal{D}^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}_s(h) - \mathcal{L}_\mathcal{D}(h)\| \leq \epsilon \}) \geq 1 - \delta$
+
+Equals to
+
+$\mathcal{D}^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}_s(h) - \mathcal{L}_\mathcal{D}(h)\| > \epsilon \}) < 1 - \delta$
+
+$\bigcup_{h \in \mathcal{H}}\{\mathcal{S}: \| \mathcal{L}_s(h) - \mathcal{L}_\mathcal{D}(h)\| > \epsilon \} \leq $
+
+$\leq  \sum_{h \in \mathcal{H}} \mathcal{D}^m(\{\mathcal{S} :\| \mathcal{L}_s(h) - \mathcal{L}_\mathcal{D}(h)\| > \epsilon\})$
+
+
+At the same time:
+$\mathcal{L}_\mathcal{D}(h) = E[l(h,z)]$ and
+$\mathcal{L}_\mathcal{S}(h)=\frac{1}{m}\sum_{i=1}^{m}l(h,z_i)$ and
+$\mathcal{L}_\mathcal{S}(h) = \mathcal{L}_\mathcal{D}(h)$
+
+And using Hoeffding's Inequality:
+$\mathcal{D}^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}_s(h) - \mathcal{L}_\mathcal{D}(h)\| > \epsilon \}) < 1 - \delta$
+$\leq \sum_{h \in H}2 * exp(-2*m *\epsilon^2) = 2*|\mathcal{H}|*exp(-2*m *\epsilon^2)$
+
+#### Corollary
+
+Let $\mathcal{H}$ be a finite hypothesis class, let $\mathcal{Z}$ be a domain and let $l: \mathcal{H} \times \mathcal{Z} \to{[0,1]}$ be a los function, then $\mathcal{H}$ enjoys the uniform convergence with sample complexity:
+$m_h^{uc}(\epsilon, \delta) \leq \frac{log(\frac{2|H|}{\delta})}{2\epsilon^2}$
