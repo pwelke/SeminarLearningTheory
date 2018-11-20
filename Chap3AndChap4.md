@@ -64,7 +64,7 @@ $\mathcal{L}\_{\mathcal{D}}(h_S) \leq min\_{h \in \mathcal{H}}\mathcal{L}\_{\mat
 
 ##### Sketch of proof:
 
-$\mathcal{L}_{\mathcal{D}}(h_s) \leq \mathcal{L}_{\mathcal{S}}(h_s) + \frac{\epsilon}{2} \leq \mathcal{L}_{\mathcal{S}}(h) + \frac{\epsilon}{2} \leq \mathcal{L}_{\mathcal{D}}(h)} + \epsilon$
+$\mathcal{L}\_{\mathcal{D}}(h_s) \leq \mathcal{L}\_{\mathcal{S}}(h_s) + \frac{\epsilon}{2} \leq \mathcal{L}\_{\mathcal{S}}(h) + \frac{\epsilon}{2} \leq \mathcal{L}\_{\mathcal{D}}(h)} + \epsilon$
 
 
 ###### Finite classes are agnostic PAC learnable
