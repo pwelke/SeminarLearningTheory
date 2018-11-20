@@ -56,7 +56,7 @@ is not much larger than the best error achievable by a predictor from the class 
 
 A training set $\mathcal{S}$ is called $\epsilon$-representative
 (w.r.t. domain $\mathcal{Z}$, hypothesis class $\mathcal{H}$, loss function $l$, and distribution $\mathcal{D}$) if 
-$\forall h \in \mathcal{H}, \| \mathcal{L}_{\mathcal{S}}(h) -  \mathcal{L}_{\mathcal{D}}(h)\| \leq \epsilon$
+$\forall h \in \mathcal{H}, \| \mathcal{L}\_{\mathcal{S}}(h) -  \mathcal{L}\_{\mathcal{D}}(h)\| \leq \epsilon$
 
 Assume that a training set S is $\frac{\epsilon}{2}$-representative (w.r.t. domain $\mathcal{Z}$, hypothesis class $\mathcal{H}$, loss function $l$, and distribution $\mathcal{D}$). Then, any output of
 $ERM_H(S)$, namely, any $h_S$ $\in$ $argmin_{h \in \mathcal{H}}$ $\mathcal{L}_{S}(h)$, satisfies
