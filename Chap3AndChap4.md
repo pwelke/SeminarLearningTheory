@@ -64,20 +64,20 @@ $\mathcal{L}\_{\mathcal{D}}(h_S) \leq min\_{h \in \mathcal{H}}\mathcal{L}\_{\mat
 
 ##### Sketch of proof:
 
-$\mathcal{L}\_{\mathcal{D}}(h_s) \leq \mathcal{L}\_{\mathcal{S}}(h_s) + \frac{\epsilon}{2} \leq \mathcal{L}\_{\mathcal{S}}(h) + \frac{\epsilon}{2} \leq \mathcal{L}\_{\mathcal{D}}(h)} + \epsilon$
+$\mathcal{L}\_{\mathcal{D}}(h_s) \leq \mathcal{L}\_{\mathcal{S}}(h_s) + \frac{\epsilon}{2} \leq \mathcal{L}\_{\mathcal{S}}(h) + \frac{\epsilon}{2} \leq \mathcal{L}\_{\mathcal{D}}(h) + \epsilon$
 
 
 ###### Finite classes are agnostic PAC learnable
 
-$\mathcal{D}^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}_s(h) - \mathcal{L}_\mathcal{D}(h)\| \leq \epsilon \}) \geq 1 - \delta$
+$\mathcal{D}\^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| \leq \epsilon \}) \geq 1 - \delta$
 
 Equals to
 
-$\mathcal{D}^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}_s(h) - \mathcal{L}_\mathcal{D}(h)\| > \epsilon \}) < 1 - \delta$
+$\mathcal{D}\^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \}) < 1 - \delta$
 
-$\bigcup_{h \in \mathcal{H}}\{\mathcal{S}: \| \mathcal{L}_s(h) - \mathcal{L}_\mathcal{D}(h)\| > \epsilon \} \leq $
+$\bigcup_{h \in \mathcal{H}}\{\mathcal{S}: \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \} \leq $
 
-$\leq  \sum_{h \in \mathcal{H}} \mathcal{D}^m(\{\mathcal{S} :\| \mathcal{L}_s(h) - \mathcal{L}_\mathcal{D}(h)\| > \epsilon\})$
+$\leq  \sum\_{h \in \mathcal{H}} \mathcal{D}\^m(\{\mathcal{S} :\| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon\})$
 
 
 At the same time:
