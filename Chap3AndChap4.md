@@ -69,15 +69,15 @@ $\mathcal{L}\_{\mathcal{D}}(h_s) \leq \mathcal{L}\_{\mathcal{S}}(h_s) + \frac{\e
 
 ###### Finite classes are agnostic PAC learnable
 
-$\mathcal{D}\^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| \leq \epsilon \}) \geq 1 - \delta$
+$\mathcal{D}^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| \leq \epsilon \}) \geq 1 - \delta$
 
 Equals to
 
-$\mathcal{D}\^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \}) < 1 - \delta$
+$\mathcal{D}^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \}) < 1 - \delta$
 
 $\bigcup_{h \in \mathcal{H}}\{\mathcal{S}: \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \} \leq $
 
-$\leq  \sum\_{h \in \mathcal{H}} \mathcal{D}\^m(\{\mathcal{S} :\| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon\})$
+$\leq  \sum\_{h \in \mathcal{H}} \mathcal{D}^m(\{\mathcal{S} :\| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon\})$
 
 
 At the same time:
