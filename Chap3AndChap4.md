@@ -70,7 +70,7 @@ $\mathcal{L}\_{\mathcal{D}}(h_s) \leq \mathcal{L}\_{\mathcal{S}}(h_s) + \frac{\e
 #### Uniform convergence:
 We say that a hypothesis class $\mathcal{H}$ has
 the uniform convergence property (w.r.t. a domain $\mathcal{Z}$ and a loss function l) if
-there exists a function $m^\mathcal{UC}\_{\mathcal{H}}$ : (0; 1)^2 \to \mathcal{N}$ such that for every $\epsilon, \delta \in (0; 1)$ and for every probability distribution $\mathcal{D}$ over $\mathcal{Z}$, if $\mathcal{S}$ is a sample of $m \geq m^\mathcal{UC}_{\mathcal{H}}(\epsilon, \delta)$
+there exists a function $m^\mathcal{UC}\_{\mathcal{H}} : (0; 1)^2 \to \mathcal{N}$ such that for every $\epsilon, \delta \in (0; 1)$ and for every probability distribution $\mathcal{D}$ over $\mathcal{Z}$, if $\mathcal{S}$ is a sample of $m \geq m^\mathcal{UC}_{\mathcal{H}}(\epsilon, \delta)$
 examples drawn i.i.d. according to $\mathcal{D}$, then, with probability of at least $1 - \delta$, $\mathcal{S}$ is $\epsilon$-representative.
 
 ###### Finite classes are agnostic PAC learnable
