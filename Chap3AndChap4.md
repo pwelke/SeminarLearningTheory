@@ -67,6 +67,12 @@ $\mathcal{L}\_{\mathcal{D}}(h_S) \leq min\_{h \in \mathcal{H}}\mathcal{L}\_{\mat
 $\mathcal{L}\_{\mathcal{D}}(h_s) \leq \mathcal{L}\_{\mathcal{S}}(h_s) + \frac{\epsilon}{2} \leq \mathcal{L}\_{\mathcal{S}}(h) + \frac{\epsilon}{2} \leq \mathcal{L}\_{\mathcal{D}}(h) + \epsilon$
 
 
+#### Uniform convergence:
+We say that a hypothesis class $\mathcal{H}$ has
+the uniform convergence property (w.r.t. a domain $\mathcal{Z}$ and a loss function l) if
+there exists a function $m^\mathcal{UC}\_{\mathcal{H}}$ : (0; 1)^2 \to \mathcal{N}$ such that for every $\epsilon, \delta \in (0; 1)$ and for every probability distribution $\mathcal{D}$ over $\mathcal{Z}$, if $\mathcal{S}$ is a sample of $m \geq m^\mathcal{UC}_{\mathcal{H}}(\epsilon, \delta)$
+examples drawn i.i.d. according to $\mathcal{D}$, then, with probability of at least $1 - \delta$, $\mathcal{S}$ is $\epsilon$-representative.
+
 ###### Finite classes are agnostic PAC learnable
 
 $\mathcal{D}^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| \leq \epsilon \}) \geq 1 - \delta$
@@ -91,5 +97,5 @@ $\leq \sum_{h \in H}2exp(-2m\epsilon^2) = 2|\mathcal{H}|exp(-2m\epsilon^2)$
 
 #### Corollary
 
-Let $\mathcal{H}$ be a finite hypothesis class, let $\mathcal{Z}$ be a domain and let $l: \mathcal{H} \times \mathcal{Z} \to{[0,1]}$ be a los function, then $\mathcal{H}$ enjoys the uniform convergence with sample complexity:
+Let $\mathcal{H}$ be a finite hypothesis class, let $\mathcal{Z}$ be a domain and let $l: \mathcal{H} \times \mathcal{Z} \to{[0,1]}$ be a loss function, then $\mathcal{H}$ enjoys the uniform convergence with sample complexity:
 $m_h^{uc}(\epsilon, \delta) \leq \frac{log(\frac{2|H|}{\delta})}{2\epsilon^2}$
