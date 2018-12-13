@@ -14,7 +14,9 @@ A hypothesis class $\mathcal{H}$ of binary classifiers is nonuniformly learnable
 "$\Rightarrow$" 
 Assume that $\mathcal{H}$ is nonuniform learnable using some algorithm $A$.
 For every $n \in \mathbb{N}$ let 
-$$ \mathcal{H}\_{n} := \{ h \in \mathcal{H} : m\_{\mathcal{H}}^{NUL} (1/8, 1/7, h) \leq n \} .$$
+
+$ \mathcal{H}\_{n} := \{ h \in \mathcal{H} : m\_{\mathcal{H}}^{NUL} (1/8, 1/7, h) \leq n \} .$
+
 It follows that $\mathcal{H} = \bigcup\_{n \in \mathbb{N}} \mathcal{H}\_{n}$.
 
 We prove the "$\Rightarrow$" claim by contradiction. 
