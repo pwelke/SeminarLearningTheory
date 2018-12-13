@@ -15,7 +15,7 @@ A hypothesis class $\mathcal{H}$ of binary classifiers is nonuniformly learnable
 Assume that $\mathcal{H}$ is nonuniform learnable using some algorithm $A$.
 For every $n \in \mathbb{N}$ let 
 
-$ \mathcal{H}\_{n} := \{ h \in \mathcal{H} : m\_{\mathcal{H}}^{NUL} (1/8, 1/7, h) \leq n \} .$
+$ \mathcal{H}\_{n} := \\{ h \in \mathcal{H} : m\_{\mathcal{H}}^{NUL} (1/8, 1/7, h) \leq n \\} .$
 
 It follows that $\mathcal{H} = \bigcup\_{n \in \mathbb{N}} \mathcal{H}\_{n}$.
 
@@ -27,7 +27,7 @@ Then, by the fundamental Theorem (Thm. 6.7) $\mathcal{H}\_{n}$ has infinite VC-d
 (Note, that this implies that the domain $\mathcal{X}, on which $\mathcal{H}$ operates must be infinite, as well).
 $A$ is a learning algorithm for the class of binary classificators with $0-1$-loss.
 Thus, the No-Free-Lunch Theorem (Thm. 5.1) applies for $\mathcal{H}\_{n}$ and all $n' \in \mathbb{N}$.
-(In particular, it does not require $A$ to output anything more specific than a function $f: \mathcal{X} \to \{0,1\}$.)
+(In particular, it does not require $A$ to output anything more specific than a function $f: \mathcal{X} \to \\{ 0,1 \\} $.)
 
 That is:
 
