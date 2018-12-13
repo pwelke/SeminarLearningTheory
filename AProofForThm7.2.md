@@ -24,18 +24,18 @@ I.e., assume that $\mathcal{H}\_{n}$ is not APAC learnable then we find a contra
 
 Suppose $\mathcal{H}\_{n}$ is not APAC learnable. 
 Then, by the fundamental Theorem (Thm. 6.7) $\mathcal{H}\_{n}$ has infinite VC-dimension.
-(Note, that this implies that the domain $\mathcal{X}$, on which $\mathcal{H}$ operates must be infinite, as well).
-$A$ is a learning algorithm for the class of binary classificators with $0-1$-loss.
+(Note, that this implies that the domain $\mathcal{X}$, on which $\mathcal{H}\_{n}$ and $\mathcal{H}$ operate must be infinite, as well).
 Thus, $\mathcal{H}\_{n}$ shatters sets of size $n'$ for all $n' \in \mathbb{N}$.
+$A$ is a learning algorithm for the class of binary classificators with $0-1$-loss.
 Thus, for any $n'$ the No-Free-Lunch Theorem (Thm. 5.1) holds with respect to some $h' \in \mathcal{H}\_{n}$.
-(In particular, it does not require $A$ to output anything more specific than a function $f: \mathcal{X} \to \\{ 0,1 \\} $.)
+(In particular, Thm. 5.1 does not require $A$ to output anything more specific than a function $f: \mathcal{X} \to \\{ 0,1 \\} $.)
 
 That is:
 
-$ \forall n' \in \mathbb{N} \\ \exists $ a distribution $D$ that is realizable by $\mathcal{H}\_{n}$ and $\exists h' \in \mathcal{H}\_{n}$ s.t. with probability $ \geq 1/7$ over the choice of $ S ~ D^{n'}$ it holds that $L\_{D} (A(S)) \geq 1/8 = L\_{D} (h') + 1/8$. 
+$ \forall n' \in \mathbb{N} \\ \exists $ a distribution $D$ that is realizable by $\mathcal{H}\_{n}$ and $\exists h' \in \mathcal{H}\_{n}$ s.t. with probability $ \geq 1/7$ over the choice of $ S \sim D^{n'}$ it holds that $L\_{D} (A(S)) \geq 1/8 = L\_{D} (h') + 1/8$. 
 
 However, by definition of $\mathcal{H}\_{n}$ we have $\forall h\in \mathcal{H}\_{n} : m\_{\mathcal{H}}^{NUL} (1/8, 1/7, h) \leq n$.
-That is, $ \forall D \\ \forall h \in \mathcal{H}\_{n} : L\_{D} (A(S)) \leq L\_{D}(h) + 1/8 $ with probability $\geq 6/7$ over the choice of $S ~ D^n$.
+That is, $ \forall D \\ \forall h \in \mathcal{H}\_{n} : L\_{D} (A(S)) \leq L\_{D}(h) + 1/8 $ with probability $\geq 6/7$ over the choice of $S \sim D^n$.
 
 Considering the case $n' = n$ yields the desired contradiction.
 Hence, $\mathcal{H}\_{n}$ must be agnostic PAC learnable. 
