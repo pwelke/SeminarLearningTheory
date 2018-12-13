@@ -15,7 +15,7 @@ A hypothesis class $\mathcal{H}$ of binary classifiers is nonuniformly learnable
 Assume that $\mathcal{H}$ is nonuniform learnable using some algorithm $A$.
 For every $n \in \mathbb{N}$ let 
 
-$ \mathcal{H}\_{n} := \\{ h \in \mathcal{H} : m\_{\mathcal{H}}^{NUL} (1/8, 1/7, h) \leq n \\} .$
+$ \mathcal{H}\_{n} := \\{ h \in \mathcal{H} : m\_{\mathcal{H}}^{NUL} (1/10, 1/10, h) \leq n \\} .$
 
 It follows that $\mathcal{H} = \bigcup\_{n \in \mathbb{N}} \mathcal{H}\_{n}$.
 
@@ -35,7 +35,7 @@ That is:
 $ \forall n' \in \mathbb{N} \\ \exists $ a distribution $D$ that is realizable by $\mathcal{H}\_{n}$ and $\exists h' \in \mathcal{H}\_{n}$ s.t. with probability $ \geq 1/7$ over the choice of $ S \sim D^{n'}$ it holds that $L\_{D} (A(S)) \geq 1/8 = L\_{D} (h') + 1/8$. 
 
 However, by definition of $\mathcal{H}\_{n}$ we have $\forall h\in \mathcal{H}\_{n} : m\_{\mathcal{H}}^{NUL} (1/8, 1/7, h) \leq n$.
-That is, $ \forall D \\ \forall h \in \mathcal{H}\_{n} : L\_{D} (A(S)) \leq L\_{D}(h) + 1/8 $ with probability $\geq 6/7$ over the choice of $S \sim D^n$.
+That is, $ \forall D \\ \forall h \in \mathcal{H}\_{n} : L\_{D} (A(S)) \leq L\_{D}(h) + 1/10 $ with probability $\geq 9/10$ over the choice of $S \sim D^n$.
 
 Considering the case $n' = n$ yields the desired contradiction.
 Hence, $\mathcal{H}\_{n}$ must be agnostic PAC learnable. 
