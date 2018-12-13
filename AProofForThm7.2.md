@@ -32,10 +32,10 @@ Thus, for any $n'$ the No-Free-Lunch Theorem (Thm. 5.1) holds with respect to so
 
 That is:
 
-$ \forall n' \in \mathbb{N} \exists $ a distribution $D$ that is realizable by $\mathcal{H}\_{n}$ and $\exists h' \in \mathcal{H}\_{n}$ s.t. with probability $ \geq 1/7$ over the choice of $ S ~ D^{n'}$ it holds that $L\_{D} (A(S)) \geq 1/8 = L\_{D} (h') + 1/8$. 
+$ \forall n' \in \mathbb{N} \\ \exists $ a distribution $D$ that is realizable by $\mathcal{H}\_{n}$ and $\exists h' \in \mathcal{H}\_{n}$ s.t. with probability $ \geq 1/7$ over the choice of $ S ~ D^{n'}$ it holds that $L\_{D} (A(S)) \geq 1/8 = L\_{D} (h') + 1/8$. 
 
 However, by definition of $\mathcal{H}\_{n}$ we have $\forall h\in \mathcal{H}\_{n} : m\_{\mathcal{H}}^{NUL} (1/8, 1/7, h) \leq n$.
-That is, $ \forall D \forall h \in \mathcal{H}\_{n} : L\_{D} (A(S)) \leq L\_{D}(h) + 1/8 $ with probability $\geq 6/7$ over the choice of $S ~ D^n$.
+That is, $ \forall D \\ \forall h \in \mathcal{H}\_{n} : L\_{D} (A(S)) \leq L\_{D}(h) + 1/8 $ with probability $\geq 6/7$ over the choice of $S ~ D^n$.
 
 Considering the case $n' = n$ yields the desired contradiction.
 Hence, $\mathcal{H}\_{n}$ must be agnostic PAC learnable. 
