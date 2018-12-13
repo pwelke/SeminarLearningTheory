@@ -24,7 +24,7 @@ I.e., assume that $\mathcal{H}\_{n}$ is not APAC learnable then we find a contra
 
 Suppose $\mathcal{H}\_{n}$ is not APAC learnable. 
 Then, by the fundamental Theorem (Thm. 6.7) $\mathcal{H}\_{n}$ has infinite VC-dimension.
-(Note, that this implies that the domain $\mathcal{X}, on which $\mathcal{H}$ operates must be infinite, as well).
+(Note, that this implies that the domain $\mathcal{X}$, on which $\mathcal{H}$ operates must be infinite, as well).
 $A$ is a learning algorithm for the class of binary classificators with $0-1$-loss.
 Thus, the No-Free-Lunch Theorem (Thm. 5.1) applies for $\mathcal{H}\_{n}$ and all $n' \in \mathbb{N}$.
 (In particular, it does not require $A$ to output anything more specific than a function $f: \mathcal{X} \to \\{ 0,1 \\} $.)
