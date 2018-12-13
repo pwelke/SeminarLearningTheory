@@ -40,3 +40,4 @@ That is, $ \forall D \\ \forall h \in \mathcal{H}\_{n} : L\_{D} (A(S)) \leq L\_{
 Considering the case $n' = n$ yields the desired contradiction.
 Hence, $\mathcal{H}\_{n}$ must be agnostic PAC learnable. 
 
+## Comments
