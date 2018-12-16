@@ -85,7 +85,7 @@ $\mathcal{D}^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - 
 
 Equals to
 
-$\mathcal{D}^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \}) < 1 - \delta$
+$\mathcal{D}^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \}) < \delta$
 
 Writing
 
@@ -93,14 +93,14 @@ $\mathcal{D}^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - 
 
 Applying the union bound 
 
-$\bigcup_{h \in \mathcal{H}}\{\mathcal{S}: \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \} \leq $
-
-$\leq  \sum\_{h \in \mathcal{H}} \mathcal{D}^m(\{\mathcal{S} :\| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon\})$
+$\bigcup_{h \in \mathcal{H}}\{\mathcal{S}: \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \} \leq $ $\sum\_{h \in \mathcal{H}} \mathcal{D}^m(\{\mathcal{S} :\| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon\})$
 
 At the same time:
 
 $\mathcal{L}\_\mathcal{D}(h) = E[l(h,z)]$ and
+
 $\mathcal{L}\_\mathcal{S}(h)=\frac{1}{m}\sum_{i=1}^{m}l(h,z_i)$ and
+
 $\mathcal{L}\_\mathcal{S}(h) = \mathcal{L}\_\mathcal{D}(h)$
 
 And using Hoeffding's Inequality:
