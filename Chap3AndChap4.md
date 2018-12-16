@@ -37,7 +37,7 @@ In other words, $\mathcal{D}$ - joint distribution over domain points and labels
 
 Let us redefine $\mathcal{L}_{\mathcal{D}}(h)$:
 
-$\mathcal{L}\_{\mathcal{D}}(h) = \mathcal{P}\_{(x,y)\sim D}[h(x)\neq y] = \mathcal{D}(\{(x,y): h(x) \neq y\})$
+$\mathcal{L}\_{\mathcal{D}}(h) = \mathcal{P}\_{(x,y)\sim D}[h(x)\neq y] = \mathcal{D}$({$(x,y): h(x) \neq y$})
 
 And now we want learning algorithm to find a predictor whose error is not much larger than the best possible error of 
 a predictor in some hypothesis class, given for bench marking.
