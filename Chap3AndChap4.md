@@ -104,8 +104,8 @@ $\mathcal{L}\_\mathcal{S}(h)=\frac{1}{m}\sum_{i=1}^{m}l(h,z_i)$ and
 $\mathcal{L}\_\mathcal{S}(h) = \mathcal{L}\_\mathcal{D}(h)$
 
 And using Hoeffding's Inequality:
-$\mathcal{D}^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \}) < 1 - \delta$
-$\leq \sum_{h \in H}2exp(-2m\epsilon^2) = 2|\mathcal{H}|exp(-2m\epsilon^2)$
+
+$\mathcal{D}^m$({$\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon$})$\leq \sum_{h \in H}2exp(-2m\epsilon^2) = 2|\mathcal{H}|exp(-2m\epsilon^2)$
 
 #### Corollary
 
