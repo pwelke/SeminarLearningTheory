@@ -116,13 +116,24 @@ $m^\mathcal{UC}\_{\mathcal{H}}(\epsilon, \delta) \leq \frac{log(\frac{2|H|}{\del
 ### Questions:
 1. How to approach a good hypothesis class?
 
+Approaching a good hypothesis class is undoubtedly a very important question in the field of practical machine learning. 
+Unfortunately, the best answer to the question is "based on previous knowledge of the problem under consideration". 
+Obviously, it does not provide any recipe for how to proceed and requires from the researches deep understanding of 
+the problem and experience. In certain sense, choosing "proper" hypothesis class is more an "art" than a "science".
+
 2. P49 of the book, Remark 3.2, first sentence, why the algorithm will return a hypothesis from H?
 
-3. P58,Exercise 1
+As can be seen in the definition of Agnostic PAC Learnability, we are looking for a hypothesis in the Hypothesis class
+whose error  will not be much larger than the best error achievable by a predictor from the class. 
+And for that we are using following expression:   $\mathcal{L}\_{\mathcal{D}}(h) \leq min_{h' \in \mathcal{H}} \mathcal{L}_{\mathcal{D}}(h') + \epsilon$
 
-4. P57，Remark 4.1("Discretization trick"). Is it really a trick to solve problem or something we have to deal with?
+3. P57，Remark 4.1("Discretization trick"). Is it really a trick to solve problem or something we have to deal with?
 
-5.The bound of PAC learnability and bound of agnostic PAC learnability is different, why? and which part of the assumption makes the difference?
+First of all, let us pay attention, that authors of the book put the name of the remark into quotes. Given that, authors, 
+probably, wanted to pay attention to the fact when we are dealing with practical tasks and computers, we have a useful tool 
+"to get a very good estimate of the practical sample complexity of infinite hypothesis classes"  
+
+4. The bound of PAC learnability and bound of agnostic PAC learnability is different, why? and which part of the assumption makes the difference?
 
 
 
