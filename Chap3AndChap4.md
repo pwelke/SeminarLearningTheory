@@ -73,7 +73,7 @@ the **Uniform Convergence property** (w.r.t. a domain $\mathcal{Z}$ and a loss f
 there exists a function $m^\mathcal{UC}\_{\mathcal{H}} : (0; 1)^2 \to \mathcal{N}$ such that for every $\epsilon, \delta \in (0; 1)$ and for every probability distribution $\mathcal{D}$ over $\mathcal{Z}$, if $\mathcal{S}$ is a sample of $m \geq m^\mathcal{UC}_{\mathcal{H}}(\epsilon, \delta)$
 examples drawn i.i.d. according to $\mathcal{D}$, then, with probability of at least $1 - \delta$, $\mathcal{S}$ is $\epsilon$-representative.
 
-Similar to the definition of sample complexity for **PAC** learning, the function $m^\mathcal{UC}\_{\mathcal{H}}
+Similar to the definition of sample complexity for **PAC** learning, the function $m^\mathcal{UC}\_{\mathcal{H}}$
 measures the (minimal) sample complexity of obtaining the **Uniform Convergence**
 property, namely, how many examples we need to ensure that with probability of at least $1 - \delta$  the sample would be $\epsilon$-representative.
 The term **uniform** here refers to having a fixed sample size that works for all
@@ -86,6 +86,12 @@ $\mathcal{D}^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - 
 Equals to
 
 $\mathcal{D}^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \}) < 1 - \delta$
+
+Writing
+
+$\mathcal{D}^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \})$ = $\bigcup_{h \in \mathcal{H}}\{\mathcal{S}: \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \}$
+
+Applying the union bound 
 
 $\bigcup_{h \in \mathcal{H}}\{\mathcal{S}: \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \} \leq $
 
