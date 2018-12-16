@@ -81,7 +81,7 @@ members of $\mathcal{H}$ and over all possible probability distributions over th
 
 ###### Finite classes are agnostic PAC learnable
 
-$\mathcal{D}^m(\{\\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| \leq \epsilon \}\) \geq 1 - \delta$
+$\mathcal{D}^m$ ({ $\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| \leq \epsilon$ }) $\geq 1 - \delta$
 
 Equals to
 
@@ -89,7 +89,7 @@ $\mathcal{D}^m(\{\mathcal{S} : \exists h \in \mathcal{H} \| \mathcal{L}\_s(h) - 
 
 Writing
 
-$\{\mathcal{S} : \exists h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \}$ = $\bigcup_{h \in \mathcal{H}}\{\mathcal{S}: \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \}$
+{$\{\mathcal{S} : \exists h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \}$} = $\bigcup_{h \in \mathcal{H}}\{\mathcal{S}: \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \}$
 
 Applying the union bound 
 
