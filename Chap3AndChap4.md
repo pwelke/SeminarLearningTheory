@@ -111,7 +111,7 @@ $\leq \sum_{h \in H}2exp(-2m\epsilon^2) = 2|\mathcal{H}|exp(-2m\epsilon^2)$
 #### Corollary
 
 Let $\mathcal{H}$ be a finite hypothesis class, let $\mathcal{Z}$ be a domain and let $l: \mathcal{H} \times \mathcal{Z} \to{[0,1]}$ be a loss function, then $\mathcal{H}$ enjoys the uniform convergence with sample complexity:
-$m_h^{uc}(\epsilon, \delta) \leq \frac{log(\frac{2|H|}{\delta})}{2\epsilon^2}$
+$m^\mathcal{UC}\_{\mathcal{H}}(\epsilon, \delta) \leq \frac{log(\frac{2|H|}{\delta})}{2\epsilon^2}$
 
 ### Questions:
 1. How to approach a good hypothesis class?
