@@ -89,7 +89,7 @@ $\mathcal{D}^m(\{\mathcal{S} : \exists h \in \mathcal{H} \| \mathcal{L}\_s(h) - 
 
 Writing
 
-\{\mathcal{S} : \exists h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \}$ = $\bigcup_{h \in \mathcal{H}}\{\mathcal{S}: \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \}$
+$\{\mathcal{S} : \exists h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \}$ = $\bigcup_{h \in \mathcal{H}}\{\mathcal{S}: \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon \}$
 
 Applying the union bound 
 
