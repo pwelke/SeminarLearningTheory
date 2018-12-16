@@ -81,7 +81,7 @@ members of $\mathcal{H}$ and over all possible probability distributions over th
 
 ###### Finite classes are agnostic PAC learnable
 
-$\mathcal{D}^m(\{\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| \leq \epsilon \}) \geq 1 - \delta$
+$\mathcal{D}^m(\{\\mathcal{S} : \forall h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| \leq \epsilon \}\) \geq 1 - \delta$
 
 Equals to
 
