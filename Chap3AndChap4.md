@@ -127,11 +127,10 @@ Unfortunately, the best answer to the question is "based on previous knowledge o
 Obviously, it does not provide any recipe for how to proceed and requires from the researches deep understanding of 
 the problem and experience. In certain sense, choosing "proper" hypothesis class is more an "art" than a "science".
 
-**Q:** P49 of the book, Remark 3.2, first sentence, why the algorithm will return a hypothesis from H?
+**Q:** P49 of the book, Remark 3.2, why the algorithm will return a outside of H?
 
-**A:** As can be seen in the definition of Agnostic PAC Learnability, we are looking for a hypothesis in the Hypothesis class
-whose error  will not be much larger than the best error achievable by a predictor from the class. 
-And for that we are using following expression:   $\mathcal{L}\_{\mathcal{D}}(h) \leq min_{h' \in \mathcal{H}} \mathcal{L}_{\mathcal{D}}(h') + \epsilon$
+**A:** The "optimal" solution might be a bit outside of the hypothesis class. When it is impossible to find a solution within 
+some constraints, it can be reasonable to relax those constraints. After relaxation, we are more likely to find a solution.
 
 **Q:** P57，Remark 4.1("Discretization trick"). Is it really a trick to solve problem or something we have to deal with?
 
@@ -142,7 +141,9 @@ probably, wanted to pay attention to the fact when we are dealing with practical
 **Q:** The bound of PAC learnability and bound of agnostic PAC learnability is different, why? and which part of the assumption makes the difference?
 
 **A:** If we look at the definitions of **PAC** and **Agnostic PAC** learnabilities, we would find, that the definitions are very similar, but still 
-they have some differences, which lead to different bounds. The main difference is, probably, hidden inside the function $m_H(\epsilon, \delta)$
+they have some differences, which lead to different bounds. The main difference is, of course, that **Agnostic PAC** tries to find a hypothesis,
+whose error is not much larger than the best error achievable by a hypothesis from the hypothesis class. Because of this difference, the function function $m_H(\epsilon, \delta)$ should be
+defined differently for **PAC** and **Agnostic PAC**
 
 
 
