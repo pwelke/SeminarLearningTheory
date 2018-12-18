@@ -142,7 +142,7 @@ probably, wanted to pay attention to the fact when we are dealing with practical
 
 **A:** If we look at the definitions of **PAC** and **Agnostic PAC** learnabilities, we would find, that the definitions are very similar, but still 
 they have some differences, which lead to different bounds. The main difference is, of course, that **Agnostic PAC** tries to find a hypothesis,
-whose error is not much larger than the best error achievable by a hypothesis from the hypothesis class. Because of this difference, the function function $m_H(\epsilon, \delta)$ should be
+whose error is not much larger than the best error achievable by a hypothesis from the hypothesis class. Because of this difference, the function $m_H(\epsilon, \delta)$ should be
 defined differently for **PAC** and **Agnostic PAC**.
 
 
