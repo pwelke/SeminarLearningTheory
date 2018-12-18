@@ -99,7 +99,7 @@ Writing
 
 Applying the union bound 
 
-$\mathcal{D}^m$({$\mathcal{S} : \exists h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon$})$\leq $ $\sum\_{h \in \mathcal{H}} \mathcal{D}^m$({$\mathcal{S} :\| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon$})
+$\mathcal{D}^m$({$\mathcal{S} : \exists h \in \mathcal{H}, \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon$})$\leq $ $\sum\_{h \in \mathcal{H}} \mathcal{D}^m$({$\mathcal{S} :\| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon$})
 
 At the same time:
 
@@ -111,7 +111,7 @@ $E(\mathcal{L}\_\mathcal{S}(h)) = \mathcal{L}\_\mathcal{D}(h)$
 
 And using Hoeffding's Inequality:
 
-$\mathcal{D}^m$({$\mathcal{S} : \exists h \in \mathcal{H} \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon$})
+$\mathcal{D}^m$({$\mathcal{S} : \exists h \in \mathcal{H}, \| \mathcal{L}\_s(h) - \mathcal{L}\_\mathcal{D}(h)\| > \epsilon$})
 $\leq \sum_{h \in H}2exp(-2m\epsilon^2) = 2|\mathcal{H}|exp(-2m\epsilon^2)$
 
 #### Corollary
