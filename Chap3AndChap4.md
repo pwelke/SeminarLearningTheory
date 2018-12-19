@@ -23,7 +23,7 @@ $m_H : (0, 1)^2 \to \mathcal{N}$ defines sample complexity (how many samples are
 ### Corollary
 Every finite hypothesis class is PAC learnable with following sample complexity:
 
-$m_H(\epsilon, \delta;) \leq \frac{\log\frac{\|\mathcal{H}\|}{\delta}}{\epsilon}$
+$m_H(\epsilon, \delta;) \leq \frac{\log(\frac{\|\mathcal{H}\|}{\delta})}{\epsilon}$
 
 
 ### More general learning rile:
