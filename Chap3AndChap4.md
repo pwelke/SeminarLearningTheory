@@ -68,7 +68,7 @@ $\mathcal{L}\_{\mathcal{D}}(h_s) \leq \mathcal{L}\_{\mathcal{S}}(h_s) + \frac{\e
 
 ### Generalized loss functions
 
-$\mathcal{L}\_\mathcal{D}(h) = E\_{z\sim\mathcal{D}}l[l(h,z)]$  - **risk function**
+$\mathcal{L}\_\mathcal{D}(h) = E\_{z\sim\mathcal{D}}[l(h,z)]$  - **risk function**
 
 $\mathcal{L}\_\mathcal{S}(h)=\frac{1}{m}\sum_{i=1}^{m}l(h,z_i)$ - **empirical risk**
 
