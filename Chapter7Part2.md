@@ -39,7 +39,7 @@ We want to use a special weighting scheme based on a *description language*:
 
 We will need *prefix-free* languages:
 
-$\forall h,h' \in \mathcal{H}, h \neq h': d(h) \text{is not a prefix of } d(h').$
+$\forall h,h' \in \mathcal{H}, h \neq h': d(h) \text{ is not a prefix of } d(h').$
 
 **Kraft Inquality**: $\mathcal{S}\subseteq \{0,1\}^*$ prefix free: 
 
@@ -50,13 +50,15 @@ Assume, we draw a binary sequence uniformly at random (and stop if it equals a s
 
 $\forall \sigma \in \mathcal{S}: P(\sigma) = \frac{1}{2^{\|\sigma\|}}.$
 
-Overall, $\sum\_{\sigma \in \mathcal{S}}\frac{1}{2^{\|\sigma\|}} = P(\mathcal{S}) \leq 1.$
+Overall, 
 
-Due to Kraft inquality we can use the description language $d(h)$ as a hypothesis weight $w(h) = \frac{1}{w^{\|h\|}}$.
+$\sum\_{\sigma \in \mathcal{S}}\frac{1}{2^{\|\sigma\|}} = P(\mathcal{S}) \leq 1.$
+
+Due to Kraft inquality, we can use the description language $d(h)$ as a hypothesis weight $w(h) = \frac{1}{w^{\|h\|}}$.
 
 If we plug $d(h)$ into the SRM rule for singleton hypothesis, we get the *Minimum Description Length* principle: 
 
-$\boxed{\min\_{h \in \mathcal{H}}L\_S(h) + \sqrt{\frac{\|h\| + log(\frac{2}{\delta})}{2m}}}.$
+$\boxed{\min\_{h \in \mathcal{H}}L\_S(h) + \sqrt{\frac{\|h\| + log(\frac{2}{\delta})}{2m}}}$
 
 It can be seen as a tradeoff between the empirical risk of a hypothesis $L\_S(h)$ and the *complexity* of describing $h$.
 
@@ -84,6 +86,7 @@ Given an instance $x$, the algorithm Memorize returns the majority of known labe
 This example makes it clear, that consistency is to weak to capture "learning" (or to be more precise: Generalization abilities).
 
 # Comparison of Notions for Learning
+The following tables compares the three different notions of learning in terms of bounds and prior knowledge.
 
 | |  Bounds on the true error based on the empirical risk | Bounds on the quality of the output compared to the best hypothesis in the class  based on the sample size |  Encode prior knowledge |
 | --- | --- | --- | --- |
