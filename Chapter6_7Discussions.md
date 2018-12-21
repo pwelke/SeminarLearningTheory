@@ -7,7 +7,7 @@ title: "Chap. 6/7 Questions"
 Why is the definition of $\mathcal{H}\_0$ and $\mathcal{H}\_1$ not exclusive?
 
 **A:**
-As we want to have $\|\mathcal{H}\_S\| = \mathcal{H}\_0 + \mathcal{H}\_0$, we have to count all the hypothesis,  where "and" is true, twice.
+As we want to have $\|\mathcal{H}\_S\| = \|\mathcal{H}\_0\| + \|\mathcal{H}\_0\|$, we have to count all the hypothesis,  where "and" is true, twice.
 
 **Q:**
 Why we use the term "convergence"?
