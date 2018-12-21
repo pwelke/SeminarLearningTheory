@@ -46,9 +46,9 @@ $\forall h,h' \in \mathcal{H}, h \neq h': d(h) \text{is not a prefix of } d(h').
 $\sum\_{\sigma \in \mathcal{S}}\frac{1}{2^{\|\sigma\|}} \leq 1$ 
 
 **Proof:**
-Assume, we draw a binary sequence uniformly at random (and stop if it equals a string in $\mathcal{S $). Then 
+Assume, we draw a binary sequence uniformly at random (and stop if it equals a string in $\mathcal{S}$). Then 
 
-$\forall \sigma \in \mathcal{S}: P(\sigma) = \frac{1}{2^{|\sigma|}}.$
+$\forall \sigma \in \mathcal{S}: P(\sigma) = \frac{1}{2^{\|\sigma\|}}.$
 
 Overall, $\sum\_{\sigma \in \mathcal{S}}\frac{1}{2^{\|\sigma\|}} = P(\mathcal{S}) \leq 1.$
 
@@ -56,9 +56,9 @@ Due to Kraft inquality we can use the description language $d(h)$ as a hypothesi
 
 If we plug $d(h)$ into the SRM rule for singleton hypothesis, we get the *Minimum Description Length* principle: 
 
-$\min\_{h \in \mathcal{H}}L\_S(h) + \sqrt{\frac{\|h\| + log(\frac{2}{\delta})}{2m}}.$
+$\boxed{\min\_{h \in \mathcal{H}}L\_S(h) + \sqrt{\frac{\|h\| + log(\frac{2}{\delta})}{2m}}}.$
 
-It is a tradeoff between the empirical risk of a hypothesis $L\_S(h)$ and the *complexity* of describing $h$.
+It can be seen as a tradeoff between the empirical risk of a hypothesis $L\_S(h)$ and the *complexity* of describing $h$.
 
 ## Occam's Razor
 A philosophical view of MDL is the so called *Occam's Razor*: 
@@ -85,9 +85,9 @@ This example makes it clear, that consistency is to weak to capture "learning" (
 
 # Comparison of Notions for Learning
 
-| Bounds on the true error based on the empirical risk | Bounds on the quality of the output compared to the best hypothesis in the class  based on the sample size |  Encode prior knowledge |
+| |  Bounds on the true error based on the empirical risk | Bounds on the quality of the output compared to the best hypothesis in the class  based on the sample size |  Encode prior knowledge |
 | --- | --- | --- | --- |
-| | (agn.) PAC | $\checkmark$ | $\checkmark$ (in advance) | $\checkmark$ (by specifying an $\mathcal{H}$) | 
+| (agn.) PAC | $\checkmark$ | $\checkmark$ (in advance) | $\checkmark$ (by specifying an $\mathcal{H}$) | 
 | Nonuniform | $\checkmark$ (e.g. Thm 7.4 in the book) | $\checkmark$ (depends on the best $h \in \mathcal{H}$) | $\checkmark$ (weights) |
 | Consistent | $\times$ | $\times$ | $\times$ |
 
