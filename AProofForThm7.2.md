@@ -41,3 +41,4 @@ Considering the case $n' = n$ yields the desired contradiction.
 Hence, $\mathcal{H}\_{n}$ must be agnostic PAC learnable. 
 
 ## Comments
+ * Looks reasonable to me. Just a small suggestion: As you argue anyway with $L\_{D} (h') + 1/8$ and $L\_{D}(h) + 1/10$ (and not only with 1/8 and 1/10), we could drop the realizability assumption completely and directly argue for all $D$. In my opinion, this would make the proof even a little simpler.
