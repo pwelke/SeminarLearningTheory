@@ -10,7 +10,7 @@ In this chapter we discuss the minimum description length principle as a spacial
 ## Minimum Description Length Principle
 If we assume that $\mathcal{H}$ is countable, we can decompose it into singleton hypothesis classes:
 
-$\mathcal{H} = \bigcup\_{n \in \mathbb{N}} \{h\_n\}.$
+$\mathcal{H} = \bigcup\_{n \in \mathbb{N}} \\{h\_n\\}.$
 
 In this setting, we have: 
 
@@ -18,7 +18,7 @@ $n(h) = n$
 
 By the known bound for finite hypothesis classes we get: 
 
-$m^{UC}\_{\{h\_n\}} \leq log\left(\frac{\frac{2}{\delta}\|\{h\_n\}\|}{2\epsilon^2}\right) = log\left(\frac{\frac{2}{\delta}}{2\epsilon^2}\right)$
+$m^{UC}\_{\\{h\_n\\}} \leq log\left(\frac{\frac{2}{\delta}\|\\{h\_n\\}\|}{2\epsilon^2}\right) = log\left(\frac{\frac{2}{\delta}}{2\epsilon^2}\right)$
 
 and $\epsilon\_n$ becomes: 
 
@@ -32,7 +32,7 @@ $\boxed{\min\_{h \in \mathcal{H}} L\_S(h) + \sqrt{\frac{-log(w(h)) + log(\frac{2
 ### (Prefix Free) Description Languages
 We want to use a special weighting scheme based on a *description language*:
 
-* $\Sigma$: Finite alphabet (e.g. $\{0,1\}$) 
+* $\Sigma$: Finite alphabet (e.g. $\\{0,1\\}$) 
 * $\Sigma^*$: All finite strings over $\Sigma$
 * $d:\mathcal{H} \rightarrow \Sigma^{\*}$ *description language*
 * $\|h\| := \|d(h)\|$ length of one string
@@ -41,7 +41,7 @@ We will need *prefix-free* languages:
 
 $\forall h,h' \in \mathcal{H}, h \neq h': d(h) \text{ is not a prefix of } d(h').$
 
-**Kraft Inquality**: $\mathcal{S}\subseteq \{0,1\}^*$ prefix free: 
+**Kraft Inquality**: $\mathcal{S}\subseteq \\{0,1\\}^*$ prefix free: 
 
 $\sum\_{\sigma \in \mathcal{S}}\frac{1}{2^{\|\sigma\|}} \leq 1$ 
 
