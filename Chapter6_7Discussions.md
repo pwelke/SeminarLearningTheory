@@ -1,3 +1,7 @@
+---
+title: "Chap. 6/7 Questions"
+---
+
 # Questions:
 **Q:**
 Why is the definition of $\mathcal{H}\_0$ and $\mathcal{H}\_1$ not exclusive?
