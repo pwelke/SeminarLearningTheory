@@ -30,13 +30,13 @@ $A$ solves the learning task $(Z\_n, \mathcal{H}\_n, l\_n)\_{n=1}^\infty$ effici
 ## Examples
 The following examples show that for general hypothesis classes efficient learning is hard. Still, for certain hypothesis clases, some tricks, like assuming realizability or solving the task representation independently, allow us to solve the task efficiently.
 ### Axis-aligned Rectangles (Realizable Case)
-![Realizable Rectangle](/images/rectangle realizable.png)
+![Realizable Rectangle](https://github.com/pwelke/SeminarLearningTheory/blob/master/images/rectangle%20realizable.png)
 In this problem we have given a set of binary labeled points in $\mathbb{R}^n$ and $\mathcal{H}\_n$ is the set of axis-aligned rectangles in $\mathbb{R}^n$. One possible way to solve this learning task efficiently for a fixed $n$ is to first require a large enough number $m=m(\epsilon,\delta)=\mathcal{O}(p(\frac{1}{\epsilon},\frac{1}{\delta}))$ of samples to PAC-learn $\mathcal{H}\_n$. Secondly, we can determine for each dimension the smallest and largest coordinate of a positive instance. Those coordinates will correctly define an axis-aligned rectangle with zero empirical risk (i.e. an ERM hypothesis) efficiently in time $\mathcal{O}(nm)$.
 
 So this algorithm solves the learning task $(Z\_n, \mathcal{H}\_n, l\_n)\_{n=1}^\infty$ efficiently, but if $\mathcal{H}$ would be the union of all $\mathcal{H}\_n$ this algorithm would not solve the learning task wrt. $\mathcal{H}$ efficiently, as the running time depend on $n$.
 
 ### Axis-aligned Rectangles (Agnostic Case)
-![Realizable Rectangle](/images/rectangle agnostic.png)
+![Realizable Rectangle](https://github.com/pwelke/SeminarLearningTheory/blob/master/images/rectangle%20agnostic.png)
 Now we slightly vary to problem, by allowing the samples to not come from an axis-aligned rectangle. Still, we want to find the rectangle with the lowest empirical risk. One can show, that it is NP-hard to compute an ERM rectangle in this setting, so we can not hope for an algorithm which efficiently solves this learning task. \par
 Nevertheless, for each fixed $n$ we can try out all subsets of size $2n$ of our $m$-sized sample, which defines an axis-aligned rectangle in $\mathbb{R}^n$ and will solve the task efficiently in time $\mathcal{O}(m^{\mathcal{O}(n)}).$
 
