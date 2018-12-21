@@ -18,7 +18,7 @@ $n(h) = n$
 
 By the known bound for finite hypothesis classes we get: 
 
-$m^{UC}\_{\{h\_n\}} \leq log\left(\frac{\frac{2}{\delta}|\{h\_n\}|}{2\epsilon^2}\right) = log\left(\frac{\frac{2}{\delta}}{2\epsilon^2}\right)$
+$m^{UC}\_{\{h\_n\}} \leq log\left(\frac{\frac{2}{\delta}\|\{h\_n\}\|}{2\epsilon^2}\right) = log\left(\frac{\frac{2}{\delta}}{2\epsilon^2}\right)$
 
 and $\epsilon\_n$ becomes: 
 
@@ -34,16 +34,19 @@ We want to use a special weighting scheme based on a *description language*:
 
 * $\Sigma$: Finite alphabet (e.g. $\{0,1\}$) 
 * $\Sigma^*$: All finite strings over $\Sigma$
-* $d:\mathcal{H} \rightarrow \Sigma^*$ *description language*
+* $d:\mathcal{H} \rightarrow \Sigma^{\*}$ *description language*
 * $\|h\| := \|d(h)\|$ length of one string
 
-We will need *prefix-free* languages: $\forall h,h' \in \mathcal{H}, h \neq h': d(h) \text{is not a prefix of} d(h').$
-*Kraft Inquality*: $\mathcal{S}\subseteq \{0,1\}^*$ prefix free: 
+We will need *prefix-free* languages:
+
+$\forall h,h' \in \mathcal{H}, h \neq h': d(h) \text{is not a prefix of } d(h').$
+
+**Kraft Inquality**: $\mathcal{S}\subseteq \{0,1\}^*$ prefix free: 
 
 $\sum\_{\sigma \in \mathcal{S}}\frac{1}{2^{\|\sigma\|}} \leq 1$ 
 
 **Proof:**
-Assume, we draw a binary sequence uniformly at random (and stop if it equals a string in $\mathcal{S}$). Then 
+Assume, we draw a binary sequence uniformly at random (and stop if it equals a string in $\mathcal{S $). Then 
 
 $\forall \sigma \in \mathcal{S}: P(\sigma) = \frac{1}{2^{|\sigma|}}.$
 
@@ -69,9 +72,9 @@ Algorithm $A$ is *consistent* wrt. $\mathcal{H}$ and $\mathcal{P} = ($set of dis
 
 $\exists \text{ function } m\_{\mathcal{H}}^{CON}:(0,1)^2\times\mathcal{H}\times\mathcal{P} \rightarrow \mathbb{N}$ s.t. 
 
-$\forall \epsilon, \delta, \forall h \in \mathcal{H}, \forall \mathcal{D} \in \mathcal{P}: 
+$\forall \epsilon, \delta, \forall h \in \mathcal{H}, \forall \mathcal{D} \in \mathcal{P}$:
 
-\text{ for } S \text{ drawn i.i.d from } \mathcal{D}^m \text{ for } m \geq m\_{\mathcal{H}}^{CON}(\epsilon, \delta, h, \mathcal{D}):$ 
+$\text{ for } S \text{ drawn i.i.d from } \mathcal{D}^m \text{ for } m \geq m\_{\mathcal{H}}^{CON}(\epsilon, \delta, h, \mathcal{D}):$ 
 
 $L\_\mathcal{D}(A(S)) \leq L\_\mathcal{D}(h) + \epsilon$
 
@@ -84,7 +87,7 @@ This example makes it clear, that consistency is to weak to capture "learning" (
 
 | Bounds on the true error based on the empirical risk | Bounds on the quality of the output compared to the best hypothesis in the class  based on the sample size |  Encode prior knowledge |
 | --- | --- | --- | --- |
-| (agn.) PAC | $\checkmark$ | $\checkmark$ (in advance) | $\checkmark$ (by specifying an $\mathcal{H}$) | 
+| | (agn.) PAC | $\checkmark$ | $\checkmark$ (in advance) | $\checkmark$ (by specifying an $\mathcal{H}$) | 
 | Nonuniform | $\checkmark$ (e.g. Thm 7.4 in the book) | $\checkmark$ (depends on the best $h \in \mathcal{H}$) | $\checkmark$ (weights) |
 | Consistent | $\times$ | $\times$ | $\times$ |
 
