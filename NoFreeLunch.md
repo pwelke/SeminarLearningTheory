@@ -11,7 +11,7 @@ Let us first review the formal statement of the theorem.
 
 **No-Free-Lunch Theorem**
 
-Let $A$ be any learning algorithm (for binary classification with regards to the $0-1$ loss) over the domain $\mathcal{X}$. Let $m < |\mathcal{X}|/2$ be the size of a training set. Then there exists a distribution $\mathcal{D}$ over $\mathcal{X}\times \lbrace 0,1 \rbrace$ such that:
+Let $A$ be any learning algorithm (for binary classification with regards to the $0-1$ loss) over the domain $\mathcal{X}$. Let $m < \|\mathcal{X}\|/2$ be the size of a training set. Then there exists a distribution $\mathcal{D}$ over $\mathcal{X}\times \lbrace 0,1 \rbrace$ such that:
 
 1. There exists a function $f : \mathcal{X} \to \lbrace 0,1 \rbrace$ with $L_{\mathcal{D}}(f) = 0.$
 
@@ -31,7 +31,7 @@ $\mathcal{D}_{i}(\lbrace x,y \rbrace ) = \begin{cases} 1/|C| \qquad& \text{if} y
 0 \qquad& \text{otherwise.}
 \end{cases}$
 
-So the samples that $f_{i}$ would classify correctly are uniformly sampled with probability $1/|C|$, while all other samples have probability 0. This way we can guarantee that for each $\mathcal{D}_{i}$ there exists a zero-error hypothesis, namely $f_{i}$. It can then be shown that 
+So the samples that $f_{i}$ would classify correctly are uniformly sampled with probability $1/\|C\|$, while all other samples have probability 0. This way we can guarantee that for each $\mathcal{D}_{i}$ there exists a zero-error hypothesis, namely $f_{i}$. It can then be shown that 
 
 $\max_{i\in [T]} E_{S\sim\mathcal{D}^{m}} [L_{\mathcal{D}}(A'(S))] \geq 1/4,$
 
