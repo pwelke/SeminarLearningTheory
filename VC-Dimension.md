@@ -26,7 +26,7 @@ To illustrate the concept of the VC-Dimension, consider the following example. A
 In this case, VCdim($\mathcal{H}$) = 4.
 For the first inequality, we simply need to find one set of 4 points that is shattered by axis-aligned rectangles. We consider 4 equidistant points on a circle.
 
-![VCdim at least 4](https://github.com/pwelke/SeminarLearningTheory/blob/master/images/VCdim1.png)
+![VCdim at least 4](https://raw.githubusercontent.com/pwelke/SeminarLearningTheory/master/images/VCdim1.png)
 
 It is easy to see that any partition of the 4 points into positive (green) and negative (red) can be represented by some axis-aligned rectangle.
 
