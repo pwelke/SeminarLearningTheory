@@ -27,7 +27,7 @@ In the following, the main idea of the proof will be pointed out, as it plays a 
 The basic idea is to take a set $C \subset \mathcal{X}$ of size $2m$ and then define a distribution for each possible function from $C$ to $\lbrace 0,1 \rbrace$ that forces our learner to output a bad hypothesis with high probability.
 There are $T = 2^{2m}$ such functions $f_{1},...,f_{T}$. For each $f_{i}$, define a distribution $\mathcal{D}_{i}$ in the following way:
 
-$\mathcal{D}\_{i}(\lbrace x,y \rbrace ) = \begin{cases} 1/|C| \qquad& \text{if} y = f_{i}(x)\\
+$\mathcal{D}\_{i}(\lbrace x,y \rbrace ) = \begin{cases} 1/|C| \qquad& \text{if } y = f_{i}(x)\linebreak
 0 \qquad& \text{otherwise.}
 \end{cases}$
 
