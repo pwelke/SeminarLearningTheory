@@ -8,10 +8,10 @@ So finiteness is sufficient but not necessary for learnability. To define a more
 ### Restriction of a hypothesis class and shattering sets
 We define the **Restriction of** $\mathcal{H}$  **to** $C = \lbrace c_{1},...,c_{m} \rbrace\subset \mathcal{X}$ as the set of functions from $C$ to $\lbrace 0,1 \rbrace$ that can be derived from $\mathcal{H}$ (i.e. that correspond to a hypothesis in our class). If we describe each function from $C$ to $\lbrace 0,1 \rbrace$ as a vector in $\lbrace 0,1 \rbrace^{\|C\|}$, we can formally write this as
 
-$\mathcal{H}_{C} = \lbrace (h(c_{1}),...h(c_{m})): h\in\mathcal{H}\rbrace$
+$\mathcal{H}\_{C} = \lbrace (h(c_{1}),...h(c_{m})): h\in\mathcal{H}\rbrace$
 
 
-If $\mathcal{H}_{C}$ is the set of all functions from $C$ to $\lbrace 0,1 \rbrace$ (i.e. $|\mathcal{H}_{C}| = 2^{\|C\|}$), we say that $\mathcal{H}$  **shatters** $C$.\\
+If $\mathcal{H}\_{C}$ is the set of all functions from $C$ to $\lbrace 0,1 \rbrace$ (i.e. $\|\mathcal{H}\_{C}\| = 2^{\|C\|}$), we say that $\mathcal{H}$  **shatters** $C$.\\
 
 So $\mathcal{H}$ shatters a set $C$ if every possible labelling (with the two labels $0$ and $1$) can be described by a hypothesis in $\mathcal{H}$.
 
