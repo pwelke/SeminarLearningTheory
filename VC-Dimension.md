@@ -18,3 +18,14 @@ Now we can define the VC-Dimension. The **VC-Dimension** of a hypothesis class $
 
 The motivation behind this definition is as follows. The No-Free-Lunch Theorem effectively states that the set of all functions from a domain to $\lbrace 0,1 \rbrace$ is not PAC-learnable. However, the proof of this statement only works *because* we are considering all possible functions. So it is a reasonable assumption that restricting ourselves might actually be an advantage.
 Note that an infinite VC-Dimension implies non-learnability: for each set of size $m$ there is a set $C\subset \mathcal{X}$ of size $2m$ that is shattered by our hypothesis class. So the restriction of the hypothesis class to $C$ is the set of all functions from $C$ to $\lbrace 0,1 \rbrace$ which, by the No-Free-Lunch Theorem, implies non-learnability.
+
+### Example
+
+To illustrate the concept of the VC-Dimension, consider the following example. As hypothesis class, we choose the set of all axis-aligned rectangles in the Euclidean plane. If we want to show that a certain number $d$ is indeed the VC-Dimension of a hypothesis class, we need to show two things: VCdim($\mathcal{H}$)$\geq d$ and VCdim($\mathcal{H}$)$ < d+1$.
+
+In this case, VCdim($\mathcal{H}$) = 4.
+For the first inequality, we simply need to find one set of 4 points that is shattered by axis-aligned rectangles. We consider 4 equidistant points on a circle.
+
+![VCdim at least 4](https://github.com/pwelke/SeminarLearningTheory/blob/master/images/VCdim1.png)
+
+
