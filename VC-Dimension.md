@@ -30,4 +30,8 @@ For the first inequality, we simply need to find one set of 4 points that is sha
 
 It is easy to see that any partition of the 4 points into positive (green) and negative (red) can be represented by some axis-aligned rectangle.
 
+To show that the VC-Dimension is strictly less than 5, we have to show that *no* set of size 5 is shattered. For this purpose, consider an arbitraty set of 5 points and their bounding box (indicated by the dashed blue rectangle below). There has to be at least one point inside the bounding box (or on one side of the box). Now, if we label the other 4 points positive and the fifth negative, each axis-aligned rectangle containing all positive points also has to contain the negative point. Therefore, no set of size 5 is shattered by $\mathcal{H}$.
+
+![VCdim less than 5](https://raw.githubusercontent.com/pwelke/SeminarLearningTheory/master/images/VCdim2.png)
+
 
