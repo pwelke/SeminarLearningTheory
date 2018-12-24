@@ -39,6 +39,6 @@ which implies the claim (can easily be shown using Markov's inequality).
 
 ### Consequences ###
 
-As a direct consequence if follows that, for some infinite domain $\mathcal{X}$, the set of all functions from $\mathcal{X}$ to $\lbrace 0,1 \rbrace$ cannot be PAC-learnable. No matter what training set size $m$ we pick, $|\mathcal{X}|$ will always be larger than $2m$. So we can always apply the above theorem.
+As a direct consequence if follows that, for some infinite domain $\mathcal{X}$, the set of all functions from $\mathcal{X}$ to $\lbrace 0,1 \rbrace$ cannot be PAC-learnable. No matter what training set size $m$ we pick, $\|\mathcal{X}\|$ will always be larger than $2m$. So we can always apply the above theorem.
 
 One way to tackle this problem is the choice of a suitable hypothesis class. This usually results restricts the set of functions to choose from, and can indeed exclude such unfavourable distributions that prevent PAC-learning.
