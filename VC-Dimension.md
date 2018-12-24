@@ -1,8 +1,6 @@
 # The VC-Dimension
 The VC-Dimension (named after Vapnik and Chervonenkis) is a measure of complexity for a given hypothesis class. The motivation is as follows: finiteness of a hypothesis class implies PAC-learnability, and the sample complexity depends on the size of the class. However, there are also infinite hypothesis classes which are PAC-learnable. Consider for example the class of threshold functions over the real numbers, $\mathcal{H} = \lbrace h_{a} \rbrace$ where
 $h_{a}(x) = 1$ if  $a<0$, and $h_{a}(x) = 0$, otherwise. This hypothesis class is PAC-learnable with sample complexity $m(\epsilon,\delta) \leq \lceil \log(2/\delta)/\epsilon \rceil.$
-  
-
 So finiteness is sufficient but not necessary for learnability. To define a more useful measure of complexity, we first need some other definitions.
 
 ### Restriction of a hypothesis class and shattering sets
@@ -11,11 +9,10 @@ We define the **Restriction of** $\mathcal{H}$  **to** $C = \lbrace c_{1},...,c_
 $\mathcal{H}\_{C} = \lbrace (h(c_{1}),...h(c_{m})): h\in\mathcal{H}\rbrace$
 
 
-If $\mathcal{H}\_{C}$ is the set of all functions from $C$ to $\lbrace 0,1 \rbrace$ (i.e. $\|\mathcal{H}\_{C}\| = 2^{\|C\|}$), we say that $\mathcal{H}$  **shatters** $C$.\\
-
+If $\mathcal{H}\_{C}$ is the set of all functions from $C$ to $\lbrace 0,1 \rbrace$ (i.e. $\|\mathcal{H}\_{C}\| = 2^{\|C\|}$), we say that $\mathcal{H}$  **shatters** $C$.
 So $\mathcal{H}$ shatters a set $C$ if every possible labelling (with the two labels $0$ and $1$) can be described by a hypothesis in $\mathcal{H}$.
 
- ### The VC-Dimension
+### The VC-Dimension
 
 Now we can define the VC-Dimension. The **VC-Dimension** of a hypothesis class $\mathcal{H}$, denoted by VCdim$(\mathcal{H})$, is the size of a largest set $C\subset \mathcal{X}$ that is shattered by $\mathcal{H}$.
 
