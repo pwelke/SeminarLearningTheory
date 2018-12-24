@@ -27,7 +27,7 @@ In the following, the main idea of the proof will be pointed out, as it plays a 
 The basic idea is to take a set $C \subset \mathcal{X}$ of size $2m$ and then define a distribution for each possible function from $C$ to $\lbrace 0,1 \rbrace$ that forces our learner to output a bad hypothesis with high probability.
 There are $T = 2^{2m}$ such functions $f_{1},...,f_{T}$. For each $f_{i}$, define a distribution $\mathcal{D}_{i}$ in the following way:
 
-$\mathcal{D}\_{i}(\lbrace x,y \rbrace ) = 1/|C|$ if  $y = f_{i}(x)$
+$\mathcal{D}\_{i}(\lbrace x,y \rbrace ) = 1/|C|$ if  $y = f_{i}(x)$, and
 $\mathcal{D}\_{i}(\lbrace x,y \rbrace ) = 0$ otherwise.
 
 So the samples that $f_{i}$ would classify correctly are uniformly sampled with probability $1/\|C\|$, while all other samples have probability 0. This way we can guarantee that for each $\mathcal{D}\_{i}$ there exists a zero-error hypothesis, namely $f_{i}$. It can then be shown that 
@@ -40,4 +40,4 @@ which implies the claim (can easily be shown using Markov's inequality).
 
 As a direct consequence if follows that, for some infinite domain $\mathcal{X}$, the set of all functions from $\mathcal{X}$ to $\lbrace 0,1 \rbrace$ cannot be PAC-learnable. No matter what training set size $m$ we pick, $\|\mathcal{X}\|$ will always be larger than $2m$. So we can always apply the above theorem.
 
-One way to tackle this problem is the choice of a suitable hypothesis class. This usually results restricts the set of functions to choose from, and can indeed exclude such unfavourable distributions that prevent PAC-learning.
+One way to tackle this problem is the choice of a suitable hypothesis class. This usually restricts the set of functions to choose from. The proof of the No-Free-Lunch Theorem only works because we are considering all possible functions from our domain to $\lbrace 0,1 \rbrace$. So restricting ourselves may indeed exclude such unfavourable distributions that prohobit PAC-learning.
