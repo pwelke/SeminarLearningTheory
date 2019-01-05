@@ -21,7 +21,7 @@ $$ \tau_{\mathcal{H}}(m)\leq \sum^d_{i=0} \binom{m}{i}$$ for all $m\in \mathbb{N
 Proof: First we observe that for any $S\subset X$ 
 $$|\{ B\subset S: \mathcal{H} \ shatters \ B \}| \leq \sum^d_{i=0} \binom{|S|}{i}\text{,}$$ since no set of size $>d$ can be shattered and $S$ contains $\binom{|S|}{i}$ subsets of size $i$.
 
-Claim: $|\mathcal{H}_S|\leq |\{ B\subset S: \mathcal{H} \ shatters \ B\}|$.
+Claim: $|\mathcal{H}_S|\leq |\{ B\subset S: \mathcal{H} \ shatters \ B\}|$.\\
 Proof of the claim: Proof by induction on the sample complexity of $S$.
 $|S|= 1$: The empty set is vacuously shattered. This leaves us with 
 $$ |\mathcal{H}_S|= 1+ \Big\{^{1 \quad \text{if $S$ is shattered}}_{0 \quad \text{otherwise.}}$$
