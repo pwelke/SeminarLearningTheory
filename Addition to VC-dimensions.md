@@ -2,17 +2,22 @@
 
 In this section we pick up the topic of VC-dimensions again, adding some technical but famous results. In particular we present Sauer's Lemma and (without a proof) one of its applications. We will also define a way to analyse the expressive power of a hypothesis space.
 
+
 Remark: Let in the following $\mathcal{H}$ be a hypothesis space on a domain $X$, where $X$ is given an arbitrary probability distribution $\mathcal{D}$.
+
 
 Definition:
 We define the restriction of $\mathcal{H}$ to a sample set $S\subset X$ as 
 $$ \mathcal{H}_S := \{h|_S : S \rightarrow \{ 0,1\} : h \in \mathcal{H} \}\text{.} $$
 
+
 Definition:
 We define the growth function of $\mathcal{H}$ as 
 $$ \tau_{\mathcal{H}}: \mathbb{N}\rightarrow\mathbb{N}\text{,} \quad \tau_{\mathcal{H}}(m) := \max_{S\subset X\text{,} \ |S|=m} |\mathcal{H}_S|\text{.}$$
 
+
 The growth function tells us how the expressive power of the hypothesis spaces evolves when enlarging the sample size. If it grows exponentially, $\mathcal{H}$ is very general. On the other hand, if $\tau_{\mathcal{H}}$ is eventually constant, we have a clearly restricted hypothesis space.  A very famous result is Sauer's Lemma which bounds the growth function with respect to the VC-dimension.
+
 
 Lemma (Sauer et al.):
 Let $VCdim(\mathcal{H}) \leq d < \infty $. Then 
@@ -52,7 +57,9 @@ $$|\mathcal{H}_S|=|\mathcal{H}_0|+|\mathcal{H}_1|\leq |\{B\subset S: \mathcal{H}
 
 This concludes the proof.
 
+
 We now state without a proof an important theorem that puts the growth function into the context of learnability.
+
 
 Theorem: Let $S\subset X$ be drawn i.i.d.. Then for every $\delta\in(0,1)$ we have with probability at least $1-\delta$ that
 $$ |L_{\mathcal{D}}(h)-L_S(h)|\leq \frac{4\sqrt{\log{\tau_{\mathcal{H}}(2|S|)}}}{\delta\sqrt{2|S|}}\text{.}$$
