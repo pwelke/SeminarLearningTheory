@@ -29,11 +29,11 @@ $\nu: \mathcal{H}\rightarrow \mathbb{N}$, $h \mapsto \min\{ n\in\mathbb{N}: h\in
 $\epsilon_n: \mathbb{N}\times(0,1) \rightarrow (0,1)$, $(m,\delta)\mapsto \min\{\epsilon\in(0,1): m_{\mathcal{H}_n}^{UC}(\epsilon, \delta)\leq m\}$.
 
 Hence for all $m\in\mathbb{N}$, $\delta\in(0,1)$ we have with probability at least $1-\delta$ that 
-$$ \forall n\in\mathbb{N}, \forall h\in\mathcal{H}_n \quad \|L_{\mathcal{D}}(h)-L_S(h)\|\leq \epsilon_n(m,\delta) \text{.}$$
+$$ \forall n\in\mathbb{N}, \forall h\in\mathcal{H}_n \quad |L_{\mathcal{D}}(h)-L_S(h)|\leq \epsilon_n(m,\delta) \text{.}$$
 
 Since $\mathcal{H}$ has infinite VC-dimension, we can't fix an $\epsilon>0$ and determine a sufficient sample size to achieve this bound (with probability at least $1-\delta$). Instead we first fix the sample complexity and regard the resulting bound on each $\mathcal{H}_n$, $n\in\mathbb{N}$. We now introduce weights on those subspaces. The following theorem shows why this is useful.
 
-Definition: A weight function on $\mathcal{H}=\bigcup_{n\in\mathbb{N}} \mathcal{H}_n$ is a function $\omega: \mathbb{N}\rightarrow [0,1]$ such that $\sum_{n \in\mathbb{N}} \omega(n)\leq 1$.
+Definition: A weight function on $$\mathcal{H}=\bigcup_{n\in\mathbb{N}} \mathcal{H}_n$$ is a function $$\omega: \mathbb{N}\rightarrow [0,1]$$ such that $$\sum_{n \in\mathbb{N}} \omega(n)\leq 1$$.
 
 Theorem: With probability at least $1-\delta$ we have that
 $$ \forall n\in\mathbb{N}, \forall h\in\mathcal{H}_n \quad \|L_{\mathcal{D}}(h)-L_S(h)\|\leq \epsilon_n(m, \omega(n)\cdot\delta) \text{.}$$
