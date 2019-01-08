@@ -8,7 +8,7 @@ Remark: Let in the following $\mathcal{H}$ be a hypothesis space on a domain $X$
 
 Definition:
 We define the restriction of $\mathcal{H}$ to a sample set $S\subset X$ as 
-$$ \mathcal{H}_S := \{h\|_S : S \rightarrow \{ 0,1\} : h \in \mathcal{H} \}\text{.} $$
+$$ \mathcal{H}_S := \{h|_S : S \rightarrow \{ 0,1\} : h \in \mathcal{H} \}\text{.} $$
 
 
 Definition:
