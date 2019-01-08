@@ -38,9 +38,9 @@ Definition: A weight function on $$\mathcal{H}=\bigcup_{n\in\mathbb{N}} \mathcal
 Theorem: With probability at least $1-\delta$ we have that
 $$ \forall n\in\mathbb{N}, \forall h\in\mathcal{H}_n \quad |L_{\mathcal{D}}(h)-L_S(h)|\leq \epsilon_n(m, \omega(n)\cdot\delta) \text{.}$$
 
-Proof: $$P\left(\exists n\in\mathbb{N}, \exists h\in\mathcal{H}_n \quad \|L_{\mathcal{D}}(h)-L_S(h)\| > \epsilon_n(m, \omega(n)\cdot\delta)\right)$$ 
+Proof: $$P\left( \exists n\in\mathbb{N}, \exists h\in\mathcal{H}_n \quad \|L_{\mathcal{D}}(h)-L_S(h)\| > \epsilon_n(m, \omega(n)\cdot\delta)\right )$$ 
 
-$$\leq \sum_{n\in\mathbb{N}} P\left(\exists h\in\mathcal{H}_n \quad |L_{\mathcal{D}}(h)-L_S(h)| > \epsilon_n(m, \omega(n)\cdot\delta)\right)
+$$\leq \sum_{n\in\mathbb{N}} P\left( \exists h\in\mathcal{H}_n \quad |L_{\mathcal{D}}(h)-L_S(h)| > \epsilon_n(m, \omega(n)\cdot\delta) \right)
 \leq \sum_{n\in\mathbb{N}} \omega(n)\cdot\delta \leq \delta$$.
 
 Corollary: With probability at least $1-\delta$ we have that
