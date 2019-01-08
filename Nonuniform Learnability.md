@@ -48,7 +48,7 @@ $$\forall h\in\mathcal{H} \quad L_{\mathcal{D}}(h)\leq L_S(h)+\epsilon_{\nu(h)}(
 
 We have fixed the sample complexity and the weights. Now we want to find a hypothesis minimising the true error with respect to those parameters.
 
-###Structural Risk Minimiser: Pick $$h\in \argmin_{h\in\mathcal{H}}\{L_S(h)+\epsilon_{\nu(h)}(m,\omega(\nu(h))\cdot\delta)\}$$.
+###Structural Risk Minimiser: Pick $$h\in argmin_{h\in\mathcal{H}}\{L_S(h)+\epsilon_{\nu(h)}(m,\omega(\nu(h))\cdot\delta)\}$$.
 
 To obtain nonuniform learnability we can pick a hypothesis $\tilde{h}\in\mathcal{H}$ and choose our $\epsilon,\delta>0$ as usual. We then fix the sample complexity accordingly and apply the SRM paradigm.
 
