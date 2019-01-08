@@ -5,10 +5,10 @@ Remark: Let in the following $\mathcal{H}$ be a hypothesis space on a domain $X$
 Uniform convergence is a very useful but not always available property of a hypothesis space. Luckily there is a weaker notion that still yields some information. We will later see how. First we recall two definitions.
 
 Definition: We call $S\subset X$ $\epsilon$-representative for $\mathcal{H}$ if for all $h\in\mathcal{H}$
-$$\| L_{\mathcal{D}}(h)-L_S(h)\| \leq \epsilon \text{.}$$
+$$| L_{\mathcal{D}}(h)-L_S(h)| \leq \epsilon \text{.}$$
 
 Definition: $\mathcal{H}$ has the uniform convergence property if there exists a function $m_{\mathcal{H}}^{UC}: (0,1)^2 \rightarrow \mathbb{N}$ such that for all $\epsilon,\delta>0$ and an i.i.d. drawn sample set $S\subset X$ with $\|S\|>m_{\mathcal{H}}^{UC}(\epsilon,\delta)$ we have with probability at least $1-\delta$ that 
-$$ \forall h\in\mathcal{H} \quad \|L_{\mathcal{D}}(h)-L_S(h)\|<\epsilon \text{.}$$
+$$ \forall h\in\mathcal{H} \quad |L_{\mathcal{D}}(h)-L_S(h)|<\epsilon \text{.}$$
 
 In the case of uniform convergence we ask for a sample complexity that guarantees us with propability at least $1-\delta$ that a sample set of given size provides us for \emph{all} $h\in\mathcal{H}$ an empirical error that is in some sense representative for the true error. However this is often not possible. But instead we can compare hypotheses among each other. We already weakened the notion of PAC-learnability to agnostic PAC-learnability. That is, instead of the real classification we compared hypotheses to the best possible among them. We can weaken this even further by comparing hypotheses with any fixed element $\tilde{h}\in\mathcal{H}$.
 
