@@ -34,16 +34,16 @@ $\|S\|= 1$: The empty set is vacuously shattered. This leaves us with
 $$ |\mathcal{H}_S|= 1+ \Big\{^{1 \quad \text{if $S$ is shattered}}_{0 \quad \text{otherwise.}}$$
 $1 <\|S\|$: Assume $\|S\|=m$ and $S=\{s_1, \dots, s_m\}$ for some $m\in\mathbb{N}$ and that the claim holds for sets of size $<m$. Let furthermore $S':= S\setminus \{s_m\}$. We define 
 
-$ \mathcal{H}_0:= \{h\in\mathcal{H}_{S'}: h\cup (s_m,0)\in\mathcal{H}_S \vee h\cup(s_m,1)\in\mathcal{H}_S\}=\mathcal{H}_{S'}$,\\
+$$ \mathcal{H}_0:= \{h\in\mathcal{H}_{S'}: h\cup (s_m,0)\in\mathcal{H}_S \vee h\cup(s_m,1)\in\mathcal{H}_S\}=\mathcal{H}_{S'}$$,
 
-$\mathcal{H}_1:=\{h\in\mathcal{H}_{S'}: h\cup (s_m,0)\in \mathcal{H}_S\wedge h\cup (s_m,1)\in\mathcal{H}_S\}$.
+$$\mathcal{H}_1:=\{h\in\mathcal{H}_{S'}: h\cup (s_m,0)\in \mathcal{H}_S\wedge h\cup (s_m,1)\in\mathcal{H}_S\}$$.
 
-Note that for every $h\in\mathcal{H}_1\subset\mathcal{H}_0$ there is $\{h\cup(s_m,0), h\cup(s_m,1)\}\subset \mathcal{H}_S$. Hence $$\|\mathcal{H}_S\|=\|\mathcal{H}_0\setminus\mathcal{H}_1\|+2\|\mathcal{H}_1\|$$ and therefore $$\|\mathcal{H}_S\|=\|\mathcal{H}_0\|+\|\mathcal{H}_1\|\text{.}$$
+Note that for every $h\in\mathcal{H}_1\subset\mathcal{H}_0$ there is $\{h\cup(s_m,0), h\cup(s_m,1)\}\subset \mathcal{H}_S$. Hence $$|\mathcal{H}_S|=|\mathcal{H}_0\setminus\mathcal{H}_1|+2|\mathcal{H}_1|$$ and therefore $$|\mathcal{H}_S|=|\mathcal{H}_0|+|\mathcal{H}_1|\text{.}$$
 
 We can apply the induction hypothesis on $\mathcal{H}_0$ and obtain 
-$$ \|\mathcal{H}_0\|\leq\|\{ B\subset S': \mathcal{H} \ shatters \ B\}\|=\|\{ B\subset S: s_m \notin B\wedge \mathcal{H} \ shatters \ B\}\|\text{.}$$
+$$ |\mathcal{H}_0|\leq|\{ B\subset S': \mathcal{H} \ shatters \ B\}|=|\{ B\subset S: s_m \notin B\wedge \mathcal{H} \ shatters \ B\}|\text{.}$$
 
-For $\mathcal{H}_1$ we can construct a hypothesis space $\mathcal{H}'$ such that $\mathcal{H}_1=\mathcal{H}'_{S'}$. Namely, we define 
+For $$\mathcal{H}_1$$ we can construct a hypothesis space $\mathcal{H}'$ such that $\mathcal{H}_1=\mathcal{H}'_{S'}$. Namely, we define 
 $$\mathcal{H}' := \{h\cup(s_m,0): h\in \mathcal{H}_1\}\cup\{h\cup (s_m,1): h\in\mathcal{H}_1\}\text{.}$$
 
 We again apply the induction hypothesis 
