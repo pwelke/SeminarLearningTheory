@@ -38,7 +38,8 @@ $$ \mathcal{H}_0:= \{h\in\mathcal{H}_{S'}: h\cup (s_m,0)\in\mathcal{H}_S \vee h\
 
 $$\mathcal{H}_1:=\{h\in\mathcal{H}_{S'}: h\cup (s_m,0)\in \mathcal{H}_S\wedge h\cup (s_m,1)\in\mathcal{H}_S\}$$.
 
-Note that for every $h\in\mathcal{H}_1\subset\mathcal{H}_0$ there is $\{h\cup(s_m,0), h\cup(s_m,1)\}\subset \mathcal{H}_S$. Hence $$|\mathcal{H}_S|=|\mathcal{H}_0\setminus\mathcal{H}_1|+2|\mathcal{H}_1|$$ and therefore $$|\mathcal{H}_S|=|\mathcal{H}_0|+|\mathcal{H}_1|\text{.}$$
+Note that for every $h\in\mathcal{H}_1\subset\mathcal{H}_0$ there is $\{h\cup(s_m,0), h\cup(s_m,1)\}\subset \mathcal{H}_S$. Hence 
+$$\| \mathcal{H}_S \|=\| \mathcal{H}_0\setminus\mathcal{H}_1\|+2\| \mathcal{H}_1 \|$$ and therefore $$\| \mathcal{H}_S \|= \| \mathcal{H}_0 \|+\| \mathcal{H}_1 \| \text{.}$$
 
 We can apply the induction hypothesis on $\mathcal{H}_0$ and obtain 
 $$ |\mathcal{H}_0|\leq|\{ B\subset S': \mathcal{H} \ shatters \ B\}|=|\{ B\subset S: s_m \notin B\wedge \mathcal{H} \ shatters \ B\}|\text{.}$$
