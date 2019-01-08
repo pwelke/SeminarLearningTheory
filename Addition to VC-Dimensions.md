@@ -54,7 +54,7 @@ $\|\mathcal{H}_1\|\leq \|\{B\subset S': \mathcal{H}' \ shatters \ B\}\|=\|\{B\su
 $=\|\{B\subset S: s_m\in B \wedge \mathcal{H} \ shatters \ B\}\|$.
 
 Putting both inequalities together yields 
-$$\|\mathcal{H}_S\|=\|\mathcal{H}_0\|+\|\mathcal{H}_1\|\leq \|\{B\subset S: \mathcal{H} \ shatters \ B\}\|\text{.}$$
+$$|\mathcal{H}_S|=|\mathcal{H}_0|+|\mathcal{H}_1|\leq |\{B\subset S: \mathcal{H} \ shatters \ B\}|\text{.}$$
 
 This concludes the proof.
 
@@ -63,4 +63,4 @@ We now state without a proof an important theorem that puts the growth function 
 
 
 Theorem: Let $S\subset X$ be drawn i.i.d.. Then for every $\delta\in(0,1)$ we have with probability at least $1-\delta$ that
-$$ \|L_{\mathcal{D}}(h)-L_S(h)\|\leq \frac{4\sqrt{\log{\tau_{\mathcal{H}}(2\|S\|)}}}{\delta\sqrt{2\|S\|}}\text{.}$$
+$$ |L_{\mathcal{D}}(h)-L_S(h)|\leq \frac{4\sqrt{\log{\tau_{\mathcal{H}}(2|S|)}}}{\delta\sqrt{2|S|}}\text{.}$$
