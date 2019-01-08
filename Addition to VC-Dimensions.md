@@ -13,7 +13,7 @@ $$ \mathcal{H}_S := \{h|_S : S \rightarrow \{ 0,1\} : h \in \mathcal{H} \}\text{
 
 Definition:
 We define the growth function of $\mathcal{H}$ as 
-$$ \tau_{\mathcal{H}}: \mathbb{N}\rightarrow\mathbb{N}\text{,} \quad \tau_{\mathcal{H}}(m) := \max_{S\subset X\text{,} \ \|S\|=m} \|\mathcal{H}_S\|\text{.}$$
+$$ \tau_{\mathcal{H}}: \mathbb{N}\rightarrow\mathbb{N}\text{,} \quad \tau_{\mathcal{H}}(m) := \max_{S\subset X\text{,} \ |S|=m} |\mathcal{H}_S|\text{.}$$
 
 
 The growth function tells us how the expressive power of the hypothesis spaces evolves when enlarging the sample size. If it grows exponentially, $\mathcal{H}$ is very general. On the other hand, if $\tau_{\mathcal{H}}$ is eventually constant, we have a clearly restricted hypothesis space.  A very famous result is Sauer's Lemma which bounds the growth function with respect to the VC-dimension.
@@ -24,17 +24,17 @@ Let $VCdim(\mathcal{H}) \leq d < \infty $. Then
 $$ \tau_{\mathcal{H}}(m)\leq \sum^d_{i=0} \binom{m}{i}$$ for all $m\in \mathbb{N}$.
 
 Proof: First we observe that for any $S\subset X$ 
-$$\|\{ B\subset S: \mathcal{H} \ shatters \ B \}\| \leq \sum^d_{i=0} \binom{\|S\|}{i}\text{,}$$ since no set of size $>d$ can be shattered and $S$ contains $\binom{\|S\|}{i}$ subsets of size $i$.
+$$|\{ B\subset S: \mathcal{H} \ shatters \ B \}| \leq \sum^d_{i=0} \binom{|S|}{i}\text{,}$$ since no set of size $>d$ can be shattered and $S$ contains $\binom{\|S\|}{i}$ subsets of size $i$.
 
 Claim: $\|\mathcal{H}_S\|\leq \|\{ B\subset S: \mathcal{H} \ shatters \ B\}\|$.
 
 Proof of the claim: Proof by induction on the sample complexity of $S$.
 
 $\|S\|= 1$: The empty set is vacuously shattered. This leaves us with 
-$$ \|\mathcal{H}_S\|= 1+ \Big\{^{1 \quad \text{if $S$ is shattered}}_{0 \quad \text{otherwise.}}$$
+$$ |\mathcal{H}_S|= 1+ \Big\{^{1 \quad \text{if $S$ is shattered}}_{0 \quad \text{otherwise.}}$$
 $1 <\|S\|$: Assume $\|S\|=m$ and $S=\{s_1, \dots, s_m\}$ for some $m\in\mathbb{N}$ and that the claim holds for sets of size $<m$. Let furthermore $S':= S\setminus \{s_m\}$. We define 
 
-$ \mathcal{H}_0:= \{h\in\mathcal{H}_{S'}: h\cup (s_m,0)\in\mathcal{H}_S \vee h\cup(s_m,1)\in\mathcal{H}_S\}=\mathcal{H}_{S'}$,
+$ \mathcal{H}_0:= \{h\in\mathcal{H}_{S'}: h\cup (s_m,0)\in\mathcal{H}_S \vee h\cup(s_m,1)\in\mathcal{H}_S\}=\mathcal{H}_{S'}$,\\
 
 $\mathcal{H}_1:=\{h\in\mathcal{H}_{S'}: h\cup (s_m,0)\in \mathcal{H}_S\wedge h\cup (s_m,1)\in\mathcal{H}_S\}$.
 
