@@ -36,11 +36,11 @@ Since $\mathcal{H}$ has infinite VC-dimension, we can't fix an $\epsilon>0$ and 
 Definition: A weight function on $$\mathcal{H}=\bigcup_{n\in\mathbb{N}} \mathcal{H}_n$$ is a function $$\omega: \mathbb{N}\rightarrow [0,1]$$ such that $$\sum_{n \in\mathbb{N}} \omega(n)\leq 1$$.
 
 Theorem: With probability at least $1-\delta$ we have that
-$$ \forall n\in\mathbb{N}, \forall h\in\mathcal{H}_n \quad \|L_{\mathcal{D}}(h)-L_S(h)\|\leq \epsilon_n(m, \omega(n)\cdot\delta) \text{.}$$
+$$ \forall n\in\mathbb{N}, \forall h\in\mathcal{H}_n \quad |L_{\mathcal{D}}(h)-L_S(h)|\leq \epsilon_n(m, \omega(n)\cdot\delta) \text{.}$$
 
-Proof: $$P(\exists n\in\mathbb{N}, \exists h\in\mathcal{H}_n \quad \|L_{\mathcal{D}}(h)-L_S(h)\| > \epsilon_n(m, \omega(n)\cdot\delta))$$ 
+Proof: $$P(\exists n\in\mathbb{N}, \exists h\in\mathcal{H}_n \quad |L_{\mathcal{D}}(h)-L_S(h)| > \epsilon_n(m, \omega(n)\cdot\delta))$$ 
 
-$$\leq \sum_{n\in\mathbb{N}} P(\exists h\in\mathcal{H}_n \quad \|L_{\mathcal{D}}(h)-L_S(h)\| > \epsilon_n(m, \omega(n)\cdot\delta))
+$$\leq \sum_{n\in\mathbb{N}} P(\exists h\in\mathcal{H}_n \quad |L_{\mathcal{D}}(h)-L_S(h)| > \epsilon_n(m, \omega(n)\cdot\delta))
 \leq \sum_{n\in\mathbb{N}} \omega(n)\cdot\delta \leq \delta$$.
 
 Corollary: With probability at least $1-\delta$ we have that
