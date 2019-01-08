@@ -52,7 +52,7 @@ Structural Risk Minimiser: Pick $$h\in \text{argmin}_{h\in\mathcal{H}}\{L_S(h)+\
 
 To obtain nonuniform learnability we can pick a hypothesis $\tilde{h}\in\mathcal{H}$ and choose our $\epsilon,\delta>0$ as usual. We then fix the sample complexity accordingly and apply the SRM paradigm.
 
-Theorem: Let $\mathcal{H}=\bigcup_{n\in\mathbb{N}}\mathcal{H}_n$ where each $\mathcal{H}_n$ has the uniform convergence property. Then for any $\tilde{h}\in\mathcal{H}$ and any i.i.d. drawn sample set $S\subset X$ with $\|S\|\geq m_{\mathcal{H}_{\nu(\tilde{h})}}^{UC}(\frac{\epsilon}{2},\omega(\nu(\tilde{h}))\cdot\delta)$ we have with probability at least $1-\delta$ that
+Theorem: Let $$\mathcal{H}=\bigcup_{n\in\mathbb{N}}\mathcal{H}_n$$ where each $$\mathcal{H}_n$$ has the uniform convergence property. Then for any $$\tilde{h}\in\mathcal{H}$$ and any i.i.d. drawn sample set $$S\subset X$$ with $$\|S\|\geq m_{\mathcal{H}_{\nu(\tilde{h})}}^{UC}(\frac{\epsilon}{2},\omega(\nu(\tilde{h}))\cdot\delta)$$ we have with probability at least $$1-\delta$$ that
 $$ L_{\mathcal{D}}(A(S))\leq L_{\mathcal{D}}(\tilde{h})+\epsilon \text{.}$$
 
 Proof: Let $m\in\mathbb{N}$ be fixed. By the preceding theorem we have with probability at least $1-\delta$ that 
