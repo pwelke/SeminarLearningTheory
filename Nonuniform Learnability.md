@@ -38,17 +38,17 @@ Definition: A weight function on $$\mathcal{H}=\bigcup_{n\in\mathbb{N}} \mathcal
 Theorem: With probability at least $1-\delta$ we have that
 $$ \forall n\in\mathbb{N}, \forall h\in\mathcal{H}_n \quad \|L_{\mathcal{D}}(h)-L_S(h)\|\leq \epsilon_n(m, \omega(n)\cdot\delta) \text{.}$$
 
-Proof: $P(\exists n\in\mathbb{N}, \exists h\in\mathcal{H}_n \quad \|L_{\mathcal{D}}(h)-L_S(h)\| > \epsilon_n(m, \omega(n)\cdot\delta))$ 
+Proof: $$P(\exists n\in\mathbb{N}, \exists h\in\mathcal{H}_n \quad \|L_{\mathcal{D}}(h)-L_S(h)\| > \epsilon_n(m, \omega(n)\cdot\delta))$$ 
 
-$\leq \sum_{n\in\mathbb{N}} P(\exists h\in\mathcal{H}_n \quad \|L_{\mathcal{D}}(h)-L_S(h)\| > \epsilon_n(m, \omega(n)\cdot\delta))
-\leq \sum_{n\in\mathbb{N}} \omega(n)\cdot\delta \leq \delta$.
+$$\leq \sum_{n\in\mathbb{N}} P(\exists h\in\mathcal{H}_n \quad \|L_{\mathcal{D}}(h)-L_S(h)\| > \epsilon_n(m, \omega(n)\cdot\delta))
+\leq \sum_{n\in\mathbb{N}} \omega(n)\cdot\delta \leq \delta$$.
 
 Corollary: With probability at least $1-\delta$ we have that
 $$\forall h\in\mathcal{H} \quad L_{\mathcal{D}}(h)\leq L_S(h)+\epsilon_{\nu(h)}(m,\omega(\nu(h))\cdot\delta) \text{.}$$
 
 We have fixed the sample complexity and the weights. Now we want to find a hypothesis minimising the true error with respect to those parameters.
 
-\emph{Structural Risk Minimiser}: Pick $h\in \argmin_{h\in\mathcal{H}}\{L_S(h)+\epsilon_{\nu(h)}(m,\omega(\nu(h))\cdot\delta)\}$.
+###Structural Risk Minimiser: Pick $$h\in \argmin_{h\in\mathcal{H}}\{L_S(h)+\epsilon_{\nu(h)}(m,\omega(\nu(h))\cdot\delta)\}$$.
 
 To obtain nonuniform learnability we can pick a hypothesis $\tilde{h}\in\mathcal{H}$ and choose our $\epsilon,\delta>0$ as usual. We then fix the sample complexity accordingly and apply the SRM paradigm.
 
