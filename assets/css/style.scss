@@ -11,7 +11,7 @@
   -o-transition: left 0.5s ease;
   transition: left 0.5s ease;
   background: #212121;
-  color: white;
+  color: #0090ff;
   cursor: pointer;
   font-size: 2rem;
   height: 100vh;
@@ -63,7 +63,7 @@
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  background: ##0090ff;
+  background: #0090ff;
   content: '';
   height: 0.4rem;
   width: 100%;
@@ -78,7 +78,7 @@
 .nav-toggle.expanded .nav-toggle-bar { background: transparent; }
 
 .nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
-  background: ##0090ff;
+  background: #0090ff;
   margin-top: 0;
 }
 
