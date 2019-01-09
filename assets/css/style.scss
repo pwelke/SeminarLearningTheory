@@ -10,16 +10,16 @@
   -ms-transition: left 0.5s ease;
   -o-transition: left 0.5s ease;
   transition: left 0.5s ease;
-  background: #28dde0;
+  background: #000000;
   color: white;
   cursor: pointer;
   font-size: 2rem;
   height: 100vh;
-  left: -20rem;
+  left: -30rem;
   padding: 6rem 2rem 2rem 2rem;
   position: fixed;
   top: 0;
-  width: 20rem;
+  width: 30rem;
   z-index: 1;
 }
 
@@ -43,6 +43,7 @@
   cursor: pointer;
   height: 2rem;
   left: 2rem;
+  right: 2rem;
   position: fixed;
   top: 2rem;
   width: 3.6rem;
