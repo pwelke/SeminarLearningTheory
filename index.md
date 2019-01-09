@@ -9,6 +9,6 @@ The wiki of this repository is used for the written documentation of the Seminar
 ## Table of Contents
 
 {% for p in site.pages %}
-1) [{{ p.title }}]({{site.baseurl}}{{ p.url }})
+- [{{p.title}}]({{site.baseurl}}{{p.url}})
 {% endfor %}
 
