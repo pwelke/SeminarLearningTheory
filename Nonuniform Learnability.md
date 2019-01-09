@@ -1,3 +1,7 @@
+---
+title: "Nonuniform Learnability & SRM"
+---
+
 # Nonuniform Learnability and Structural Risk Minimisation (SRM)
 
 Remark: Let in the following $\mathcal{H}$ be a hypothesis space on a domain $X$, where $X$ is given an arbitrary probability distribution $\mathcal{D}$.
