@@ -59,19 +59,6 @@
               <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
             </section>
           {% endif %}
-          
-          <!-- taken from https://thinkshout.com/blog/2014/12/creating-dynamic-menus-in-jekyll/ -->
-          <!--
-          <table style="width:100%">
-            </tr>
-              {% for p in site.pages %}
-                <th>
-                  <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
-                </th>
-              {% endfor %}
-            </tr>  
-          </table>
-          -->
 
           <!-- taken from https://www.cssscript.com/basic-hamburger-toggle-menu-css-vanilla-javascript/ , additional css as well -->
           <div class="nav-toggle">
@@ -101,7 +88,6 @@
               };
 
               hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-              // hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
             }());
           </script>
 
