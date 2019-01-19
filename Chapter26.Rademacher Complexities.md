@@ -48,4 +48,4 @@ ___
 Why do they use $\mathcal{R}$-value in statement and not in the proof?
 
 **A:** Value $\mathcal{c}$ which was used previously (for example in Theorem 26.12) 
-in front of the square root is bounded by this $\mathcal{R}$-valueю
+in front of the square root is bounded by this $\mathcal{R}$-value.
