@@ -23,7 +23,7 @@ we have learnt the overall distribution pretty much.
 
 ___
 
-**Q:** Lemma 26.8 - why do the use maximum of difference between estimated and actual $a$?
+**Q:** Lemma 26.8 - why do they use maximum of differences between estimated and actual $a$?
 
 **A:** They use the geometric idea of difference between mean and center, where center is an actual $a$.
 
