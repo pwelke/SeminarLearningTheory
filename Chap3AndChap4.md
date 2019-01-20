@@ -6,9 +6,6 @@ title: "Chap. 3&4"
 
 ### PAC(Probably Approximately correct) learning
 
-$\lceil$
-$\\lceil$
-
 A hypothesis class $\mathcal{H}$ is **PAC learnable**
 if there exist a function $m_H : (0, 1)^2 \to \mathcal{N}$ and a learning algorithm with the
 following property: For every $ \epsilon, \delta \in (0, 1)$, for every distribution $\mathcal{D}$ over $\mathcal{X}$, and
@@ -120,7 +117,7 @@ $\leq \sum_{h \in H}2exp(-2m\epsilon^2) = 2|\mathcal{H}|exp(-2m\epsilon^2)$
 #### Corollary
 
 Let $\mathcal{H}$ be a finite hypothesis class, let $\mathcal{Z}$ be a domain and let $l: \mathcal{H} \times \mathcal{Z} \to{[0,1]}$ be a loss function, then $\mathcal{H}$ enjoys the uniform convergence with sample complexity:
-$m^\mathcal{UC}\_{\mathcal{H}}(\epsilon, \delta) \leq \frac{\log(\frac{2|H|}{\delta})}{2\epsilon^2}$
+$m^\mathcal{UC}\_{\mathcal{H}}(\epsilon, \delta) \leq \lceil \frac{\log(\frac{2|H|}{\delta})}{2\epsilon^2} \rceil$
 
 ### Questions:
 **Q:** How to approach a good hypothesis class?
