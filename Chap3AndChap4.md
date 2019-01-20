@@ -6,6 +6,9 @@ title: "Chap. 3&4"
 
 ### PAC(Probably Approximately correct) learning
 
+$\lceil$
+$\\lceil$
+
 A hypothesis class $\mathcal{H}$ is **PAC learnable**
 if there exist a function $m_H : (0, 1)^2 \to \mathcal{N}$ and a learning algorithm with the
 following property: For every $ \epsilon, \delta \in (0, 1)$, for every distribution $\mathcal{D}$ over $\mathcal{X}$, and
