@@ -1,5 +1,5 @@
 ---
-title: "6 - Proof of Theorem 7.2"
+title: "Proof of Theorem 7.2"
 ---
 
 ## A Proof Proposal for Theorem 7.2
