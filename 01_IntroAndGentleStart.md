@@ -1,5 +1,5 @@
 ---
-title: "1 - Chapter 1 & 2: Introduction & A Gentle Start"
+title: "Chapter 1 & 2: Introduction & A Gentle Start"
 ---
 
 ## Introduction & a Gentle Start
