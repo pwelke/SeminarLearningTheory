@@ -1,3 +1,7 @@
+---
+title: "Chapter 5: Error Decomposition"
+---
+
 # Error Decomposition
 
 From the No-Free-Lunch Theorem we can conclude that choosing a suitable hypothesis class is crucial for learning a given concept. This way we restrict ourselves to a subset of all possible functions from $\mathcal{X}$ to $\lbrace 0,1 \rbrace$, which helps us avoiding unfavourable distributions and might allow us to find a low-error hypothesis with high probability. On the other hand we might exclude the best hypotheses from our set of candidates, as it might not be a member of our hypothesis class. So we might find a good approximation for the best hypothesis in our class, but this best hypothesis in the class might be a bad approximation for the true target function. This dilemma is often referred to as the **Bias-Complexity Tradeoff** and shall be formalized in this section.
