@@ -1,5 +1,5 @@
 ---
-title: Home
+title: 0 - Home
 ---
 
 # Accompanying Wiki for the Seminar on Learning Theory
