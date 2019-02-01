@@ -1,5 +1,5 @@
 ---
-title: "Chap. 3&4"
+title: "2 - Chapter 3 & 4 A Formal Learning Model and Learning via Uniform Convergence"
 ---
 
 # A Formal Learning Model and Learning via Uniform Convergence
