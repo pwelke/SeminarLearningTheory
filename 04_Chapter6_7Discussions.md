@@ -1,5 +1,5 @@
 ---
-title: "Chap. 6/7 Questions"
+title: "Chapter 6 & 7: Questions"
 ---
 
 # Questions:
