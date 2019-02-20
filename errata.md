@@ -8,3 +8,20 @@ This section collects ideas for improvements of the book and errors we found. Fo
 ## Chapter 1.1
 
 Blah
+
+## Chapter 3
+
+1. On the page 46, the Bayes Optimal Predictor is discussed, but the proof of the claim about it is left for the exercise:
+"see Exercise 7". Even though it is written, that it is "easy to verify", for the sake of understandability  
+it would probably be better to show the proof.
+
+2. For the definition of Agnostic PAC (page 46), explanation of the word "Agnostic" can probably can help readers to better 
+understand the concept. For example: "Agnostic in this context means doubtful or uncertain about the existence of something".
+
+3. The use case for the remark 3.2 (page 49) is not clear. Probably some clarification like "The "optimal" solution might be a bit outside of the hypothesis class. When it is impossible to find a solution within 
+some constraints, it can be reasonable to relax those constraints. After relaxation, we are more likely to find a solution."
+
+## Chapter 4
+
+1. Remark 4.1 (page 57) The "Discretization Trick" is a bit ambiguous name for the idea, which is explained there, since there is no actual trick there,
+but only the things, which we face in real life scenarios.
