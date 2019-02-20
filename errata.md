@@ -12,8 +12,7 @@ Blah
 ## Chapter 3
 
 1. On the page 46, the Bayes Optimal Predictor is discussed, but the proof of the claim about it is left for the exercise:
-"see Exercise 7". Even though it is written, that it is "easy to verify", for the sake of understandability  
-it would probably be better to show the proof.
+"see Exercise 7". Even though it is written, that it is "easy to verify", for the sake of understandability it would probably be better to show the proof.
 
 2. For the definition of Agnostic PAC (page 46), explanation of the word "Agnostic" can probably can help readers to better 
 understand the concept. For example: "Agnostic in this context means doubtful or uncertain about the existence of something".
