@@ -22,7 +22,7 @@ $$L_{\mathcal{D}}(h)\leq L_{\mathcal{D}}(\tilde{h})+\epsilon \text{.}$$
 Definition: $\mathcal{H}$ is called nonuniformely learnable if there exists an algorithm $A: \mathcal{P}(X) \rightarrow \mathcal{H}$ and a function $m_{\mathcal{H}}^{NUL}: (0,1)^2\times \mathcal{H} \rightarrow \mathbb{N}$ such that for all $\epsilon,\delta>0$, $\tilde{h}\in\mathcal{H}$ and an i.i.d. drawn sample set $S\subset X$ with $\|S\|>m_{\mathcal{H}}^{NUL}(\epsilon,\delta, \tilde{h})$ we have with probability at least $1-\delta$ that 
 $$ L_{\mathcal{D}}(A(S)) \leq L_{\mathcal{D}}(\tilde{h})+\epsilon \text{.}$$
 
-## Structural Rist Minimisation (SRM)
+## Structural Risk Minimisation (SRM)
 
 Assume that our hypothesis space has infinite VC-dimension. Even though we lose uniform convergence, there might still be certain structures we can exploit. Often we prefer some hypotheses over others. Reasons might be intuition, costs or implementation concerns. In those cases we can divide our hypothesis space into (not necessarily disjoint) subspaces and assign weights to them. If each of those subspaces has the uniform convergence property, we will infer nonuniform learnability.
 
