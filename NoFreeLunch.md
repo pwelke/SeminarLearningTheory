@@ -40,4 +40,4 @@ which implies the claim (can easily be shown using Markov's inequality).
 
 As a direct consequence if follows that, for some infinite domain $\mathcal{X}$, the set of all functions from $\mathcal{X}$ to $\lbrace 0,1 \rbrace$ cannot be PAC-learnable. No matter what training set size $m$ we pick, $\|\mathcal{X}\|$ will always be larger than $2m$. So we can always apply the above theorem.
 
-One way to tackle this problem is the choice of a suitable hypothesis class. This usually restricts the set of functions to choose from. The proof of the No-Free-Lunch Theorem only works because we are considering all possible functions from our domain to $\lbrace 0,1 \rbrace$. So restricting ourselves may indeed exclude such unfavourable distributions that prohobit PAC-learning.
+One way to tackle this problem is the choice of a suitable hypothesis class. This usually restricts the set of functions to choose from. The proof of the No-Free-Lunch Theorem only works because we are considering all possible functions from our domain to $\lbrace 0,1 \rbrace$. So restricting ourselves may indeed exclude such unfavourable distributions that prohibit PAC-learning.
