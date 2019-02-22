@@ -42,7 +42,7 @@ $$| \mathcal{H}_S |=| \mathcal{H}_0\setminus\mathcal{H}_1 |+2 | \mathcal{H}_1 |$
 We can apply the induction hypothesis on $\mathcal{H}_0$ and obtain 
 $$ |\mathcal{H}_0|\leq|\{ B\subset S': \mathcal{H} \ shatters \ B\}|=|\{ B\subset S: s_m \notin B\wedge \mathcal{H} \ shatters \ B\}|\text{.}$$
 
-For $$\mathcal{H}_1$$ we can construct a hypothesis space $\mathcal{H}'$ such that $\mathcal{H}_1=\mathcal{H}'_{S'}$. Namely, we define 
+For $$\mathcal{H}_1$$ we can construct a hypothesis space $\mathcal{H}'$ such that $$\mathcal{H}_1=\mathcal{H}'_{S'}$$. Namely, we define 
 $$\mathcal{H}' := \{h\cup(s_m,0): h\in \mathcal{H}_1\}\cup\{h\cup (s_m,1): h\in\mathcal{H}_1\}\text{.}$$
 
 We again apply the induction hypothesis 
