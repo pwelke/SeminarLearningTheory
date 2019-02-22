@@ -1,7 +1,7 @@
 # No-Free-Lunch Theorem
 
 Whenever we choose a hypothesis class $\mathcal{H}$, we actually make use of some prior knowledge about our data. We only choose the class because we believe (or hope) that it contains a good (i.e. low-error) estimator for the concept we want to learn.
-This begs the question whether such prior knowledge is a necessary condition for learning, or whether there can exist a "universal learner''. Recall that a learning task is defined by an unknown probability distribution $\mathcal{D}$ over the set of all possible examples and labellings $\mathcal{X}\times \mathcal{Y}$, and given a training set of size $m$, we want to find a hypothesis $h$ that has a low error with high probability. So a universal learner would correspond to an algorithm $A$ and a sample complexity $m$ such that $A$ finds a low risk predictor $h$ for *every* distribution $\mathcal{D}$ with high probability. The following Theorem effectively states that no such learner can exist.
+This begs the question whether such prior knowledge is a necessary condition for learning, or whether there can exist a "universal learner''. Recall that a learning task is defined by an unknown probability distribution $\mathcal{D}$ over the set of all possible examples and labellings $\mathcal{X}\times \mathcal{Y}$, and given a training set of size $m$, we want to find a hypothesis $h$ that has a low error with high probability. So a universal learner would correspond to an algorithm $A$ and a sample complexity $m$ such that $A$ finds a low risk predictor $h$ for *every* distribution $\mathcal{D}$ with high probability. The following theorem effectively states that no such learner can exist.
 
   
 
