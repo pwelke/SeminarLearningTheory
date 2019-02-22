@@ -30,7 +30,7 @@ Let $\mathcal{H}=\bigcup_{n\in\mathbb{N}} \mathcal{H}_n$ where each $\mathcal{H}
 
 $\nu: \mathcal{H}\rightarrow \mathbb{N}$, $$h \mapsto \min \{ n\in\mathbb{N}: h\in\mathcal{H}_n\}$$,
 
-$\epsilon_n: \mathbb{N}\times(0,1) \rightarrow (0,1)$, $$(m,\delta)\mapsto \min \{ \epsilon\in(0,1): m_{\mathcal{H}_n}^{UC}(\epsilon, \delta)\leq m \}$$.
+$\epsilon_n: \mathbb{N}\times(0,1) \rightarrow (0,1)$, $$(m,\delta)\mapsto \inf \{ \epsilon\in(0,1): m_{\mathcal{H}_n}^{UC}(\epsilon, \delta)\leq m \}$$.
 
 Hence for all $m\in\mathbb{N}$, $\delta\in(0,1)$ we have with probability at least $1-\delta$ that 
 $$ \forall n\in\mathbb{N}, \forall h\in\mathcal{H}_n \quad |L_{\mathcal{D}}(h)-L_S(h)|\leq \epsilon_n(m,\delta) \text{.}$$
