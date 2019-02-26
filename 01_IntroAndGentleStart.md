@@ -57,6 +57,7 @@ $\mathcal{L}_{\mathcal{D},f}(h_S)\leq\epsilon$
 **A:** In general we compare results with $h^{*}$, because given the hypothesis space $\mathcal{H}$ it is the result closest to the real function one could possibly obtain.
 
 **Q:** Is it possible to calculate $h^{*}$?
+
 **A:** In general this is impossible, since we cannot compute $\mathcal{L}_{\mathcal{D},f}$. However, in Chapter 4 we will see that under certain conditions, $h_S\rightarrow h^*$ for $\|S\|\rightarrow\infty$.
 
 **Q:** In the sample set $S$ are duplicates of instances allowed? And what is the actual influence of duplicats in sample $S$?
