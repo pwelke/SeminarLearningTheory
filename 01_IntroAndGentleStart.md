@@ -96,5 +96,6 @@ In practice, a hypothesis is not necessarily evaluated with the same error measu
 **Q:** What is overfitting?
 
 **A:** the Oxford dictionary defines overfitting as: "The production of an analysis which corresponds too closely or exactly to a particular set of data, and may therefore fail to fit additional data or predict future observations reliably."
-* In ML, this refers to a model that has a low training error (empirical risk) $\mathcal{L}\_{S}$ but a high risk $\mathcal{L}\_{\mathcal{H},f}$.
+
+In ML, this refers to a model that has a low training error (empirical risk) $\mathcal{L}\_{S}$ but a high risk $\mathcal{L}\_{\mathcal{H},f}$.
 
