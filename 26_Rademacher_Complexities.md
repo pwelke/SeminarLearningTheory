@@ -104,17 +104,25 @@ $\mathcal{H}\_1 = \{ x \mapsto \langle w , x \rangle : \\| w \\|\_1 \leq 1 \}$
 
 $\mathcal{H}\_2 = \{ x \mapsto \langle w , x \rangle : \\| w \\|\_2 \leq 1 \}$
 
-The Rademacher Complexity of the hypothesis class $\mahtcal{H}\_2$ can be bounded by the maximum $\mathcal{l}\_2$-norm of a sample from Hilbert space $S$ devided by the square root of $m$, the size of $S$. 
+The Rademacher Complexity of the hypothesis class $\mahtcal{H}\_2$ can be bounded by the maximum $\mathcal{l}\_2$-norm of a sample from Hilbert space $S$ devided by the square root of $m$, the size of $S$ (Lemma 26.10). 
 
 $\mathcal{R}(\mathcal{H}\_2 \circ S ) \leq \max_i \frac{ \\|x_i\\|\_2 }{ \sqrt{m} }$
 
 Notice that the dimension of the Hilbert space $S$ does not influence the Rademacher complexity \mathcal{R}(\mathcal{l} \circ \mathcal{H}\_2 \circ S)$, which is usefull when analyzing kernel methods.
 
-A similar bound can be proven for $\mahtcal{H}\_1$, but the dimension of $S$ does appear in the numerator of the bound.
+A similar bound can be proven for $\mahtcal{H}\_1$, but the dimension of $S$ does appear in the numerator of the bound (Lemma 26.11).
 
-$\mathcal{R}(\mathcal{H}\_1 \circ S ) \leq \max_i \\|x_i\\|\_\inf \frac{ 2 \log(2n) }{ \sqrt{m} }$
+$\mathcal{R}(\mathcal{H}\_1 \circ S ) \leq \max_i \\|x_i\\|\_\infty \frac{ 2 \log(2n) }{ \sqrt{m} }$
 
-The two Lemmata imply two generalization bounds.
+Apart from the extra $\log(n)$ factor that appears in Theorem 26.11, a comparison of both bounds is interesting. In Lemma 26.10, $w$ is bounded by its $\mathcal{l}\_2$-norm and the $\mathcal{l}\_2$-norm of the instances influences the bound.
+
+In contrast, in Lemma 26.11 $w$ is bounded by its $\mathcal{l}\_1$-norm 
+(which is stronger than an $\mathcal{l}\_2$-constraint) while the $\mathcal{l}\_\infty$-norm of the instances should be low since its influences the bound (which is weaker than a low $\mathcal{l}\_2$ assumption). 
+
+TABLE
+
+Therefore, the choice of the hypothesis class $\mathcal{H} and constraint on instances and hypotheses should depend on our prior
+knowledge of the set of instances and on prior assumptions on good predictors.
 
 ___
 
