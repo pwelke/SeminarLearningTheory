@@ -2,23 +2,25 @@
 title: "Chapter 26: Rademacher Complexities"
 ---
 
-In chapter 4 it has been shown that the property of uniform convergence implies learnability and that the ERM-rule is $/epsilon$-consistent.
+# Rademacher Complexities
+
+In chapter 4 it has been shown that the property of uniform convergence implies learnability and that the ERM-rule is $\epsilon$-consistent.
+
 In this chapter Rademacher Complexity is introduced which measures the rate of uniform convergence.
 
-## Notation:
+### Notation:
 
-At first some notation is defined
+At first some notation is defined. Given a fixed loss function $\mathcal{l}$ and a set of hypotheses $\mathcal{H}$ we define all the projection from a sample to its loss for the set of hypotheses
 
-F := l o H := {
+$\mathcal{F} := \mathcal{l} \circ \mathcal{H} := \{z \to \mathcal{l}(h,z) :h \in \mathcal{H} \} $
 
-given f in F
+Given some $f \in \mathcal{F} $ define the loss over a sample $\mathcal{L}_S$ and the loss over the whole distriburion $\mathcal{L}_D$ 
 
-L_D
-L_S
+Finally, define $\mathcal{F} \circ S$ as the set of all possible evaluations a function $f ∈ \mathcal{F}$ can achieve on a sample $S$
 
-F o S
+$\mathcal{F} \circ S := \{(f(z_1), \dots,f (z_m)) :f\in \mathcal{F}\}$
 
-## Definitions:
+### Definitions:
 
 **Representativeness of S with respect to F**
 
@@ -36,7 +38,7 @@ R(F o S) := 1/m
 
 where $\sigma$ i.i.d. with P[] = 1/2
 
-## Lemmas and Theorems:
+### Lemmas and Theorems:
 
 The first Lemma that is shown bounds the expected value of representativeness of S by twice the expected Rademacher Complexity.
 
@@ -52,7 +54,7 @@ Also the second and third bound depend on the chosen training sample S, which is
 
 THEOREM
 
-## Rademacher Calculus:
+### Rademacher Calculus:
 
 Four Properties where proven for the Rademacher Calculus which can be applied to bound the Rademacher Complexity R(l o H o S) for specific cases.
 
@@ -62,7 +64,7 @@ A in R^m
 3. Massart: The Rademacher Complexity of a finite set grows logarithmically with its size.
 4. Contraction Lemma:
 
-## Rademacher Complexity of Linear Classes:
+### Rademacher Complexity of Linear Classes:
 
 The following two linear and bounded hypothesis classes will be analyzed:
 H_1
@@ -74,8 +76,6 @@ A similar bound can be proven for H_1, but the dimension of S does appear in the
 
 The two Lemmata imply two generalization bounds.
 
-
-# A Formal Learning Model and Learning via Uniform Convergence
 
 ### Questions:
 
