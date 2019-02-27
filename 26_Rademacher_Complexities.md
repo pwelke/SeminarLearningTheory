@@ -79,7 +79,7 @@ In particular, this holds for $h = \text{ERM}\_\mathcal{H} ( S )$.
 **(iii)**  For any $h^\*$, with probability of at least $1 − \delta$, 
 
 $\mathcal{L}\_\mathcal{D} ( \text{ERM}\_\mathcal{H} ( S ) ) − \mathcal{L}\_\mathcal{D} (h^\*) \leq 2
-\mathcal{R} ( \mathcal{l} \circ \mathcal{H} \circ S) + 5 c \sqrt{ \frac{2 ln(\frac{8}{\delta})}{m} } $.
+\mathcal{R} ( \mathcal{l} \circ \mathcal{H} \circ S) + 5 c \sqrt{ \frac{2 \ln(\frac{8}{\delta})}{m} } $.
 
 Theorem 26.5 gives three different bounds that mainly say, that, if the Rademacher Complexity $\mathcal{R}(\mathcal{l} \circ \mathcal{H} \circ S)$ is small, the ERM-rule can be used.
 Also the second and third bound depend on the chosen training sample $S$, which is called a data-dependent bound and in comparison to other bounds, the third **bound can be calculated**!
@@ -104,13 +104,19 @@ $\mathcal{H}\_1 = \{ x \mapsto \langle w , x \rangle : \\| w \\|\_1 \leq 1 \}$
 
 $\mathcal{H}\_2 = \{ x \mapsto \langle w , x \rangle : \\| w \\|\_2 \leq 1 \}$
 
-The hypothesis class $\mahtcal{H}\_2$ can be bounded by the maximum $\mathcal{l}\_2$-norm of a sample from Hilbert space $S$ devided by the square root of $m$, the size of $S$. Notice that the dimension of the Hilbert space $S$ does not influence the Rademacher complexity \mathcal{R}(\mathcal{l} \circ \mathcal{H}\_2 \circ S)$, which is usefull when analyzing kernel methods.
+The Rademacher Complexity of the hypothesis class $\mahtcal{H}\_2$ can be bounded by the maximum $\mathcal{l}\_2$-norm of a sample from Hilbert space $S$ devided by the square root of $m$, the size of $S$. 
+
+$\mathcal{R}(\mathcal{H}\_2 \circ S ) \leq \max_i \frac{ \\|x_i\\|\_2 }{ \sqrt{m} }$
+
+Notice that the dimension of the Hilbert space $S$ does not influence the Rademacher complexity \mathcal{R}(\mathcal{l} \circ \mathcal{H}\_2 \circ S)$, which is usefull when analyzing kernel methods.
 
 A similar bound can be proven for $\mahtcal{H}\_1$, but the dimension of $S$ does appear in the numerator of the bound.
 
+$\mathcal{R}(\mathcal{H}\_1 \circ S ) \leq \max_i \\|x_i\\|\_\inf \frac{ 2 \log(2n) }{ \sqrt{m} }$
+
 The two Lemmata imply two generalization bounds.
 
----
+___
 
 ### Questions:
 
