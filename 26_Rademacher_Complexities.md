@@ -8,7 +8,7 @@ In chapter 4 it has been shown that the property of uniform convergence implies 
 
 In this chapter Rademacher Complexity is introduced which measures the rate of uniform convergence.
 
-### Notation:
+#### Notation:
 
 At first some notation is defined. Given a fixed loss function $\mathcal{l}$ and a hypothesis class $\mathcal{H}$ we define the set of all the projection from a sample to its loss for the hypothesis class $\mathcal{H}$ as
 
@@ -26,7 +26,7 @@ Finally, define $\mathcal{F} \circ S$ as the set of all possible evaluations a f
 
 $\mathcal{F} \circ S := \\{(f(z_1), \dots,f (z_m)) :f\in \mathcal{F}\\}$
 
-### Definitions:
+#### Definitions:
 
 The **Representativeness of S with respect to F** is defined as
 
@@ -44,7 +44,7 @@ $\mathcal{R}(\mathcal{F} \circ S) := \frac{1}{m}  \mathop{\mathbb{E}}\_{\sigma \
 
 The definition makes use of $\sigma \sim \\{\pm 1\\}^m$ assigning a sample either to the training or validation set where $\sigma$ i.i.d. with $\mathbb{P}\[ \sigma_i = 1\] = \mathbb{P} \[ \sigma_i = − 1\]  = \frac{1}{2} $.
 
-### Lemmas and Theorems:
+#### Lemmas and Theorems:
 
 The first Lemma 26.2 that is shown bounds the expected value of representativeness of S by twice the expected Rademacher Complexity.
 
@@ -62,20 +62,21 @@ This is achieved by applying the McDiarmid's Inequality.
 For  all samples $z$ and $h \in \mathcal{H}$  their loss needs to be bounded by a constant $\| \mathcal{l} ( h,z ) \| \leq c$.
 
 Then, 
-(i)  With probability of at least $1 − \delta$, for all $h \in \mathcal{H}$, 
+
+**(i)**  With probability of at least $1 − \delta$, for all $h \in \mathcal{H}$, 
 
 $\mathcal{L}\_\mathcal{D} (h) − \mathcal{L}\_S (h) \leq 2 \mathop{\mathbb{E}} \_{S' \sim \mathcal{D}^m} \mathcal{R} ( \mathcal{l} \circ \mathcal{H} \circ S' ) + c \sqrt{ \frac{2 ln(\frac{2}{\delta})}{m} }$ .
 
 
 In particular, this holds for $h = \text{ERM}\_\mathcal{H} ( S )$ .
 
-(ii)  With probability of at least $1 − \delta$, for all $h \in \mathcal{H}$, 
+**(ii)**  With probability of at least $1 − \delta$, for all $h \in \mathcal{H}$, 
 
 $\mathcal{L}\_\mathcal{D} (h) − \mathcal{L}\_S (h) \leq 2 \mathcal{R} ( \mathcal{l} \circ \mathcal{H} \circ S)  + 4 c \sqrt{ \frac{2 ln(\frac{4}{\delta})}{m} } $.
  
 In particular, this holds for $h = \text{ERM}\_\mathcal{H} ( S )$.
 
-(iii)  For any $h^\*$, with probability of at least $1 − \delta$, 
+**(iii)**  For any $h^\*$, with probability of at least $1 − \delta$, 
 
 $\mathcal{L}\_\mathcal{D} ( \text{ERM}\_\mathcal{H} ( S ) ) − \mathcal{L}\_\mathcal{D} (h^\*) \leq 2
 \mathcal{R} ( \mathcal{l} \circ \mathcal{H} \circ S) + 5 c \sqrt{ \frac{2 ln(\frac{8}{\delta})}{m} } $.
@@ -83,22 +84,19 @@ $\mathcal{L}\_\mathcal{D} ( \text{ERM}\_\mathcal{H} ( S ) ) − \mathcal{L}\_\ma
 Theorem 26.5 gives three different bounds that mainly say, that, if the Rademacher Complexity $\mathcal{R}(\mathcal{l} \circ \mathcal{H} \circ S)$ is small, the ERM-rule can be used.
 Also the second and third bound depend on the chosen training sample $S$, which is called a data-dependent bound and in comparison to other bounds, the third **bound can be calculated**!
 
-### Rademacher Calculus:
+#### Rademacher Calculus:
 
 Four Properties where proven for the Rademacher Calculus which can be applied to bound the Rademacher Complexity \mathcal{R}(\mathcal{l} \circ \mathcal{H} \circ S)$ for specific cases.
 
 For a set $A$ in $\mathbb{R}^m$
 1. When applying an affine transformation with factor $c \in \mathbb{R}$ and translation $a_0 \in \mathbb{R}^m$ to A, it holds 
-
 $\mathcal{R}({ca + a_0 : a \in A }) \leq \| c \| \mathcal{R} (A) $
-
 2. The Rademacher Complexity of the complex hull of $A$ is equal to the Rademacher Complexity of $A$
 3. Massart-Lemma: The Rademacher Complexity of a finite set grows logarithmically with its size.
 4. Contraction Lemma: If in every dimension $i \in \[m\]$ of $A$ a $\rho$-Lipschitz function $\varphi_i:\mathbb{R} \to \mathbb{R}$ is applied the Rademacher complexity of the transformed $\Phi(A)$ can be bounded via 
+$\mathcal{R}(\Phi(A)) \leq \rho \mathcal{R}(A)$.
 
-$\mathcal{R}(Phi(A)) \leq \rho \mathcal{R}(A)$.
-
-### Rademacher Complexity of Linear Classes:
+#### Rademacher Complexity of Linear Classes:
 
 The following two linear and bounded hypothesis classes will be analyzed in detail applying some of the properties for Rademacher Calculus:
 
