@@ -100,9 +100,9 @@ $\mathcal{R}(\Phi(A)) \leq \rho \mathcal{R}(A)$.
 
 The following two linear and bounded hypothesis classes will be analyzed in detail applying some of the properties for Rademacher Calculus:
 
-$\mahtcal{H}\_1 = \{ x \mapsto \langle w , x \rangle : \\| w \\|\_1 \leq 1 \}$
+$\mathcal{H}\_1 = \{ x \mapsto \langle w , x \rangle : \\| w \\|\_1 \leq 1 \}$
 
-$\mahtcal{H}\_2 = \{ x \mapsto \langle w , x \rangle : \\| w \\|\_2 \leq 1 \}$
+$\mathcal{H}\_2 = \{ x \mapsto \langle w , x \rangle : \\| w \\|\_2 \leq 1 \}$
 
 The hypothesis class $\mahtcal{H}\_2$ can be bounded by the maximum $\mathcal{l}\_2$-norm of a sample from Hilbert space $S$ devided by the square root of $m$, the size of $S$. Notice that the dimension of the Hilbert space $S$ does not influence the Rademacher complexity \mathcal{R}(\mathcal{l} \circ \mathcal{H}\_2 \circ S)$, which is usefull when analyzing kernel methods.
 
