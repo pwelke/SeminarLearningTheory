@@ -36,14 +36,7 @@ It measures the biggest difference of the losses measured over the whole domain 
 
 In general it is not possible to calculate the loss of an hypothesis over the whole domain. In practice the representativeness is estimated by splitting up the sample S in some training and validation set.
 
-smaller version 
-
  <img src="https://raw.githubusercontent.com/pwelke/SeminarLearningTheory/master/images/skizze_training_validation_set.png" width="400">
-
-html
-
-<a href="url"><img src="https://raw.githubusercontent.com/pwelke/SeminarLearningTheory/master/images/skizze_training_validation_set.png"  width="500" ></a>
-
 
 The **Rademacher Complexity** does exactly this. The sample set $S$ is split up in all possible combinations of training and validation set and the differences in the losses are averaged.
 
@@ -53,7 +46,7 @@ The definition makes use of $\sigma \sim \\{\pm 1\\}^m$ assigning a sample $z_i$
 
 #### Lemmas and Theorems:
 
-The Lemma 26.2 bounds the expected value of representativeness of $S$ by twice the expected Rademacher Complexity.
+Lemma 26.2 bounds the expected value of representativeness of $S$ by twice the expected Rademacher Complexity.
 
 $ \mathop{\mathbb{E}} \_{S \sim \mathcal{D}^m} \[ \text{Rep}\_\mathcal{D} (F,S )] 
 \leq 
@@ -66,7 +59,7 @@ Lemma 26.2 can be applied directly to the Representativeness of a specific hypot
 In general, we want to bound the expected value of the representaticeness of $S$ with a better dependence on the confidence parameter $\delta \in (0,1)$.
 This is achieved by applying the McDiarmid's Inequality which leads to Theorem 26.5. 
 
-The theorem requires, that for  all samples $z$ and all hypotheses $h \in \mathcal{H}$  their loss needs to be bounded by a constant $\| \mathcal{l} ( h,z ) \| \leq c$. 
+This theorem requires, that for  all samples $z$ and all hypotheses $h \in \mathcal{H}$  their loss needs to be bounded by a constant $\| \mathcal{l} ( h,z ) \| \leq c$. 
 Then, 
 
 **(i)**  With probability of at least $1 − \delta$ and for all $h \in \mathcal{H}$ 
