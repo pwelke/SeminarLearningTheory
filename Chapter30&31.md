@@ -18,6 +18,8 @@ Shortly speaking, an algorithm that can "compress" its output is a good learner.
 Since $V$ and $T$ are independent, by using Bernstein's inequality, we get 
 
 LEMMA 30.1,
-Assume that the range of the loss function is [0,1]. Then, \[\mathbb{P}\lbrack L_{D}(h_{T}) - L_{V}(h_{T}) \geq \sqrt{\frac{2L_{V}(h_{T})\log (1/\delta)}{\lvert V \rvert }} + \frac{4\log (1/\delta)}{\lvert V \rvert}  \rbrack \leq \delta\]
+Assume that the range of the loss function is [0,1]. Then, 
+
+$\mathbb{P}\lbrack L_{D}(h_{T}) - L_{V}(h_{T}) \geq \sqrt{\frac{2L_{V}(h_{T})\log (1/\delta)}{\lvert V \rvert }} + \frac{4\log (1/\delta)}{\lvert V \rvert}  \rbrack \leq \delta$
 
 
