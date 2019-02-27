@@ -104,13 +104,13 @@ $\mathcal{H}\_1 = \{ x \mapsto \langle w , x \rangle : \\| w \\|\_1 \leq 1 \}$
 
 $\mathcal{H}\_2 = \{ x \mapsto \langle w , x \rangle : \\| w \\|\_2 \leq 1 \}$
 
-The Rademacher Complexity of the hypothesis class $\mahtcal{H}\_2$ can be bounded by the maximum $\mathcal{l}\_2$-norm of a sample from Hilbert space $S$ devided by the square root of $m$, the size of $S$ (Lemma 26.10). 
+The Rademacher Complexity of the hypothesis class $\mathcal{H}\_2$ can be bounded by the maximum $\mathcal{l}\_2$-norm of a sample from Hilbert space $S$ devided by the square root of $m$, the size of $S$ (Lemma 26.10). 
 
 $\mathcal{R}(\mathcal{H}\_2 \circ S ) \leq \max_i \frac{ \\|x_i\\|\_2 }{ \sqrt{m} }$
 
 Notice that the dimension of the Hilbert space $S$ does not influence the Rademacher complexity $\mathcal{R}(\mathcal{l} \circ \mathcal{H}\_2 \circ S)$, which is usefull when analyzing kernel methods.
 
-A similar bound can be proven for the Rademacher Complexity of $\mahtcal{H}\_1$, but the dimension of $S$ does appear in the numerator of the bound (Lemma 26.11).
+A similar bound can be proven for the Rademacher Complexity of $\mathcal{H}\_1$, but the dimension of $S$ does appear in the numerator of the bound (Lemma 26.11).
 
 $\mathcal{R}(\mathcal{H}\_1 \circ S ) \leq \max_i \\|x_i\\|\_\infty \frac{ 2 \log(2n) }{ \sqrt{m} }$
 
@@ -120,9 +120,8 @@ In contrast, in Lemma 26.11 $w$ is bounded by its $\mathcal{l}\_1$-norm
 (which is stronger than an $\mathcal{l}\_2$-constraint) while the $\mathcal{l}\_\infty$-norm of the instances should be low since its influences the bound (which is weaker than a low $\mathcal{l}\_2$ assumption). 
 
 
-|                     | Bounds on                                             |
-| Hypothesis Class    | Hypotheses ($w$)         | Instances $x$              |
-| ------------------- |:------------------------:| --------------------------:|
+| Hypothesis Class    | Bounds on hypotheses ($w$)  | Bounds on instances $x$    |
+| ------------------- |:------------------------:|:--------------------------:|
 | \mathcal{H}\_1      | $\mathcal{l}\_1$-norm    | $\mathcal{l}\_\infty$-norm |
 | \mathcal{H}\_2      | $\mathcal{l}\_2$-norm    | $\mathcal{l}\_2$-norm      |
 
