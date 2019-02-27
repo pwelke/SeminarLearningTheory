@@ -38,7 +38,7 @@ In general it is not possible to calculate the loss of an hypothesis over the wh
 
 smaller version 
 
- <img src="https:/raw.githubusercontent.com/pwelke/SeminarLearningTheory/master/images/skizze_training_validation_set.png" width="400">
+ <img src="https://raw.githubusercontent.com/pwelke/SeminarLearningTheory/master/images/skizze_training_validation_set.png" width="400">
 
 html
 
