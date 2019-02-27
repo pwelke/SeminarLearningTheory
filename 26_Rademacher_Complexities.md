@@ -14,11 +14,11 @@ At first some notation is defined. Given a fixed loss function $\mathcal{l}$ and
 
 $\mathcal{F} := \mathcal{l} \circ \mathcal{H} := \\{z \to \mathcal{l}(h,z) :h \in \mathcal{H} \\} $.
 
-Given some $f \in \mathcal{F} $ define the loss over the whole distriburion 
+Given some $f \in \mathcal{F} $ define the loss of $f$ over the whole distriburion 
 
-$\mathcal{L}_D := \mathbb{E}_{z \sim \mathcal{D}} \[ f(z) \] $
+$\mathcal{L}\_D := \mathbb{E}_{z \sim \mathcal{D}} \[ f(z) \] $
 
-and the loss over a sample 
+and the lossof $f$ over a sample as 
 
 $\mathcal{L}\_S := \frac{1}{m} \sum \_{i=1}^m f(z_i)$.
 
@@ -40,7 +40,7 @@ FOTO
 
 The **Rademacher Complexity** does exactly this, by splitting up the sample $S$ in all possible combination of training and validation set.
 
-$\mathcal{R}(F o S) := \frac{1}{m}  \mathbb{E}\_{\sigma \sim \\{\om 1\\}^m } \[ \sup \_{f \in \mathcal{F} } \sum_{i=1}^{m} σ i f ( z_i ) \] $
+$\mathcal{R}(F o S) := \frac{1}{m}  \mathop{\mathbb{E}}_\_{\sigma \sim \\{\pm 1\\}^m } \[ \sup \_{f \in \mathcal{F} } \sum_{i=1}^{m} \sigma_i f ( z_i ) \] $
 
 The definition makes use of $\sigma \sim \\{\pm 1\\}^m$ assigning a sample either to the training or validation set where $\sigma$ i.i.d. with $\mathbb{P}\[ \sigma_i = 1\] = \mathbb{P} \[ \sigma_i = − 1\]  = \frac{1}{2} $.
 
