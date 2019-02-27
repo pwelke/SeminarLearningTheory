@@ -40,7 +40,7 @@ FOTO
 
 The **Rademacher Complexity** does exactly this, by splitting up the sample $S$ in all possible combination of training and validation set.
 
-$\mathcal{R}(F o S) := \frac{1}{m}  \mathop{\mathbb{E}}\_{\sigma \sim \\{\pm 1\\}^m } \[ \sup \_{f \in \mathcal{F} } \sum_{i=1}^{m} \sigma_i f ( z_i ) \] $
+$\mathcal{R}(\mathcal{F} \circ S) := \frac{1}{m}  \mathop{\mathbb{E}}\_{\sigma \sim \\{\pm 1\\}^m } \[ \sup \_{f \in \mathcal{F} } \sum_{i=1}^{m} \sigma_i f ( z_i ) \] $
 
 The definition makes use of $\sigma \sim \\{\pm 1\\}^m$ assigning a sample either to the training or validation set where $\sigma$ i.i.d. with $\mathbb{P}\[ \sigma_i = 1\] = \mathbb{P} \[ \sigma_i = − 1\]  = \frac{1}{2} $.
 
@@ -48,7 +48,7 @@ The definition makes use of $\sigma \sim \\{\pm 1\\}^m$ assigning a sample eithe
 
 The first Lemma 26.2 that is shown bounds the expected value of representativeness of S by twice the expected Rademacher Complexity.
 
-$ \mathop{\mathbb{E}} \_{S \sim \mathcal{D}^m} \[ \matahcal{Rep}\_\mathcal{D} (F,S )] 
+$ \mathop{\mathbb{E}} \_{S \sim \mathcal{D}^m} \[ \mathcal{Rep}\_\mathcal{D} (F,S )] 
 \leq 
 2 \mathop{\mathbb{E}} \_{S \sim \mathcal{D}^m}  \mathcal{R} ( \mathcal{F} \circ S) $
 
@@ -59,30 +59,28 @@ Lemma 26.2 can be applied directly to the Representativeness of a specific hypot
 In general, we want to bound the expected value of the representaticeness of $S$ with a better dependence on the confidence parameter $\delta \in (0,1)$.
 This is achieved by applying the McDiarmid's Inequality. 
 
-For  all samples $z$ and $h \in \mathcal{H}$  their loss needs to be bounded by a constant $\| \mathcal{l} ( h,z ) \| \leq c.
+For  all samples $z$ and $h \in \mathcal{H}$  their loss needs to be bounded by a constant $\| \mathcal{l} ( h,z ) \| \leq c$.
 
 Then, 
-1.  With probability of at least $1 − \delta$, for all $h \in \mathcal{H}$, 
+(i)  With probability of at least $1 − \delta$, for all $h \in \mathcal{H}$, 
 
 $\mathcal{L}\_\mathcal{D} (h) − \mathcal{L}\_S (h) \leq 2 \mathop{\mathbb{E}} \_{S' \sim \mathcal{D}^m} \mathcal{R} ( \mathcal{l} \circ \mathcal{H} \circ S' ) + c \sqrt{ \frac{2 ln(\frac{2}{\delta})}{m} }$ .
 
 
-In particular, this holds for $h = ERM_\mathcal{H} ( S )$ .
+In particular, this holds for $h = \text{ERM}\_\mathcal{H} ( S )$ .
 
-2.  With probability of at least $1 − \delta$, for all $h \in \mathcal{H}$, 
+(ii)  With probability of at least $1 − \delta$, for all $h \in \mathcal{H}$, 
 
-$\mathcal{L}\_\mathcal{D} (h) − \mathcal{L}\_S (h) \leq 2 \mathcal{R} ( \mathcal{l} \circ \mathcal{H} \circ S)
- + 4 c \sqrt{ \frac{2 ln(\frac{4}{\delta})}{m} } $.
+$\mathcal{L}\_\mathcal{D} (h) − \mathcal{L}\_S (h) \leq 2 \mathcal{R} ( \mathcal{l} \circ \mathcal{H} \circ S)  + 4 c \sqrt{ \frac{2 ln(\frac{4}{\delta})}{m} } $.
  
-In particular, this holds for $h = ERM_\mathcal{H} ( S )$.
+In particular, this holds for $h = \text{ERM}\_\mathcal{H} ( S )$.
 
-3.  For any $h^\*$, with probability of at least $1 − \delta$, 
+(iii)  For any $h^\*$, with probability of at least $1 − \delta$, 
 
-$\mathcal{L}\_\mathcal{D} ( ERM_\mathcal{H} ( S ) ) − \mathcal{L}\_\mathcal{D} (h^\*) \leq 2
-\mathcal{R} ( \mathcal{l} \circ \mathcal{H} \circ S)
- + 5 c \sqrt{ \frac{2 ln(\frac{8}{\delta})}{m} } $.
+$\mathcal{L}\_\mathcal{D} ( \text{ERM}\_\mathcal{H} ( S ) ) − \mathcal{L}\_\mathcal{D} (h^\*) \leq 2
+\mathcal{R} ( \mathcal{l} \circ \mathcal{H} \circ S) + 5 c \sqrt{ \frac{2 ln(\frac{8}{\delta})}{m} } $.
 
-Theorem 26.5 gives three different bounds that mainly say that if the Rademacher Complexity $\mathcal{R}(\mathcal{l} \circ \mathcal{H} \circ S)$ is small the ERM-rule can be used.
+Theorem 26.5 gives three different bounds that mainly say, that, if the Rademacher Complexity $\mathcal{R}(\mathcal{l} \circ \mathcal{H} \circ S)$ is small, the ERM-rule can be used.
 Also the second and third bound depend on the chosen training sample $S$, which is called a data-dependent bound and in comparison to other bounds, the third **bound can be calculated**!
 
 ### Rademacher Calculus:
@@ -96,7 +94,9 @@ $\mathcal{R}({ca + a_0 : a \in A }) \leq \| c \| \mathcal{R} (A) $
 
 2. The Rademacher Complexity of the complex hull of $A$ is equal to the Rademacher Complexity of $A$
 3. Massart-Lemma: The Rademacher Complexity of a finite set grows logarithmically with its size.
-4. Contraction Lemma:
+4. Contraction Lemma: If in every dimension $i \in \[m\]$ of $A$ a $\rho$-Lipschitz function $\varphi_i:\mathbb{R} \to \mathbb{R}$ is applied the Rademacher complexity of the transformed $\Phi(A)$ can be bounded via 
+
+$\mathcal{R}(Phi(A)) \leq \rho \mathcal{R}(A)$.
 
 ### Rademacher Complexity of Linear Classes:
 
