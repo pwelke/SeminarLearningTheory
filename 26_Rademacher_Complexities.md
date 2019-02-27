@@ -40,17 +40,21 @@ FOTO
 
 The **Rademacher Complexity** does exactly this, by splitting up the sample $S$ in all possible combination of training and validation set.
 
-$\mathcal{R}(F o S) := \frac{1}{m}  \mathop{\mathbb{E}}_\_{\sigma \sim \\{\pm 1\\}^m } \[ \sup \_{f \in \mathcal{F} } \sum_{i=1}^{m} \sigma_i f ( z_i ) \] $
+$\mathcal{R}(F o S) := \frac{1}{m}  \mathop{\mathbb{E}}\_{\sigma \sim \\{\pm 1\\}^m } \[ \sup \_{f \in \mathcal{F} } \sum_{i=1}^{m} \sigma_i f ( z_i ) \] $
 
 The definition makes use of $\sigma \sim \\{\pm 1\\}^m$ assigning a sample either to the training or validation set where $\sigma$ i.i.d. with $\mathbb{P}\[ \sigma_i = 1\] = \mathbb{P} \[ \sigma_i = − 1\]  = \frac{1}{2} $.
 
 ### Lemmas and Theorems:
 
-The first Lemma that is shown bounds the expected value of representativeness of S by twice the expected Rademacher Complexity.
+The first Lemma 26.2 that is shown bounds the expected value of representativeness of S by twice the expected Rademacher Complexity.
 
-LEMMA
+$ \mathop{\mathbb{E}} \_{S \sim \mathcal{D}^m} \[ \matahcal{Rep}\_\mathcal{D} (F,S )] 
+\leq 
+2 \mathop{\mathbb{E}} \_{S \sim \mathcal{D}^m}  \mathcal{R} ( \mathcal{F} \circ S) $
 
-Theorem 26.3 give some easy bounds on the expected estimation error of the loss by applying the Lemma.
+This implies that by splitting up the sample $S$ into different validation and training sets one can actually estimate the (expected value of the) loss difference between sample $S$ and the distribution $\mathcal{D}$. 
+
+Theorem 26.3 give some easy bounds on the expected estimation error of the loss by applying the Lemma 26.2.
 
 THEOREM
 
