@@ -18,27 +18,27 @@ Given some $f \in \mathcal{F} $ define the loss of $f$ over the whole distriburi
 
 $\mathcal{L}\_\mathcal{D}(f) := \mathbb{E}\_{z \sim \mathcal{D}} \[ f(z) \] $
 
-and the loss of $f$ over a sample set $S$ as 
+and the loss of $f$ over a sample set $S$ of size $m$ as 
 
 $\mathcal{L}\_S(f) := \frac{1}{m} \sum \_{i=1}^m f(z_i)$.
 
-Finally, define $\mathcal{F} \circ S$ as the set of all possible evaluations a function $f ∈ \mathcal{F}$ can achieve on a sample $S$:
+Finally, define $\mathcal{F} \circ S$ as the set of all possible evaluations a function $f ∈ \mathcal{F}$ can achieve on $S$:
 
 $\mathcal{F} \circ S := \\{(f(z_1), \dots,f (z_m)) :f\in \mathcal{F}\\}$
 
 #### Definitions:
 
-The **Representativeness of S with respect to F** is defined as
+The **Representativeness of $S$ with respect to $\mathcal{F}$** is defined as
 
 $\text{Rep}\_{\mathcal{D}} (\mathcal{F},S) := \sup_{f\in\mathcal{F}} (\mathcal{L}\_\mathcal{D} (f) − \mathcal{L}\_S (f))$.
 
-It measures the biggest difference between the losses measured in the sample $S$ and over the whole set.
+It measures the biggest difference of the losses measured over the whole domain and the sample set $S$.
 
 In general it is not possible to calculate the loss of an hypothesis over the whole domain. In practice the representativeness is estimated by splitting up the sample S in some training and validation set.
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/pwelke/SeminarLearningTheory/blob/master/images/skizze_training_validation_set.jpg "Visualization of Training and Validation Set")
 
-The **Rademacher Complexity** does exactly this, by splitting up the sample $S$ in all possible combinations of training and validation set and averaging the differences in the losses.
+The **Rademacher Complexity** does exactly this. The sample set $S$ is split up in all possible combinations of training and validation set and the differences in the losses are averaged.
 
 $\mathcal{R}(\mathcal{F} \circ S) := \frac{1}{m}  \mathop{\mathbb{E}}\_{\sigma \sim \\{\pm 1\\}^m } \[ \sup \_{f \in \mathcal{F} } \sum_{i=1}^{m} \sigma_i f ( z_i ) \] $
 
@@ -59,35 +59,35 @@ Lemma 26.2 can be applied directly to the Representativeness of a specific hypot
 In general, we want to bound the expected value of the representaticeness of $S$ with a better dependence on the confidence parameter $\delta \in (0,1)$.
 This is achieved by applying the McDiarmid's Inequality which leads to Theorem 26.5. 
 
-For  all samples $z$ and all hypotheses $h \in \mathcal{H}$  their loss needs to be bounded by a constant $\| \mathcal{l} ( h,z ) \| \leq c$. 
+The theorem requires, that for  all samples $z$ and all hypotheses $h \in \mathcal{H}$  their loss needs to be bounded by a constant $\| \mathcal{l} ( h,z ) \| \leq c$. 
 Then, 
 
-**(i)**  With probability of at least $1 − \delta$ and for all $h \in \mathcal{H}$ holds
+**(i)**  With probability of at least $1 − \delta$ and for all $h \in \mathcal{H}$ 
 
 $\mathcal{L}\_\mathcal{D} (h) − \mathcal{L}\_S (h) \leq 2 \mathop{\mathbb{E}}  \_{S' \sim \mathcal{D}^m} \[ \mathcal{R} ( \mathcal{l} \circ \mathcal{H} \circ S' ) \] + c \sqrt{ \frac{2 ln( 2 / \delta)}{m} }$ .
 
 In particular, this holds for $h = \text{ERM}\_\mathcal{H} ( S )$ .
 
-**(ii)**  With probability of at least $1 − \delta$ and for all $h \in \mathcal{H}$ holds
+**(ii)**  With probability of at least $1 − \delta$ and for all $h \in \mathcal{H}$ 
 
 $\mathcal{L}\_\mathcal{D} (h) − \mathcal{L}\_S (h) \leq 2 \mathcal{R} ( \mathcal{l} \circ \mathcal{H} \circ S)  + 4 c \sqrt{ \frac{2 ln( 4 / \delta )}{m} } $.
  
 In particular, this holds for $h = \text{ERM}\_\mathcal{H} ( S )$.
 
-**(iii)**  For any $h^\*$, with probability of at least $1 − \delta$, 
+**(iii)**  For any $h^\*$ and with probability of at least $1 − \delta$, 
 
 $\mathcal{L}\_\mathcal{D} ( \text{ERM}\_\mathcal{H} ( S ) ) − \mathcal{L}\_\mathcal{D} (h^\*) \leq 2
 \mathcal{R} ( \mathcal{l} \circ \mathcal{H} \circ S) + 5 c \sqrt{ \frac{2 \ln( 8 / \delta)}{m} } $.
 
-Theorem 26.5 gives three different bounds that mainly say, that, if the Rademacher Complexity $\mathcal{R}(\mathcal{l} \circ \mathcal{H} \circ S)$ is small, the ERM-rule can be used.
-Also the second and third bound depend on the chosen training sample $S$, which is called a data-dependent bound and in comparison to other bounds, the third **bound can be calculated** since it doesn't involde an expected value over the distribution $\mathcal{D}$!
+The above theorem 26.5 gives three different bounds that mainly say, that, if the Rademacher Complexity $\mathcal{R}(\mathcal{l} \circ \mathcal{H} \circ S)$ is small, the ERM-rule can be used.
+Also the second and third bound depend on the chosen sample set $S$, which is called a data-dependent bound and in comparison to other bounds, the third **bound can be calculated** since it doesn't involde an expected value over the distribution $\mathcal{D}$!
 
 #### Rademacher Calculus:
 
 Four Properties where proven for Rademacher Calculus which can be applied to bound the Rademacher Complexity $\mathcal{R}(\mathcal{l} \circ \mathcal{H} \circ S)$ for specific cases.
 
 For a set $A \subset \mathbb{R}^m$
-1. When applying an affine transformation with factor $c \in \mathbb{R}$ and translation $a_0 \in \mathbb{R}^m$ to A, it holds 
+1. When applying an affine transformation with factor $c \in \mathbb{R}$ and translation $a_0 \in \mathbb{R}^m$ to $A$, it holds 
 $\mathcal{R}(\\{ca + a_0 : a \in A \\}) \leq \| c \| \mathcal{R} (A) $
 2. The Rademacher Complexity of the complex hull of $A$ is equal to the Rademacher Complexity of $A$
 3. Massart lemma: The Rademacher Complexity of a finite set grows logarithmically with its size.
@@ -102,7 +102,7 @@ $\mathcal{H}\_1 = \\{ x \mapsto \langle w , x \rangle : \\| w \\|\_1 \leq 1 \\}$
 
 $\mathcal{H}\_2 = \\{ x \mapsto \langle w , x \rangle : \\| w \\|\_2 \leq 1 \\}$
 
-The Rademacher Complexity of the hypothesis class $\mathcal{H}\_2$ can be bounded by the maximum $\mathcal{l}\_2$-norm of a sample from Hilbert space $S$ devided by the square root of $m$, the size of $S$ (Lemma 26.10). 
+The Rademacher Complexity of the hypothesis class $\mathcal{H}\_2$ can be bounded by the maximum $\mathcal{l}\_2$-norm of an instance from Hilbert space $S$ devided by the square root of $m$, the size of $S$ (Lemma 26.10). 
 
 $\mathcal{R}(\mathcal{H}\_2 \circ S ) \leq \max_i \frac{ \\|x_i\\|\_2 }{ \sqrt{m} }$
 
@@ -112,9 +112,9 @@ A similar bound can be proven for the Rademacher Complexity of $\mathcal{H}\_1$,
 
 $\mathcal{R}(\mathcal{H}\_1 \circ S ) \leq \max_i \\|x_i\\|\_\infty \frac{ 2 \log(2n) }{ \sqrt{m} }$
 
-Apart from the extra $\log(n)$ factor that appears in Theorem 26.11, a comparison of both bounds is interesting. In Lemma 26.10, $w$ is bounded by its $\mathcal{l}\_2$-norm and the $\mathcal{l}\_2$-norm of the instances influences the bound.
+Apart from the extra $\log(n)$ factor that appears in Lemma 26.11, a comparison of both bounds is interesting. In Lemma 26.10, $w$ is bounded by its $\mathcal{l}\_2$-norm and the $\mathcal{l}\_2$-norm of the instances influences the bound.
 In contrast, in Lemma 26.11 $w$ is bounded by its $\mathcal{l}\_1$-norm 
-(which is stronger than an $\mathcal{l}\_2$-constraint) while the $\mathcal{l}\_\infty$-norm of the instances should be low since its influences the bound (which is weaker than a low $\mathcal{l}\_2$ assumption). 
+(which is stronger than an $\mathcal{l}\_2$-constraint) while the $\mathcal{l}\_\infty$-norm of the instances should be low since it appears in the numerator (which is weaker than a low $\mathcal{l}\_2$ assumption). 
 
 
 | Hypothesis Class    | Bounds on hypotheses ($w$)  | Bounds on instances $x$    |
@@ -129,14 +129,14 @@ ___
 
 ### Questions:
 
-**Q:** On the page 376 the very first line $\sigma$ is introduced. Should the distribution of 
+**Q:** On the page 376 in the very first line $\sigma$ is introduced. Should the distribution of 
 -1 and +1 be equal?
 
-**A:** Yes, since we further assume that the sizes of two disjoint sets are equal. 
+**A:** Yes, since we further assume that the sizes of the two disjoint sets are equal. 
 
 ___
 
-**Q:** Page 378. Formula on the top of the page. Would it suffice if $h^*$ **(???)** is Lipschitz continuous?
+**Q:** Page 378. Formula on the top of the page: Would it suffice if $h^*$ **(???)** is Lipschitz continuous?
 
 **A:** Yes, but we have to bound something. (for Lipschitz - domain). 
 
