@@ -1,7 +1,7 @@
 ---
 title: "Chapter 30: Compression Bound & Chapter 31: PAC-Bayes"
 ---
-# Rademacher Complexities
+# Compression Bounds
 
 Basic concept:
 If a learning algorithm can express the output hypothesis using small subset of training set, then the hypothesis on the rest of the examples estimates its true error.
