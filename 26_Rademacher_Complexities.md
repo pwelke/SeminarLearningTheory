@@ -12,11 +12,11 @@ In this chapter Rademacher Complexity is introduced which measures the rate of u
 
 At first some notation is defined. Given a fixed loss function $\mathcal{l}$ and a hypothesis class $\mathcal{H}$ we define the set of all the projection from a sample to its loss for the hypothesis class $\mathcal{H}$ as
 
-$\mathcal{F} := \mathcal{l} \circ \mathcal{H} := \\{z \to \mathcal{l}(h,z) :h \in \mathcal{H} \\} $.
+$\mathcal{F} := \mathcal{l} \circ \mathcal{H} := \\{z \mapsto \mathcal{l}(h,z) :h \in \mathcal{H} \\} $.
 
 Given some $f \in \mathcal{F} $ define the loss of $f$ over the whole distriburion 
 
-$\mathcal{L}\_D := \mathbb{E}_{z \sim \mathcal{D}} \[ f(z) \] $
+$\mathcal{L}\_D := \mathbb{E}\_{z \sim \mathcal{D}} \[ f(z) \] $
 
 and the lossof $f$ over a sample as 
 
@@ -100,9 +100,9 @@ $\mathcal{R}(\Phi(A)) \leq \rho \mathcal{R}(A)$.
 
 The following two linear and bounded hypothesis classes will be analyzed in detail applying some of the properties for Rademacher Calculus:
 
-H_1 :=
+$\mahtcal{H}\_1 = \{ x \mapsto \langle w , x \rangle : \\| w \\|\_1 \leq 1 \}$
 
-H_2 :=
+$\mahtcal{H}\_2 = \{ x \mapsto \langle w , x \rangle : \\| w \\|\_2 \leq 1 \}$
 
 The hypothesis class H_2 can be bounded by the maximum l2-norm of a sample from Hilbert space S devided by the square root of m, the size of S. Notice that the dimension of the Hilbert space S does not influence the Rademacher complexity, which is usefull when analyzing kernel methods.
 
