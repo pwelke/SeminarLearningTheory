@@ -54,31 +54,57 @@ $ \mathop{\mathbb{E}} \_{S \sim \mathcal{D}^m} \[ \matahcal{Rep}\_\mathcal{D} (F
 
 This implies that by splitting up the sample $S$ into different validation and training sets one can actually estimate the (expected value of the) loss difference between sample $S$ and the distribution $\mathcal{D}$. 
 
-Theorem 26.3 give some easy bounds on the expected estimation error of the loss by applying the Lemma 26.2.
+Lemma 26.2 can be applied directly to the Representativeness of a specific hypothesis, for example $ERM_\mathcal{H}(S)$ or some $h^\*$ (Theorem 26.3).
 
-THEOREM
+In general, we want to bound the expected value of the representaticeness of $S$ with a better dependence on the confidence parameter $\delta \in (0,1)$.
+This is achieved by applying the McDiarmid's Inequality. 
 
-In general, we want a better dependence on the confidence parameter \delta.
-This is achieved by applying the McDiarmid's Inequality. Theorem 26.5 gives three different bound that mainly says that if the Rademacher Complexity R(l o H o S) is small the ERM-rule can be used.
-Also the second and third bound depend on the chosen training sample S, which is called a data-dependent bound and in comparison to other bounds, the third bound can be calculated!
+For  all samples $z$ and $h \in \mathcal{H}$  their loss needs to be bounded by a constant $\| \mathcal{l} ( h,z ) \| \leq c.
 
-THEOREM
+Then, 
+1.  With probability of at least $1 − \delta$, for all $h \in \mathcal{H}$, 
+
+$\mathcal{L}\_\mathcal{D} (h) − \mathcal{L}\_S (h) \leq 2 \mathop{\mathbb{E}} \_{S' \sim \mathcal{D}^m} \mathcal{R} ( \mathcal{l} \circ \mathcal{H} \circ S' ) + c \sqrt{ \frac{2 ln(\frac{2}{\delta})}{m} }$ .
+
+
+In particular, this holds for $h = ERM_\mathcal{H} ( S )$ .
+
+2.  With probability of at least $1 − \delta$, for all $h \in \mathcal{H}$, 
+
+$\mathcal{L}\_\mathcal{D} (h) − \mathcal{L}\_S (h) \leq 2 \mathcal{R} ( \mathcal{l} \circ \mathcal{H} \circ S)
+ + 4 c \sqrt{ \frac{2 ln(\frac{4}{\delta})}{m} } $.
+ 
+In particular, this holds for $h = ERM_\mathcal{H} ( S )$.
+
+3.  For any $h^\*$, with probability of at least $1 − \delta$, 
+
+$\mathcal{L}\_\mathcal{D} ( ERM_\mathcal{H} ( S ) ) − \mathcal{L}\_\mathcal{D} (h^\*) \leq 2
+\mathcal{R} ( \mathcal{l} \circ \mathcal{H} \circ S)
+ + 5 c \sqrt{ \frac{2 ln(\frac{8}{\delta})}{m} } $.
+
+Theorem 26.5 gives three different bounds that mainly say that if the Rademacher Complexity $\mathcal{R}(\mathcal{l} \circ \mathcal{H} \circ S)$ is small the ERM-rule can be used.
+Also the second and third bound depend on the chosen training sample $S$, which is called a data-dependent bound and in comparison to other bounds, the third **bound can be calculated**!
 
 ### Rademacher Calculus:
 
-Four Properties where proven for the Rademacher Calculus which can be applied to bound the Rademacher Complexity R(l o H o S) for specific cases.
+Four Properties where proven for the Rademacher Calculus which can be applied to bound the Rademacher Complexity \mathcal{R}(\mathcal{l} \circ \mathcal{H} \circ S)$ for specific cases.
 
-A in R^m
-1. Affine transformation: c in R, a_o in R^m
-2. The Rademacher Complexity if the complex hull of A is equal to the Rademacher Complexity of R
-3. Massart: The Rademacher Complexity of a finite set grows logarithmically with its size.
+For a set $A$ in $\mathbb{R}^m$
+1. When applying an affine transformation with factor $c \in \mathbb{R}$ and translation $a_0 \in \mathbb{R}^m$ to A, it holds 
+
+$\mathcal{R}({ca + a_0 : a \in A }) \leq \| c \| \mathcal{R} (A) $
+
+2. The Rademacher Complexity of the complex hull of $A$ is equal to the Rademacher Complexity of $A$
+3. Massart-Lemma: The Rademacher Complexity of a finite set grows logarithmically with its size.
 4. Contraction Lemma:
 
 ### Rademacher Complexity of Linear Classes:
 
-The following two linear and bounded hypothesis classes will be analyzed:
-H_1
-H_2
+The following two linear and bounded hypothesis classes will be analyzed in detail applying some of the properties for Rademacher Calculus:
+
+H_1 :=
+
+H_2 :=
 
 The hypothesis class H_2 can be bounded by the maximum l2-norm of a sample from Hilbert space S devided by the square root of m, the size of S. Notice that the dimension of the Hilbert space S does not influence the Rademacher complexity, which is usefull when analyzing kernel methods.
 
