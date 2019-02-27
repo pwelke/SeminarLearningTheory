@@ -88,7 +88,7 @@ Four Properties where proven for Rademacher Calculus which can be applied to bou
 
 For a set $A \subset \mathbb{R}^m$
 1. When applying an affine transformation with factor $c \in \mathbb{R}$ and translation $a_0 \in \mathbb{R}^m$ to A, it holds 
-$\mathcal{R}(\{ca + a_0 : a \in A \}) \leq \| c \| \mathcal{R} (A) $
+$\mathcal{R}(\\{ca + a_0 : a \in A \\}) \leq \| c \| \mathcal{R} (A) $
 2. The Rademacher Complexity of the complex hull of $A$ is equal to the Rademacher Complexity of $A$
 3. Massart lemma: The Rademacher Complexity of a finite set grows logarithmically with its size.
 4. Contraction lemma: If in every dimension $i \in \[m\]$ of $A$ a $\rho$-Lipschitz function $\varphi_i:\mathbb{R} \to \mathbb{R}$ is applied, the Rademacher complexity of the transformed $\Phi(A)$ can be bounded via 
@@ -106,7 +106,7 @@ The Rademacher Complexity of the hypothesis class $\mathcal{H}\_2$ can be bounde
 
 $\mathcal{R}(\mathcal{H}\_2 \circ S ) \leq \max_i \frac{ \\|x_i\\|\_2 }{ \sqrt{m} }$
 
-Notice that the dimension of the Hilbert space $S = \{x_1, \dots, x_m\}$ does not influence the Rademacher complexity $\mathcal{R}(\mathcal{H}\_2 \circ S)$, which is usefull when analyzing kernel methods.
+Notice that the dimension of the Hilbert space $S = \\{x_1, \dots, x_m\\}$ does not influence the Rademacher complexity $\mathcal{R}(\mathcal{H}\_2 \circ S)$, which is usefull when analyzing kernel methods.
 
 A similar bound can be proven for the Rademacher Complexity of $\mathcal{H}\_1$, but the dimension of $S \subset \mathbb{R}^n$ does appear in the numerator of the bound (Lemma 26.11).
 
@@ -118,7 +118,7 @@ In contrast, in Lemma 26.11 $w$ is bounded by its $\mathcal{l}\_1$-norm
 
 
 | Hypothesis Class    | Bounds on hypotheses ($w$)  | Bounds on instances $x$    |
-| ------------------- |:---------------------------:|:--------------------------:|
+|:-------------------:|:---------------------------:|:--------------------------:|
 | $\mathcal{H}\_1$    | $\mathcal{l}\_1$-norm       | $\mathcal{l}\_\infty$-norm |
 | $\mathcal{H}\_2$    | $\mathcal{l}\_2$-norm       | $\mathcal{l}\_2$-norm      |
 
