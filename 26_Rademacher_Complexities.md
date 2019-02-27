@@ -10,33 +10,33 @@ In this chapter Rademacher Complexity is introduced which measures the rate of u
 
 ### Notation:
 
-At first some notation is defined. Given a fixed loss function $\mathcal{l}$ and a set of hypotheses $\mathcal{H}$ we define all the projection from a sample to its loss for the set of hypotheses
+At first some notation is defined. Given a fixed loss function $\mathcal{l}$ and a set of hypotheses $\mathcal{H}$ we define all the projection from a sample to its loss for the set of hypotheses.
 
-$\mathcal{F} := \mathcal{l} \circ \mathcal{H} := \{z \to \mathcal{l}(h,z) :h \in \mathcal{H} \} $
+$\mathcal{F} := \mathcal{l} \circ \mathcal{H} := \\{z \to \mathcal{l}(h,z) :h \in \mathcal{H} \\} $
 
-Given some $f \in \mathcal{F} $ define the loss over a sample $\mathcal{L}_S$ and the loss over the whole distriburion $\mathcal{L}_D$ 
+Given some $f \in \mathcal{F} $ define the loss over a sample $\mathcal{L}_S$ and the loss over the whole distriburion $\mathcal{L}_D$ .
 
-Finally, define $\mathcal{F} \circ S$ as the set of all possible evaluations a function $f ∈ \mathcal{F}$ can achieve on a sample $S$
+Finally, define $\mathcal{F} \circ S$ as the set of all possible evaluations a function $f ∈ \mathcal{F}$ can achieve on a sample $S$.
 
-$\mathcal{F} \circ S := \{(f(z_1), \dots,f (z_m)) :f\in \mathcal{F}\}$
+$\mathcal{F} \circ S := \\{(f(z_1), \dots,f (z_m)) :f\in \mathcal{F}\\}$
 
 ### Definitions:
 
-**Representativeness of S with respect to F**
+The **Representativeness of S with respect to F** is defined as
 
-Rep_D(F,S) :=
+$\mathcal{Rep}_\mathcal{D} (\mathcal{F},S) := \sup_{f\in\mathcal{F}} (\mathcal{L}_\mathcal{D} (f) − \mathcal{L}_S (f))$.
 
-The representativeness of S measures the biggest difference between the losses measured in the sample S and over the whole set.
+The representativeness of $S$ given $\mathcal{F}$ measures the biggest difference between the losses measured in the sample $S$ and over the whole set.
 
 In general it is not possible to calculate the loss of an hypothesis over the whole domain and the representativeness is estimated by splitting up the sample S in some training and validation set.
 
 FOTO
 
-The **Rademacher Complexity** does exactly this, by splitting up S in all possible combination of training and validation set.
+The **Rademacher Complexity** does exactly this, by splitting up $S$ in all possible combination of training and validation set.
 
-R(F o S) := 1/m
+$\mathcal{R}(F o S) := \frac{1}{m}  \mathbb{E}_{\sigma \sim \\{\om 1\\}^m } \[ \sup _{f \in \mathcal{F} } \sum_{i=1}^{m} σ i f ( z_i ) \] $
 
-where $\sigma$ i.i.d. with P[] = 1/2
+The definition makes use of $\sigma \sim \\{\om 1\\}^m$ assigning a sample either to the training or validation set where $\sigma$ i.i.d. with $\mathbb{P}\[ \sigma_i = 1\] = \mathbb{P} \[ \sigma_i = − 1\]  = \frac{1}{2} $.
 
 ### Lemmas and Theorems:
 
