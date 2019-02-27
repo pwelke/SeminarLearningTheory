@@ -42,6 +42,11 @@ smaller version
 
  <img src="https://github.com/pwelke/SeminarLearningTheory/blob/master/images/skizze_training_validation_set.jpg" width="400">
 
+html
+
+<a href="url"><img src="https://github.com/pwelke/SeminarLearningTheory/blob/master/images/skizze_training_validation_set.jpg"  width="500" ></a>
+
+
 The **Rademacher Complexity** does exactly this. The sample set $S$ is split up in all possible combinations of training and validation set and the differences in the losses are averaged.
 
 $\mathcal{R}(\mathcal{F} \circ S) := \frac{1}{m}  \mathop{\mathbb{E}}\_{\sigma \sim \\{\pm 1\\}^m } \[ \sup \_{f \in \mathcal{F} } \sum_{i=1}^{m} \sigma_i f ( z_i ) \] $
