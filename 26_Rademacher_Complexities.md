@@ -36,7 +36,7 @@ It measures the biggest difference of the losses measured over the whole domain 
 
 In general it is not possible to calculate the loss of an hypothesis over the whole domain. In practice the representativeness is estimated by splitting up the sample S in some training and validation set.
 
-![alt text](https://github.com/pwelke/SeminarLearningTheory/blob/master/images/skizze_training_validation_set.jpg "Visualization of Training and Validation Set")
+ <img src="https://github.com/pwelke/SeminarLearningTheory/blob/master/images/skizze_training_validation_set.jpg" width="400">
 
 The **Rademacher Complexity** does exactly this. The sample set $S$ is split up in all possible combinations of training and validation set and the differences in the losses are averaged.
 
