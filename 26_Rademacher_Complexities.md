@@ -57,7 +57,7 @@ This implies that by splitting up the sample $S$ into different validation and t
 Lemma 26.2 can be applied directly to the Representativeness of a specific hypothesis, for example $ERM_\mathcal{H}(S)$ or some $h^\*$ (Theorem 26.3).
 
 In general, we want to bound the expected value of the representaticeness of $S$ with a better dependence on the confidence parameter $\delta \in (0,1)$.
-This is achieved by applying the McDiarmid's Inequality. 
+This is achieved by applying the McDiarmid's Inequality which leads to Theorem 26.5. 
 
 For  all samples $z$ and $h \in \mathcal{H}$  their loss needs to be bounded by a constant $\| \mathcal{l} ( h,z ) \| \leq c$.
 
@@ -65,7 +65,7 @@ Then,
 
 **(i)**  With probability of at least $1 − \delta$, for all $h \in \mathcal{H}$, 
 
-$\mathcal{L}\_\mathcal{D} (h) − \mathcal{L}\_S (h) \leq 2 \mathop{\mathbb{E}} \_{S' \sim \mathcal{D}^m} \mathcal{R} ( \mathcal{l} \circ \mathcal{H} \circ S' ) + c \sqrt{ \frac{2 ln(\frac{2}{\delta})}{m} }$ .
+$\mathcal{L}\_\mathcal{D} (h) − \mathcal{L}\_S (h) \leq 2 \mathop{\mathbb{E}}  \_{S' \sim \mathcal{D}^m} \[ \mathcal{R} ( \mathcal{l} \circ \mathcal{H} \circ S' ) \] + c \sqrt{ \frac{2 ln(\frac{2}{\delta})}{m} }$ .
 
 
 In particular, this holds for $h = \text{ERM}\_\mathcal{H} ( S )$ .
