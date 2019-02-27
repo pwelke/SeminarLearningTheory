@@ -36,7 +36,7 @@ It measures the biggest difference between the losses measured in the sample $S$
 
 In general it is not possible to calculate the loss of an hypothesis over the whole domain and in practice the representativeness is estimated by splitting up the sample S in some training and validation set.
 
-FOTO
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 The **Rademacher Complexity** does exactly this, by splitting up the sample $S$ in all possible combination of training and validation set.
 
@@ -108,9 +108,9 @@ The Rademacher Complexity of the hypothesis class $\mahtcal{H}\_2$ can be bounde
 
 $\mathcal{R}(\mathcal{H}\_2 \circ S ) \leq \max_i \frac{ \\|x_i\\|\_2 }{ \sqrt{m} }$
 
-Notice that the dimension of the Hilbert space $S$ does not influence the Rademacher complexity \mathcal{R}(\mathcal{l} \circ \mathcal{H}\_2 \circ S)$, which is usefull when analyzing kernel methods.
+Notice that the dimension of the Hilbert space $S$ does not influence the Rademacher complexity $\mathcal{R}(\mathcal{l} \circ \mathcal{H}\_2 \circ S)$, which is usefull when analyzing kernel methods.
 
-A similar bound can be proven for $\mahtcal{H}\_1$, but the dimension of $S$ does appear in the numerator of the bound (Lemma 26.11).
+A similar bound can be proven for the Rademacher Complexity of $\mahtcal{H}\_1$, but the dimension of $S$ does appear in the numerator of the bound (Lemma 26.11).
 
 $\mathcal{R}(\mathcal{H}\_1 \circ S ) \leq \max_i \\|x_i\\|\_\infty \frac{ 2 \log(2n) }{ \sqrt{m} }$
 
@@ -119,7 +119,13 @@ Apart from the extra $\log(n)$ factor that appears in Theorem 26.11, a compariso
 In contrast, in Lemma 26.11 $w$ is bounded by its $\mathcal{l}\_1$-norm 
 (which is stronger than an $\mathcal{l}\_2$-constraint) while the $\mathcal{l}\_\infty$-norm of the instances should be low since its influences the bound (which is weaker than a low $\mathcal{l}\_2$ assumption). 
 
-TABLE
+
+|                     | Bounds on                                             |
+| Hypothesis Class    | Hypotheses ($w$)         | Instances $x$              |
+| ------------------- |:------------------------:| --------------------------:|
+| \mathcal{H}\_1      | $\mathcal{l}\_1$-norm    | $\mathcal{l}\_\infty$-norm |
+| \mathcal{H}\_2      | $\mathcal{l}\_2$-norm    | $\mathcal{l}\_2$-norm      |
+
 
 Therefore, the choice of the hypothesis class $\mathcal{H} and constraint on instances and hypotheses should depend on our prior
 knowledge of the set of instances and on prior assumptions on good predictors.
