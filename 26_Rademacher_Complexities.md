@@ -104,12 +104,13 @@ $\mahtcal{H}\_1 = \{ x \mapsto \langle w , x \rangle : \\| w \\|\_1 \leq 1 \}$
 
 $\mahtcal{H}\_2 = \{ x \mapsto \langle w , x \rangle : \\| w \\|\_2 \leq 1 \}$
 
-The hypothesis class H_2 can be bounded by the maximum l2-norm of a sample from Hilbert space S devided by the square root of m, the size of S. Notice that the dimension of the Hilbert space S does not influence the Rademacher complexity, which is usefull when analyzing kernel methods.
+The hypothesis class $\mahtcal{H}\_2$ can be bounded by the maximum $\mathcal{l}\_2$-norm of a sample from Hilbert space $S$ devided by the square root of $m$, the size of $S$. Notice that the dimension of the Hilbert space $S$ does not influence the Rademacher complexity \mathcal{R}(\mathcal{l} \circ \mathcal{H}\_2 \circ S)$, which is usefull when analyzing kernel methods.
 
-A similar bound can be proven for H_1, but the dimension of S does appear in the numerator of the bound.
+A similar bound can be proven for $\mahtcal{H}\_1$, but the dimension of $S$ does appear in the numerator of the bound.
 
 The two Lemmata imply two generalization bounds.
 
+---
 
 ### Questions:
 
