@@ -95,13 +95,3 @@ Let $\mathcal{D}$ be an arbitrary distribution over an example domain $Z$. Let $
 
 $L_{D}(\mathcal{Q}) \leq L_{S}(\mathcal{Q}) + \sqrt{\frac{D(\mathcal{Q}||P)+\ln m/\delta}{2(m-1)}}$
 
-$D(\mathcal{Q}||P) \overset{def}{=} \mathop{\mathbb{E}}\limits_{h \sim Q}[\ln (\mathcal{Q}(h)/P(h))]$, the Kullback-Leibler divergence, natural measure of the distance between two distribution.
-
-Theorem suggests, 
-
-minimize the generalization loss of $\mathcal{Q}$ 
-
-$\to$ jointly minimize 
-
-$L_{S}(\mathcal{Q})$ and $D(\mathcal{Q}||P)$
-
