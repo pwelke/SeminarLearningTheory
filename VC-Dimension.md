@@ -38,13 +38,13 @@ To show that the VC-Dimension is strictly less than 5, we have to show that *no*
 
 The main reason why studying the VC-Dimension is of interest to us is the so-called Fundamental Theorem of Statistical Learning. It establishes a direct connection between the VC-Dimension and the PAC learnability of a concept class.
 
-***Theorem***
+***Fundamental Theorem of Statistical Learning***
 
 Let $\mathcal{H}$ be a hypothesis class of functions $f:\mathcal{X}\to \lbrace 0,1 \rbrace$, where $\mathcal{X}$ is the domain. Let the loss function be the $0-1$ loss. Then the following statements are equivalent:
 
 1. $\mathcal{H}$ has the uniform convergence property.
 
-2 Any ERM rule is a successful agnostic PAC-learner for $\mathcal{H}$.
+2. Any ERM rule is a successful agnostic PAC-learner for $\mathcal{H}$.
 
 3. $\mathcal{H}$ is agnostic PAC-learnable.
 
