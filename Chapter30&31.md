@@ -59,4 +59,34 @@ Let $\mathcal{H}$ be a hypothesis class of functions from $\mathcal{X}$ to $\mat
 For all $m$ there exists $A : Z^{m} \to [m]^{k}$ and $B : Z^{k} \to \mathcal{H}$ such that for all $h \in \mathcal{H}$, if we feed any training set of the form $(x_{1},y_{1})),...,(x_{m},y_{m})$ into $A$ and then feed $(x_{i_{1}},y_{i_{1}}),...,(x_{i_{k}},y_{i_{k}})$ into $B$, where $(i_{1},...,i_{k})$ is the output of $A$, then the output of $B$, denoted $h^\prime$, satisfies $L_{S}(h^\prime) \leq L_{S}(h)$.
 
 
+# PAC-Bayes
+
+Further generalizes the idea of Minimum Description Length(MDL) and Occam's razor principle.
+
+Express the prior knowledge by defining prior distribution over the hypothesis class.
+
+### PAC-Bayes Bounds
+
+#### Notation
+* $\mathcal{Q}$: Posterior probability over $\mathcal{H}$
+* $\mathcal{P}$: Prior distribution over $\mathcal{H}$
+
+In supervised learning problem, think of $\mathcal{Q}$ as defining a randomized prediction rule as follows:
+
+Whenever we get a new instance $x$, we randomly pick a hypothesis $h\in \mathcal{H}$ according to $\mathcal{Q}$ and predict $h(x)$.
+
+Define the loss of $\mathcal{Q}$ on an example $z$ to be
+
+$\ell (\mathcal{Q},z) \overset{def}{=} \mathop{\mathbb{E}}\limits_{h \sim Q}[\ell (h,z)] $
+
+By the linearity of expectation, we rewrite the
+
+generalization loss of $\mathcal{Q}$ :
+
+$L_{D}(\mathcal{Q}) \overset{def}{=} \mathop{\mathbb{E}}\limits_{h \sim Q}[L_{D}(h)]$
+
+training loss of $\mathcal{Q}$ :
+
+$L_{S}(\mathcal{Q}) \overset{def}{=} \mathop{\mathbb{E}}\limits_{h \sim Q}[L_{S}(h)]$
+
 
