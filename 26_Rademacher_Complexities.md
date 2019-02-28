@@ -136,7 +136,7 @@ ___
 
 ___
 
-**Q:** Page 378. Formula on the top of the page: Would it suffice if $h^*$ **(???)** is Lipschitz continuous?
+**Q:** Page 378. Formula on the top of the page: would it suffice if $h^*$ is Lipschitz continuous?
 
 **A:** Yes, but we have to bound something. (for Lipschitz - domain). 
 
