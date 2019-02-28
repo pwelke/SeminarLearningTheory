@@ -106,3 +106,6 @@ $\to$ jointly minimize
 
 $L_{S}(\mathcal{Q})$ and $D(\mathcal{Q}\vert \vert P)$
 
+___
+
+Q/A:
