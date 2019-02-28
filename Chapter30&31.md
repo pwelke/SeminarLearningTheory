@@ -89,4 +89,9 @@ training loss of $\mathcal{Q}$ :
 
 $L_{S}(\mathcal{Q}) \overset{def}{=} \mathop{\mathbb{E}}\limits_{h \sim Q}[L_{S}(h)]$
 
+**Theorem**
+
+Let $\mathcal{D}$ be an arbitrary distribution over an example domain $Z$. Let $\mathcal{H}$ be a hypothesis class and let $\ell : \mathcal{H} \times Z \to [0,1]$ be a loss function. Let $P$ be a prior distribution over $\mathcal{H}$ and let $\delta \in (0,1)$. Then, with probability of at least $1-\delta$ over the choice of an $i.i.d.$ training set $S = {z_{1},...,z_{m}}$ sampled according to $\mathcal{D}$, for all distributions $\mathcal{Q}$ over $\mathcal{H}$ (even such that depend on $S$), we have
+
+$L_{D}(\mathcal{Q}) \leq L_{S}(\mathcal{Q}) + \sqrt{\frac{D(\mathcal{Q}||P)+\ln m/\delta}{2(m-1)}}$
 
