@@ -93,14 +93,3 @@ The following table compares the three different notions of learning in terms of
 | (agn.) PAC | $\checkmark$ | $\checkmark$ (in advance) | $\checkmark$ (by specifying an $\mathcal{H}$) | 
 | Nonuniform | $\checkmark$ (e.g. Thm 7.4 in the book) | $\checkmark$ (depends on the best $h \in \mathcal{H}$) | $\checkmark$ (weights) |
 | Consistent | $\times$ | $\times$ | $\times$ |
-
-
-
-### Questions:
-**Q:**
-
-**A:**
-
-
-
-
