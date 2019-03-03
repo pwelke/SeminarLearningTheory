@@ -1,5 +1,5 @@
 ---
-title: "Chap. 7"
+title: "Chapter 7 Part 2: MDL and Other Notions of Learnability"
 ---
 
 
@@ -46,7 +46,7 @@ $\forall h,h' \in \mathcal{H}, h \neq h': d(h) \text{ is not a prefix of } d(h')
 $\sum\_{\sigma \in \mathcal{S}}\frac{1}{2^{\|\sigma\|}} \leq 1$ 
 
 **Proof:**
-Assume, we draw a binary sequence uniformly at random (and stop if it equals a string in $\mathcal{S}$). Then 
+Assume, we draw a binary sequence uniformly at random and stop if it equals a string in $\mathcal{S}$. Then 
 
 $\forall \sigma \in \mathcal{S}: P(\sigma) = \frac{1}{2^{\|\sigma\|}}.$
 
@@ -54,7 +54,7 @@ Overall,
 
 $\sum\_{\sigma \in \mathcal{S}}\frac{1}{2^{\|\sigma\|}} = P(\mathcal{S}) \leq 1.$
 
-Due to Kraft inequality, we can use the description language $d(h)$ as a hypothesis weight $w(h) = \frac{1}{w^{\|h\|}}$.
+Due to the Kraft inequality, we can use the description language $d(h)$ as a hypothesis weight $w(h) = \frac{1}{w^{\|h\|}}$.
 
 If we plug $d(h)$ into the SRM rule for singleton hypothesis, we get the *Minimum Description Length* principle: 
 

@@ -10,7 +10,7 @@ Why is the definition of $\mathcal{H}\_0$ and $\mathcal{H}\_1$ not exclusive?
 As we want to have $\|\mathcal{H}\_S\| = \|\mathcal{H}\_0\| + \|\mathcal{H}\_0\|$, we have to count all the hypothesis,  where "and" is true, twice.
 
 **Q:**
-Why we use the term "convergence"?
+Why do we use the term "convergence"?
 
 **A:**
 We use the term convergence in the calculus limit sense, as we can get $L\_S(h)$ arbitrarily close to $L\_{\mathcal{D}}(h)$ with a large enough sample size.
