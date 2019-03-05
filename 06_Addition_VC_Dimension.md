@@ -1,3 +1,7 @@
+---
+title: "Chapter 6: Addition to VC-Dimensions"
+---
+
 # Addition to VC-Dimensions
 
 In this section we pick up the topic of VC-dimensions again, adding some technical but famous results. In particular we present Sauer's Lemma and (without a proof) one of its applications. We will also define a way to analyse the expressive power of a hypothesis space.
