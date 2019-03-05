@@ -1,5 +1,5 @@
 ---
-title: "Nonuniform Learnability & SRM"
+title: "Chapter 7: Nonuniform Learnability & SRM"
 ---
 
 # Nonuniform Learnability and Structural Risk Minimisation (SRM)

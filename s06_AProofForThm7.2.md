@@ -1,5 +1,5 @@
 ---
-title: "Proof of Theorem 7.2"
+title: "Chapter 7: Alternative Proof of Theorem 7.2"
 ---
 
 ## A Proof Proposal for Theorem 7.2

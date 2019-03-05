@@ -1,3 +1,7 @@
+---
+title: "Chapter 6: The VC-Dimension"
+---
+
 # The VC-Dimension
 The VC-Dimension (named after Vapnik and Chervonenkis) is a measure of complexity for a given hypothesis class. The motivation is as follows: finiteness of a hypothesis class implies PAC-learnability, and the sample complexity depends on the size of the class. However, there are also infinite hypothesis classes which are PAC-learnable. Consider for example the class of threshold functions over the real numbers, $\mathcal{H} = \lbrace h_{a} \rbrace$ where
 $h_{a}(x) = 1$ if  $a<0$, and $h_{a}(x) = 0$, otherwise. This hypothesis class is PAC-learnable with sample complexity $m(\epsilon,\delta) \leq \lceil \log(2/\delta)/\epsilon \rceil.$
