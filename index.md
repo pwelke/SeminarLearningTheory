@@ -26,9 +26,9 @@ Below, you find the write-ups of our sessions.
 
 
 
-## Table of Contents
+<!-- ## Table of Contents
 
 {% for p in site.pages %}
 - [{{p.title}}]({{site.baseurl}}{{p.url}})
 {% endfor %}
-
+ -->
