@@ -1,5 +1,5 @@
 ---
-title: "Chapter 5: Error Decomposition"
+title: "Chapter 5.2: Error Decomposition"
 ---
 
 # Error Decomposition
