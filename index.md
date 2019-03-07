@@ -16,12 +16,12 @@ Below, you find the write-ups of our sessions.
 | 3 | [Lukas Drexler](https://github.com/lukasdrexler) | 6 | [VC-Dimension](s03_VC-Dimension.md) | [Screencast](screencasts/Ch5-6_BiasComplexity_VCDim1.pdf) |
 | 4 | [Oliver Kiss](https://github.com/OlKiss) | 6 | [Addition VC-Dimension](s04_Addition_VC_Dimension.md) | [Screencast](screencasts/Ch7_Nonuniform1.pdf) |
 | 4 | [Oliver Kiss](https://github.com/OlKiss) | 7 | [Nonuniform Learnability](s04_NonuniformLearnability.md) | [Screencast](screencasts/Ch7_Nonuniform1.pdf) |
-| 4 | [Oliver Kiss](https://github.com/OlKiss) | 6&7 | [Q&A](s04_Chapter6_7Discussions.md) | |
+| 4 | [Oliver Kiss](https://github.com/OlKiss) | 6 & 7 | [Q&A](s04_Chapter6_7Discussions.md) | |
 | 5 | [Maximilian Thiessen](https://github.com/maksim96) | 7 | [MDL and Other Notions of Learnability](s05_Chapter7Part2.md) | [Screencast](screencasts/Ch7-8_Nonuniform2_CompComplexity.pdf) |
 | 5 | [Pascal Welke](https://github.com/pwelke) | 7 | [An Alternative Proof for Thm 7.2](s06_AProofForThm7.2.md) | |
 | 5 | [Maximilian Thiessen](https://github.com/maksim96) | 8 | [The Runtime of Learning](s05_Chapter8.md) | [Screencast](screencasts/Ch7-8_Nonuniform2_CompComplexity.pdf) |
 | 6 | [Sara Hahner](https://github.com/sahahner) | 26 | [Rademacher Complexity](s06_chap26_RademacherComplexities.md) | [Screencast](screencasts/Ch26RademacherComplexities.pdf) |
-| 7 | [Zhuofan Liu](https://github.com/birdycoder) | 30&31 | [Compression Bounds & PAC-Bayes](s07_Chapter30Chap31.md) | [Screencast](screencasts/Ch30-31andEMX.pdf) |
+| 7 | [Zhuofan Liu](https://github.com/birdycoder) | 30 & 31 | [Compression Bounds & PAC-Bayes](s07_Chapter30Chap31.md) | [Screencast](screencasts/Ch30-31andEMX.pdf) |
 | X | All | All | [Collected Errata](s10_Errata.md) | |
 
 
