@@ -9,7 +9,7 @@ Below, you find the write-ups of our sessions.
 
 | Session | Presenter | Book Chapter | Link | Screencast |
 |---------|-----------|--------------|------|------------|
-| 1 | [Michael Kamp](https://github.com/MichaelKamp) | 1 & 2 | [Introduction and Gentle Start](s01_IntroAndGentleStart.md) | |
+| 1 | [Michael Kamp](https://github.com/MichaelKamp) | 1 & 2 | [Introduction and Gentle Start](s01_IntroAndGentleStart.md) | [Screencast](screencasts/Ch1-2_IntroAndGentleStart.pdf) |
 | 2 | [Mikhail Borisov](https://github.com/michaelborisov) | 3 & 4 | [APAC Learning and Uniform Convergence](s02_Chap3AndChap4.md) | [Screencast](screencasts/Ch3-4_PAC_APAC_UniformConvergence.pdf) |
 | 3 | [Lukas Drexler](https://github.com/lukasdrexler) | 5.1 | [No Free Lunch Theorem](s03_NoFreeLunch.md) | [Screencast](screencasts/Ch5-6_BiasComplexity_VCDim1.pdf) |
 | 3 | [Lukas Drexler](https://github.com/lukasdrexler) | 5.2 | [Error Decomposition](s03_ErrorDecomposition.md) | [Screencast](screencasts/Ch5-6_BiasComplexity_VCDim1.pdf) |
