@@ -27,7 +27,7 @@ but only the things, which we face in real life scenarios.
 
 ## Chapter 6
 
-Theorem 6.7 misses the realisability assumption in case 4.
+Lemma 6.1 on page 68 and Theorem 6.7 case 4 on page 72 miss the realisability assumption.
 
 ## Chapter 7
 
