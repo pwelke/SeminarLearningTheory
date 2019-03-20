@@ -42,4 +42,4 @@ The definition of a prefix-free description language on page 89 is a little ambi
 
 ## Chapter 26
 
-Lemma 26.9 contains a typo: the last entry of $\phy(a)$ should be denoted $\phi_m(a_m)$ instead of $\phi_m(y_m)$.
+Lemma 26.9 contains a typo: the last entry of $\phi(a)$ should be denoted $\phi_m(a_m)$ instead of $\phi_m(y_m)$.
