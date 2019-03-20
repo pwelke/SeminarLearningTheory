@@ -36,3 +36,6 @@ The epsilon function is defined on page 86 as
 $$\epsilon_n: \mathbb{N}\times(0,1) \rightarrow (0,1), (m,\delta)\mapsto \min \{ \epsilon\in(0,1): m_{\mathcal{H}_n}^{UC}(\epsilon, \delta)\leq m \}$$.
 
 Since we minimise over an open interval, the question arises whether this is always well-defined. Do we assume a "proper" agnostic case where $\epsilon =0$ never occurs? 
+
+
+The definition of a prefix-free description language on page 89 is a little ambiguous since a "prefix" is not precisely defined. Is a string a prefix of itself? The addition of an injectivity assumption would clarify that.
