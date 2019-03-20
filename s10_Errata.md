@@ -39,3 +39,7 @@ Since we minimise over an open interval, the question arises whether this is alw
 
 
 The definition of a prefix-free description language on page 89 is a little ambiguous since a "prefix" is not precisely defined. Is a string a prefix of itself? The addition of an injectivity assumption would clarify that.
+
+##Chapter 26
+
+Lemma 26.9 contains a typo: the last entry of $\phy(a)$ should be denoted $\phi_m(a_m)$ instead of $\phi_m(y_m)$.
