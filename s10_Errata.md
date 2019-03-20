@@ -24,3 +24,6 @@ some constraints, it can be reasonable to relax those constraints. After relaxat
 
 1. Remark 4.1 (page 57) The "Discretization Trick" is a bit ambiguous name for the idea, which is explained there, since there is no actual trick there,
 but only the things, which we face in real life scenarios.
+
+## Chapter 7
+The epsilon function is defined as $\epsilon_n: \mathbb{N}\times(0,1) \rightarrow (0,1)$, $$(m,\delta)\mapsto \min \{ \epsilon\in(0,1): m_{\mathcal{H}_n}^{UC}(\epsilon, \delta)\leq m \}$$. Since we minimise over an open interval, the question arises whether this is always well-defined. Do we assume a "proper" agnostic case where $\epsilon =0$ never occurs? 
